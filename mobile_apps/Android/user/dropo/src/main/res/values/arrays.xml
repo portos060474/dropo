@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="user_menu_icons">
+        <item>@drawable/ic_man_user_stroke</item>
+        <item>@drawable/ic_payment_stroke</item>
+        <item>@drawable/ic_documents_stroke</item>
+        <item>@drawable/ic_menu_orders</item>
+        <item>@drawable/ic_settings_stroke</item>
+        <item>@drawable/ic_favourite_stroke</item>
+        <item>@drawable/fav_address_2</item>
+        <item>@drawable/noti_android</item>
+        <item>@drawable/ic_help_stroke_01</item>
+        <item>@drawable/ic_logout_stroke</item>
+        <item>@drawable/ic_local_taxi_black_24dp</item>
+
+    </array>
+
+    <array name="user_menu_item">
+        <item>@string/text_profile</item>
+        <item>@string/text_payments</item>
+        <item>@string/text_documents</item>
+        <item>@string/text_orders</item>
+        <item>@string/text_settings</item>
+        <item>@string/text_favourite</item>
+        <item>@string/text_favourite_address</item>
+        <item>@string/text_notification</item>
+        <item>@string/text_help</item>
+        <item>@string/text_log_out</item>
+        <item>@string/text_book_taxi</item>
+    </array>
+
+    <array name="language_code">
+        <item>en</item>
+        <item>ar</item>
+        <item>es</item>
+        <item>fr</item>
+    </array>
+    <array name="language_name">
+        <item>English</item>
+        <item>عربى</item>
+        <item>Española</item>
+        <item>Français</item>
+    </array>
+</resources>

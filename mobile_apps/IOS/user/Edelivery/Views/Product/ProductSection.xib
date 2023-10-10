@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProductSection" rowHeight="67" id="xnv-3w-SUh" customClass="ProductSection" customModule="Edelivery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="67"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xnv-3w-SUh" id="ny4-Rv-eK8">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="147" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46i-ib-pQA">
+                        <rect key="frame" x="0.0" y="32" width="42" height="25"/>
+                        <color key="backgroundColor" red="1" green="0.084685210610000006" blue="0.1350707297" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="rsU-ys-NVa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All items are inculsive of all taxes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRo-oA-7qy">
+                        <rect key="frame" x="12" y="5" width="186.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.54509803921568623" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.65100273340000003" green="0.66293088759999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="46i-ib-pQA" firstAttribute="leading" secondItem="ny4-Rv-eK8" secondAttribute="leading" id="T1t-BA-ecN"/>
+                    <constraint firstItem="46i-ib-pQA" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="ny4-Rv-eK8" secondAttribute="trailing" constant="-10" id="bKq-u7-p0g"/>
+                    <constraint firstItem="46i-ib-pQA" firstAttribute="centerY" secondItem="ny4-Rv-eK8" secondAttribute="centerY" constant="11" id="lRK-kR-LCO"/>
+                    <constraint firstItem="sRo-oA-7qy" firstAttribute="top" secondItem="ny4-Rv-eK8" secondAttribute="top" constant="5" id="nEp-PQ-Bxk"/>
+                    <constraint firstItem="sRo-oA-7qy" firstAttribute="leading" secondItem="ny4-Rv-eK8" secondAttribute="leading" constant="12" id="vfn-dg-ma1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblProductName" destination="46i-ib-pQA" id="wab-IS-rST"/>
+                <outlet property="lbltaxInfo" destination="sRo-oA-7qy" id="edS-8g-Lj9"/>
+            </connections>
+            <point key="canvasLocation" x="-201.44927536231884" y="85.379464285714278"/>
+        </tableViewCell>
+    </objects>
+</document>

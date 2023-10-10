@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?appThemeScreenBackgroundStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dropo.PaymentActivity">
+
+    <include layout="@layout/toolbar_app_custom" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llWallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+
+            <com.dropo.component.CustomFontTextViewTitle
+                android:id="@+id/tag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|start"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:text="@string/text_wallet"
+                android:textSize="@dimen/size_app_text_medium" />
+
+            <com.dropo.component.CustomSwitch
+                android:id="@+id/switchIsWalletUse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|top"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                app:switchPadding="@dimen/activity_horizontal_padding"
+                app:theme="?appThemeSwitchStyle" />
+        </FrameLayout>
+
+        <com.dropo.component.CustomFontTextView
+            style="?appThemeLabelTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_padding"
+            android:layout_marginBottom="@dimen/dimen_app_edit_text_padding"
+            android:text="@string/text_current_balance"
+            android:textSize="@dimen/size_app_label_regular" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvWalletAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="00"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/size_app_text_large" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvAddWalletAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:background="@drawable/shape_custom_button"
+                android:paddingStart="@dimen/bottom_sheet_dialog_padding_20dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="@dimen/bottom_sheet_dialog_padding_20dp"
+                android:paddingBottom="3dp"
+                android:text="@string/text_add"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_app_label_regular"
+                android:visibility="visible"
+                app:appBackgroundColor="@integer/appThemeColor" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <include layout="@layout/include_divider_design" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.dropo.component.CustomFontTextViewTitle
+            android:id="@id/tag2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/text_select_payment_method"
+            android:textSize="@dimen/size_app_text_medium" />
+
+        <com.dropo.component.CustomFontTextView
+            android:id="@+id/tvAddCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_custom_button"
+            android:paddingStart="@dimen/bottom_sheet_dialog_padding_20dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="@dimen/bottom_sheet_dialog_padding_20dp"
+            android:paddingBottom="3dp"
+            android:text="@string/text_add"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/size_app_label_regular"
+            android:visibility="visible"
+            app:appBackgroundColor="@integer/appThemeColor" />
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/paymentTabsLayout"
+        style="?appThemeTabStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        app:tabGravity="start"
+        app:tabIndicator="@null"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="@dimen/bottom_sheet_dialog_padding_20dp"
+        app:tabPaddingStart="@dimen/bottom_sheet_dialog_padding_20dp"
+        app:tabSelectedTextColor="@color/colorWhite" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/paymentViewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.dropo.component.CustomFontTextView
+        android:id="@+id/tvPayMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/size_app_text_small" />
+
+    <LinearLayout
+        android:id="@+id/btnPayNow"
+        style="?appThemeButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:visibility="visible">
+
+        <com.dropo.component.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/text_payment"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/size_app_button_text" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="@dimen/activity_horizontal_padding"
+            android:layout_marginEnd="@dimen/activity_horizontal_padding"
+            android:background="@color/colorWhite" />
+
+        <com.dropo.component.CustomFontTextView
+            android:id="@+id/tvPayTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="00.00"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/size_app_button_text" />
+
+    </LinearLayout>
+</LinearLayout>

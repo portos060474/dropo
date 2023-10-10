@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/bottom_sheet_dialog_padding_20dp"
+    android:paddingTop="@dimen/bottom_sheet_dialog_padding_30dp"
+    android:paddingEnd="@dimen/bottom_sheet_dialog_padding_20dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    tools:context="com.dropo.fragments.OrderPreparedFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_app_edit_text_padding"
+        android:orientation="horizontal">
+
+        <com.dropo.component.CustomFontTextViewTitle
+            android:id="@+id/tvDialogAlertTitle"
+            style="?appThemeTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/text_order_details"
+            android:textSize="@dimen/size_app_text_large" />
+
+        <com.dropo.component.CustomImageView
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_app_edit_text_padding"
+            android:paddingTop="@dimen/dimen_app_edit_text_padding"
+            android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+            android:src="@drawable/ic_cross" />
+    </LinearLayout>
+
+    <com.dropo.component.CustomFontTextView
+        android:id="@+id/btnAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:background="@drawable/shape_custom_button"
+        android:paddingStart="@dimen/bottom_sheet_dialog_padding_20dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="@dimen/bottom_sheet_dialog_padding_20dp"
+        android:paddingBottom="5dp"
+        android:text="@string/text_edit_order"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_app_text_regular"
+        android:visibility="gone"
+        app:appBackgroundColor="@integer/appThemeColor" />
+
+    <LinearLayout
+        android:id="@+id/llReceivedBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.dropo.component.CustomFontTextViewTitle
+            android:id="@+id/tvLabel2"
+            style="?appThemeLabelTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/text_order_receive_by"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/size_app_text_small" />
+
+        <com.dropo.component.CustomFontTextViewTitle
+            android:id="@+id/tvReceivedBy"
+            style="?appThemeTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/size_app_text_medium" />
+
+        <com.dropo.component.CustomFontTextView
+            android:id="@+id/tvAddress"
+            style="?appThemeTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_app_edit_text_padding"
+            android:maxLines="2"
+            android:text="@string/text_empty_string"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/size_app_text_regular"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvOrderProductItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:scrollbars="horizontal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvOrderCourierItems"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/btnConfirmDetail"
+        style="?appThemeButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="@dimen/bottom_sheet_dialog_padding_30dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:visibility="gone">
+
+        <com.dropo.component.CustomFontTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="@string/text_update"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/size_app_button_text" />
+
+        <com.dropo.component.CustomFontTextView
+            android:id="@+id/tvCartTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:text="00.00"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/size_app_button_text" />
+
+    </LinearLayout>
+
+    <com.dropo.component.CustomFontButton
+        android:id="@+id/btnApproveEditOrder"
+        style="?appThemeButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:text="@string/text_confirm"
+        android:visibility="gone" />
+
+    <com.dropo.component.CustomFontButton
+        android:id="@+id/btnReorder"
+        style="?appThemeButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/text_reorder"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    app:cardBackgroundColor="?appThemeModeColor"
+    app:cardCornerRadius="@dimen/app_card_radius"
+    app:cardElevation="@dimen/app_card_elevation">
+
+    <LinearLayout
+        android:id="@+id/llCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_padding">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_app_edit_text_padding"
+            android:layout_marginTop="@dimen/dimen_app_edit_text_padding"
+            android:layout_marginBottom="@dimen/dimen_app_edit_text_padding"
+            android:src="@drawable/ic_wallet_payment_stroke_36dp" />
+
+        <com.dropo.provider.component.CustomFontTextView
+            android:id="@+id/tvCardNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_padding"
+            android:layout_weight="1"
+            android:textSize="@dimen/size_app_text_regular" />
+
+        <com.dropo.provider.component.CustomImageView
+            android:id="@+id/ivSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_app_edit_text_padding"
+            android:src="@drawable/ic_save"
+            android:visibility="visible" />
+
+        <com.dropo.provider.component.CustomImageView
+            android:id="@+id/ivDeleteCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_app_edit_text_padding"
+            android:src="@drawable/ic_cancel">
+
+        </com.dropo.provider.component.CustomImageView>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

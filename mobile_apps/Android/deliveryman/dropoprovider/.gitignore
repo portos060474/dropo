@@ -1,0 +1,6 @@
+/build
+/release
+/production
+/developer
+/staging
+*.apk

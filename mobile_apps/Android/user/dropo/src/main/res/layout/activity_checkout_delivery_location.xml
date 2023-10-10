@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?appThemeScreenBackgroundStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dropo.CheckoutDeliveryLocationActivity">
+
+    <include layout="@layout/toolbar_app_custom" />
+
+    <FrameLayout
+        android:id="@+id/mapFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <com.dropo.component.CustomEventMapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="?appThemeScreenBackgroundStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/dimen_app_edit_text_padding"
+                    app:cardElevation="@dimen/app_card_elevation">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/llDeliveryAddress"
+                        style="?appThemeTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:endIconDrawable="@drawable/cross_grey_icon"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="?appThemeIcon"
+                        app:hintEnabled="false"
+                        app:startIconDrawable="@drawable/ic_location_on_gray_24dp"
+                        app:startIconTint="@color/color_black">
+
+                        <com.dropo.component.CustomFontAutoCompleteView
+                            android:id="@+id/acDeliveryAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:dropDownAnchor="@id/llDeliveryAddress"
+                            android:dropDownWidth="match_parent"
+                            android:hint="@string/text_enter_delivery_address"
+                            android:imeOptions="actionDone"
+                            android:inputType="textNoSuggestions"
+                            android:maxLines="1"
+                            android:paddingStart="@dimen/dimen_app_edit_text_padding"
+                            android:paddingEnd="@dimen/dimen_app_edit_text_padding"
+                            android:textAlignment="viewStart"
+                            android:theme="?appThemeEditTextStyle" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llExtraAddressDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/card_view_space_8dp"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        app:cardElevation="@dimen/app_card_elevation">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="?appThemeTextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintEnabled="false">
+
+                            <com.dropo.component.CustomFontEditTextView
+                                android:id="@+id/etFlatNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:dropDownAnchor="@id/llDeliveryAddress"
+                                android:dropDownWidth="match_parent"
+                                android:hint="@string/text_flat_number_and_name"
+                                android:imeOptions="actionNext"
+                                android:inputType="textNoSuggestions"
+                                android:maxLines="1"
+                                android:padding="@dimen/activity_horizontal_padding"
+                                android:paddingEnd="@dimen/activity_horizontal_padding"
+                                android:textAlignment="viewStart"
+                                android:theme="?appThemeEditTextStyle" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin"
+                            android:layout_marginTop="@dimen/card_view_space_8dp"
+                            android:layout_marginBottom="@dimen/card_view_space_8dp"
+                            android:layout_weight="1"
+                            app:cardElevation="@dimen/app_card_elevation">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="?appThemeTextInputLayoutStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:hintEnabled="false">
+
+                                <com.dropo.component.CustomFontEditTextView
+                                    android:id="@+id/etStreetNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:hint="@string/text_street_no"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="textNoSuggestions"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/activity_horizontal_padding"
+                                    android:paddingEnd="@dimen/activity_horizontal_padding"
+                                    android:textAlignment="viewStart"
+                                    android:theme="?appThemeEditTextStyle" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/activity_horizontal_padding"
+                            android:layout_marginTop="@dimen/card_view_space_8dp"
+                            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                            android:layout_marginBottom="@dimen/card_view_space_8dp"
+                            android:layout_weight="1"
+                            app:cardElevation="@dimen/app_card_elevation">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="?appThemeTextInputLayoutStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:hintEnabled="false">
+
+                                <com.dropo.component.CustomFontEditTextView
+                                    android:id="@+id/etLandmark"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:dropDownAnchor="@id/llDeliveryAddress"
+                                    android:dropDownWidth="match_parent"
+                                    android:hint="@string/text_landmark"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="textNoSuggestions"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/activity_horizontal_padding"
+                                    android:paddingEnd="@dimen/activity_horizontal_padding"
+                                    android:textAlignment="viewStart"
+                                    android:theme="?appThemeEditTextStyle" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical">
+
+                <com.dropo.component.CustomImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_pin_delivery" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivTargetLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                app:srcCompat="@drawable/target_location" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="?appThemeScreenBackgroundStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llUserDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/card_view_space_8dp"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        app:cardElevation="@dimen/app_card_elevation">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="?appThemeTextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintEnabled="false">
+
+                            <com.dropo.component.CustomFontEditTextView
+                                android:id="@+id/etCustomerName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:dropDownAnchor="@id/llDeliveryAddress"
+                                android:dropDownWidth="match_parent"
+                                android:hint="@string/text_name"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="@dimen/activity_horizontal_padding"
+                                android:paddingEnd="@dimen/activity_horizontal_padding"
+                                android:textAlignment="viewStart"
+                                android:theme="?appThemeEditTextStyle" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin"
+                            android:layout_marginTop="@dimen/card_view_space_8dp"
+                            android:layout_marginBottom="@dimen/card_view_space_8dp"
+                            android:layout_weight="0.3"
+                            app:cardElevation="@dimen/app_card_elevation">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="?appThemeTextInputLayoutStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:hintEnabled="false">
+
+                                <com.dropo.component.CustomFontEditTextView
+                                    android:id="@+id/etCustomerCountryCode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:hint="@string/text_code"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="numberSigned"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/activity_horizontal_padding"
+                                    android:paddingEnd="@dimen/activity_horizontal_padding"
+                                    android:textAlignment="viewStart"
+                                    android:theme="?appThemeEditTextStyle" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/activity_horizontal_padding"
+                            android:layout_marginTop="@dimen/card_view_space_8dp"
+                            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                            android:layout_marginBottom="@dimen/card_view_space_8dp"
+                            android:layout_weight="1"
+                            app:cardElevation="@dimen/app_card_elevation">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="?appThemeTextInputLayoutStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:hintEnabled="false">
+
+                                <com.dropo.component.CustomFontEditTextView
+                                    android:id="@+id/etCustomerMobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:dropDownAnchor="@id/llDeliveryAddress"
+                                    android:dropDownWidth="match_parent"
+                                    android:hint="@string/text_phone"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="numberSigned"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/activity_horizontal_padding"
+                                    android:paddingEnd="@dimen/activity_horizontal_padding"
+                                    android:textAlignment="viewStart"
+                                    android:theme="?appThemeEditTextStyle" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/card_view_space_8dp"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:layout_marginBottom="@dimen/card_view_space_8dp"
+                        app:cardElevation="@dimen/app_card_elevation">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="?appThemeTextInputLayoutStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintEnabled="false">
+
+                            <com.dropo.component.CustomFontEditTextView
+                                android:id="@+id/etDeliveryAddressNote"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:dropDownAnchor="@id/llDeliveryAddress"
+                                android:dropDownWidth="match_parent"
+                                android:hint="@string/text_delivery_note"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:padding="@dimen/activity_horizontal_padding"
+                                android:paddingEnd="@dimen/activity_horizontal_padding"
+                                android:textAlignment="viewStart"
+                                android:theme="?appThemeEditTextStyle" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <com.dropo.component.CustomFontTextViewTitle
+                        android:id="@+id/tvSaveFavAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                        android:linksClickable="true"
+                        android:text="@string/text_do_you_want_to_address_as_fav" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <com.dropo.component.CustomFontButton
+                    android:id="@+id/btnDeliveryHere"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/card_view_space_8dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="@dimen/bottom_sheet_dialog_padding_30dp"
+                    android:text="@string/text_confirm" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </FrameLayout>
+</LinearLayout>

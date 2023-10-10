@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/bottom_sheet_dialog_padding_20dp"
+        android:paddingTop="@dimen/bottom_sheet_dialog_padding_30dp"
+        android:paddingEnd="@dimen/bottom_sheet_dialog_padding_20dp"
+        android:paddingBottom="@dimen/bottom_sheet_dialog_padding_30dp">
+
+        <com.dropo.component.CustomFontTextViewTitle
+            android:id="@+id/tvDialogAlertTitle"
+            style="?appThemeTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_table_reservation"
+            android:textSize="@dimen/size_app_text_large"
+            app:layout_constraintEnd_toStartOf="@+id/btnDialogAlertLeft"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.dropo.component.CustomImageView
+            android:id="@+id/btnDialogAlertLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cross"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDialogAlertTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvDialogAlertTitle"
+            app:layout_constraintTop_toTopOf="@+id/tvDialogAlertTitle" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilDate"
+            style="?appThemeTextInputLayoutStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:hint="@string/text_schedule_a_date"
+            app:endIconDrawable="@drawable/ic_calendar_gray"
+            app:endIconMode="custom"
+            app:endIconTint="?appThemeIcon"
+            app:layout_constraintEnd_toStartOf="@+id/tilTime"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDialogAlertTitle">
+
+            <com.dropo.component.CustomFontEditTextView
+                android:id="@+id/tvScheduleDate"
+                style="?appThemeEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:minLines="1"
+                android:textAlignment="viewStart" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilTime"
+            style="?appThemeTextInputLayoutStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:hint="@string/text_set_time"
+            app:endIconDrawable="@drawable/ic_clock_01"
+            app:endIconMode="custom"
+            app:endIconTint="?appThemeIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tilDate"
+            app:layout_constraintTop_toTopOf="@+id/tilDate">
+
+            <com.dropo.component.CustomFontEditTextView
+                android:id="@+id/tvScheduleTime"
+                style="?appThemeEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/text_description"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:minLines="1"
+                android:textAlignment="viewStart" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.dropo.component.CustomFontTextView
+            android:id="@+id/tvNoOfPeople"
+            style="?appThemeLabelTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="@string/text_no_of_people"
+            android:textSize="@dimen/size_app_text_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilDate" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvNoOfPeople"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_padding"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNoOfPeople"
+            tools:itemCount="10"
+            tools:listitem="@layout/item_number" />
+
+        <com.dropo.component.CustomFontTextView
+            android:id="@+id/tvSelectTable"
+            style="?appThemeLabelTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="@string/text_select_table"
+            android:textSize="@dimen/size_app_text_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rcvNoOfPeople" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvTable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_padding"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSelectTable"
+            tools:itemCount="10"
+            tools:listitem="@layout/item_number" />
+
+        <com.dropo.component.CustomFontTextView
+            android:id="@+id/tvNoTable"
+            style="?appThemeLabelTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_padding"
+            android:gravity="center"
+            android:text="@string/msg_no_table_available_for_people"
+            android:textSize="@dimen/size_app_text_regular"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSelectTable" />
+
+        <com.dropo.component.CustomFontTextView
+            android:id="@+id/tvOrder"
+            style="?appThemeLabelTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="@string/text_would_you_like_order_now"
+            android:textSize="@dimen/size_app_text_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rcvTable" />
+
+        <RadioGroup
+            android:id="@+id/rgBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tvOrder">
+
+            <com.dropo.component.CustomFontRadioButton
+                android:id="@+id/rbBookAtRest"
+                style="?appThemeRadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_book_at_restaurant" />
+
+            <com.dropo.component.CustomFontRadioButton
+                android:id="@+id/rbBookNow"
+                style="?appThemeRadioButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_book_my_order_now" />
+        </RadioGroup>
+
+        <com.dropo.component.CustomFontTextView
+            android:id="@+id/tvReopenAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/activity_horizontal_padding"
+            android:text="@string/text_empty_string"
+            android:textColor="@color/color_app_headings"
+            android:textSize="@dimen/size_app_text_regular"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgBooking" />
+
+        <com.dropo.component.CustomFontButton
+            android:id="@+id/btnBookTable"
+            style="?appThemeButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:alpha="0.5"
+            android:enabled="false"
+            android:text="@string/btn_reserve_a_table"
+            app:layout_constraintTop_toBottomOf="@+id/tvReopenAt" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

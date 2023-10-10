@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/card_view_space_12dp"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    app:cardBackgroundColor="?appThemeModeColor"
+    app:cardCornerRadius="@dimen/app_card_radius"
+    app:cardElevation="@dimen/app_card_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_padding">
+
+        <com.dropo.store.widgets.CustomFontTextViewTitle
+            android:id="@+id/tvSequenceNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_app_edit_text_padding"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:singleLine="true"
+            android:text="0"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/size_app_text_regular" />
+
+        <com.dropo.store.widgets.CustomFontTextViewTitle
+            android:id="@+id/tvSpecificationName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_horizontal_padding"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="SpecificationGroup"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/size_app_text_regular" />
+
+        <com.dropo.store.widgets.CustomFontTextViewTitle
+            android:id="@+id/tvSpecificationPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_app_edit_text_padding"
+            android:singleLine="true"
+            android:text="@string/text_price"
+            android:textAlignment="viewEnd"
+            android:textSize="@dimen/size_app_text_regular" />
+
+        <com.dropo.store.widgets.CustomImageView
+            android:id="@+id/ivSpecificationRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/cpv_default_thickness"
+            android:src="@drawable/ic_cross"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

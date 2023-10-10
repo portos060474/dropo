@@ -1,0 +1,151 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion '30.0.3'
+    defaultConfig {
+        applicationId "com.dropo.store"
+        minSdkVersion 21
+        targetSdkVersion 33
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0.0"
+        resValue "string", "FACEBOOK_APP_ID", "1482336665179472"
+        resValue "string", "FB_LOGIN_PROTOCOL_SCHEME", "fb1482336665179472"
+        resValue "string", "FB_CLIENT_TOKEN", "28a0a2c353f3f1ea5bc615434906a852"
+        resValue "string", "GOOGLE_ANDROID_API_KEY", "AIzaSyALeyDRLUHt6lI8hXBJdDeWElD11SxYqG8"
+        resValue "string", "TWITTER_CONSUMER_KEY", "Tm3zUCWPIpW4hnkiNy31E88aV"
+        resValue "string", "TWITTER_CONSUMER_SECRET", "qo9vvmbuX7Y3nPVaP6RNZOB4gejR9LaKC8mKy0oc44rFXjnXCl"
+        resValue "string", "GOOGLE_reCAPTCHA", "6LdYeuAcAAAAAGCgTihGdQdRdhsn52cYhkFtBE3M"
+        firebaseCrashlytics {
+            mappingFileUploadEnabled false
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        production {
+            flavorDimensions "default"
+            buildConfigField "String", "BASE_URL", '"https://api.dropo.ro/v4/"'
+            buildConfigField "String", "USER_PANEL_URL", '"https://dropo.ro/"'
+            buildConfigField "String", "IMAGE_URL", '"https://api.dropo.ro/"'
+
+        }
+
+        staging {
+            flavorDimensions "default"
+            buildConfigField "String", "BASE_URL", '"https://api.dropo.ro/v4/"'
+            buildConfigField "String", "USER_PANEL_URL", '"https://dropo.ro/"'
+            buildConfigField "String", "IMAGE_URL", '"https://api.dropo.ro/"'
+        }
+
+        developer {
+            flavorDimensions "default"
+            buildConfigField "String", "BASE_URL", '"https://api.dropo.ro/v4/"'
+            buildConfigField "String", "USER_PANEL_URL", '"https://dropo.ro/"'
+            buildConfigField "String", "IMAGE_URL", '"https://api.dropo.ro/"'
+        }
+
+        local {
+            flavorDimensions "default"
+            //buildConfigField "String", "BASE_URL", '"http://192.168.0.43:8100/v4/"' //Ahmad
+            buildConfigField "String", "BASE_URL", '"http://192.168.0.126:8100/v4/"' //Nandani
+            buildConfigField "String", "USER_PANEL_URL", '"https://dropo.ro/"'
+            buildConfigField "String", "IMAGE_URL", '"http://192.168.0.126:8100/"'
+        }
+    }
+
+    bundle {
+        language {
+            enableSplit = false
+        }
+        density {
+            enableSplit = true
+        }
+        abi {
+            enableSplit = true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/DEPENDENCIES', 'META-INF/NOTICE', 'META-INF/LICENSE', 'META-INF/LICENSE.txt', 'META-INF/NOTICE.txt']
+        }
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            force 'androidx.core:core-ktx:1.6.0'
+        }
+    }
+
+    namespace 'com.dropo.store'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'javax.annotation:javax.annotation-api:1.3.2'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.gms:play-services-auth:20.3.0'
+    implementation 'com.google.android.gms:play-services-location:20.0.0'
+
+    implementation platform('com.google.firebase:firebase-bom:30.4.1')
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.google.firebase:firebase-iid'
+    implementation 'com.google.firebase:firebase-storage'
+
+    implementation 'com.firebaseui:firebase-ui-database:8.0.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.facebook.android:facebook-android-sdk:13.1.0'
+    implementation 'com.twitter.sdk.android:twitter:3.3.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.stripe:stripe-android:19.3.0'
+
+    implementation project(':crope')
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.6'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.13.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.1'
+    implementation 'com.google.android.libraries.places:places:2.6.0'
+    annotationProcessor 'androidx.annotation:annotation:1.4.0'
+
+    implementation 'androidx.room:room-runtime:2.4.3'
+    annotationProcessor 'androidx.room:room-compiler:2.4.3'
+
+    implementation files('libs/btsdk.jar')
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.12.45'
+    implementation 'com.google.android.gms:play-services-safetynet:18.0.1'
+}

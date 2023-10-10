@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dimen_app_edit_text_padding"
+    android:paddingBottom="@dimen/dimen_app_edit_text_padding">
+
+
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/activity_horizontal_padding">
+
+        <com.dropo.store.widgets.CustomTextView
+            android:id="@+id/tvFromTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00"
+            android:textSize="@dimen/size_app_text_regular"
+            app:typefaceInputEt="fonts/AvenirLTStd-Medium.otf" />
+
+        <com.dropo.store.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/activity_horizontal_padding"
+            android:paddingEnd="@dimen/activity_horizontal_padding"
+            android:text="To"
+            android:textSize="@dimen/size_app_text_small"
+            app:typefaceInputEt="fonts/AvenirLTStd-Medium.otf" />
+
+        <com.dropo.store.widgets.CustomTextView
+            android:id="@+id/tvToTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00"
+            android:textSize="@dimen/size_app_text_regular"
+            app:typefaceInputEt="fonts/AvenirLTStd-Medium.otf" />
+    </LinearLayout>
+
+    <com.dropo.store.widgets.CustomImageView
+        android:id="@+id/ivBullet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/text_image"
+        android:padding="@dimen/general_top_margin"
+        android:src="@drawable/ic_cross" />
+</LinearLayout>

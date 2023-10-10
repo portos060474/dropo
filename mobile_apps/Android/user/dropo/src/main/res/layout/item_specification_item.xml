@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/activity_vertical_padding"
+    android:paddingTop="@dimen/dimen_padding_2dp"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/dimen_padding_2dp">
+
+    <com.dropo.component.CustomFontRadioButton
+        android:id="@+id/rbSingleSpecification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/dimen_app_edit_text_padding"
+        android:textColor="@color/color_app_label"
+        android:theme="?appThemeRadioButtonStyle"
+        android:visibility="gone" />
+
+    <com.dropo.component.CustomFontCheckBox
+        android:id="@+id/rbMultipleSpecification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_app_label"
+        android:theme="?appThemeCheckBoxStyle"
+        android:visibility="gone" />
+
+    <com.dropo.component.CustomFontTextView
+        android:id="@+id/tvSpecificationItemDescription"
+        style="?appThemeTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_padding"
+        android:layout_weight="1"
+        android:maxLines="2"
+        android:text="PRICE"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="@dimen/size_app_text_small" />
+
+    <LinearLayout
+        android:id="@+id/llSpecificationQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <com.dropo.component.CustomFontTextView
+            android:id="@+id/btnDecrease"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_round_right_black_stroke"
+            android:gravity="center"
+            android:text="@string/text_minus"
+            android:textSize="@dimen/size_app_text_medium"
+            app:appBackgroundStroke="1dp"
+            app:appBackgroundStrokeColor="@integer/appThemeColor"
+            app:appTextColor="@integer/appThemeColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.dropo.component.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/shape_custom_rect"
+                app:appBackgroundColor="@integer/appThemeColor" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvSpecificationQuantity"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:autoSizeMaxTextSize="@dimen/size_app_text_regular"
+                android:autoSizeMinTextSize="@dimen/size_app_text_small"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingStart="@dimen/dimen_app_edit_text_padding"
+                android:paddingEnd="@dimen/dimen_app_edit_text_padding"
+                android:text="1"
+                android:textSize="@dimen/size_app_text_small"
+                app:appBackgroundStroke="1dp"
+                app:appBackgroundStrokeColor="@integer/appThemeColor" />
+
+            <com.dropo.component.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/shape_custom_rect"
+                app:appBackgroundColor="@integer/appThemeColor" />
+
+        </LinearLayout>
+
+        <com.dropo.component.CustomFontTextView
+            android:id="@+id/btnIncrease"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_round_left_black_stroke"
+            android:gravity="center"
+            android:text="@string/text_plus"
+            android:textSize="@dimen/size_app_text_medium"
+            app:appBackgroundStroke="1dp"
+            app:appBackgroundStrokeColor="@integer/appThemeColor"
+            app:appTextColor="@integer/appThemeColor" />
+
+    </LinearLayout>
+
+    <com.dropo.component.CustomFontTextView
+        android:id="@+id/tvSpecificationItemPrice"
+        style="?appThemeTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_padding"
+        android:text="PRICE"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="@dimen/size_app_text_small" />
+
+</LinearLayout>

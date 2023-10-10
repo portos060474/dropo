@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="@dimen/activity_horizontal_padding"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.dropo.component.CustomFontTextView
+        android:id="@+id/tvOrderId"
+        style="?appThemeTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.dropo.component.CustomRatingBar
+        android:id="@+id/ratingBarReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_padding"
+        android:numStars="5"
+        android:stepSize="0.5"
+        app:appRatingBarColor="@integer/appThemeColor" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilReview"
+        style="?appThemeTextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_padding"
+        android:hint="@string/text_write_your_review"
+        app:endIconDrawable="@drawable/ic_save_1"
+        app:endIconMode="custom"
+        app:endIconTint="?appThemeIcon"
+        app:startIconDrawable="@drawable/ic_write_01"
+        app:startIconTint="?appThemeIcon">
+
+        <com.dropo.component.CustomFontEditTextView
+            android:id="@+id/etReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="?colorAccent"
+            android:theme="?appThemeEditTextStyle" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

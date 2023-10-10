@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/card_view_space_12dp"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    app:cardBackgroundColor="?appThemeModeColor"
+    app:cardCornerRadius="@dimen/app_card_radius"
+    app:cardElevation="@dimen/app_card_elevation">
+
+    <LinearLayout
+        android:id="@+id/layoutHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_horizontal_padding">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/ivClientHistory"
+                    android:layout_width="@dimen/btn_height"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/placeholder"
+                    app:riv_oval="true" />
+
+                <ImageView
+                    android:id="@+id/ivCanceled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cancelled_icon"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.dropo.store.widgets.CustomTextView
+                        style="?appThemeLabelTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_order_no"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/size_app_text_small"
+                        app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+                    <com.dropo.store.widgets.CustomTextView
+                        android:id="@+id/tvOrderNo"
+                        style="?appThemeLabelTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:text="123456"
+                        android:textSize="@dimen/size_app_text_small"
+                        app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+                    <com.dropo.store.widgets.CustomFontTextViewTitle
+                        android:id="@+id/tvOrderPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="--"
+                        android:textSize="@dimen/size_app_text_medium"
+                        app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+                </LinearLayout>
+
+
+                <com.dropo.store.widgets.CustomFontTextViewTitle
+                    android:id="@+id/tvClientName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="--"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/size_app_text_medium"
+                    app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+
+                <com.dropo.store.widgets.CustomTextView
+                    android:id="@+id/tvOrderTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="@dimen/dimen_app_edit_text_padding"
+                    android:maxLines="1"
+                    android:text="@string/text_empty_string"
+                    android:textSize="@dimen/size_app_text_small"
+                    app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+                <com.dropo.store.widgets.CustomTextView
+                    android:id="@+id/tvProfit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_padding"
+                    android:gravity="end"
+                    android:visibility="gone"
+                    android:text="profit:$20"
+                    android:textSize="@dimen/size_app_text_small"
+                    app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

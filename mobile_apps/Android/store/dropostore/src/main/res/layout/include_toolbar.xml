@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbarMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:elevation="@dimen/dimen_app_toolbar_elevation"
+    android:minHeight="?attr/actionBarSize">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:elevation="@dimen/dimen_app_toolbar_elevation"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/flCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/dimen_app_edit_text_padding"
+                android:paddingTop="@dimen/dimen_app_edit_text_padding"
+                android:paddingEnd="@dimen/dimen_app_edit_text_padding"
+                android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+                android:visibility="visible">
+
+                <com.dropo.store.widgets.CustomImageView
+                    android:id="@+id/ivToolbarRightIcon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+                <com.dropo.store.widgets.CustomTextView
+                    android:id="@+id/tvCartCount"
+                    android:layout_width="@dimen/dimen_cart_count"
+                    android:layout_height="@dimen/dimen_cart_count"
+                    android:layout_gravity="end|top"
+                    android:background="@drawable/selector_circle_red"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/size_app_text_cart"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.dropo.store.widgets.CustomFontTextViewTitle
+        android:id="@+id/tvToolbarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="@dimen/size_app_text_regular"
+        app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+</RelativeLayout>

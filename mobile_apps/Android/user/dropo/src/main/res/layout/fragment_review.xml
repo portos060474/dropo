@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/bottom_sheet_dialog_padding_30dp"
+    android:visibility="visible"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/bottom_sheet_dialog_padding_20dp"
+        android:paddingEnd="@dimen/bottom_sheet_dialog_padding_20dp">
+
+        <com.dropo.component.CustomFontTextViewTitle
+            android:id="@+id/tvDialogAlertTitle"
+            style="?appThemeTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+            android:text="@string/text_review_and_ratting"
+            android:textSize="@dimen/size_app_text_large" />
+
+        <com.dropo.component.CustomImageView
+            android:id="@+id/btnDialogAlertLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen_app_edit_text_padding"
+            android:paddingTop="@dimen/dimen_app_edit_text_padding"
+            android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+            android:src="@drawable/ic_cross" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/bottom_sheet_dialog_padding_20dp"
+        android:paddingTop="@dimen/activity_horizontal_padding"
+        android:paddingEnd="@dimen/bottom_sheet_dialog_padding_20dp"
+        android:paddingBottom="@dimen/activity_horizontal_padding">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvReviewAverage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bg_rating"
+                android:gravity="center"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="0.0"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_app_text_largest"
+                app:appBackgroundColor="@integer/appThemeColor" />
+
+            <com.dropo.component.CustomRatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_padding"
+                android:layout_marginBottom="3dp"
+                android:numStars="5"
+                app:appRatingBarColor="@integer/appThemeColor" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_padding"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.dropo.component.CustomFontTextView
+                    style="?appThemeTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="@dimen/dimen_app_edit_text_padding"
+                    android:text="5"
+                    android:textSize="@dimen/size_app_text_regular"
+                    app:drawableRightCompat="@drawable/ic_star2_small" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_padding"
+                    android:layout_marginEnd="@dimen/activity_horizontal_padding"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.dropo.component.CustomProgressBar
+                        android:id="@+id/bar5Star"
+                        style="@style/CustomProgressBarHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_weight="1"
+                        android:max="100"
+                        android:progressBackgroundTint="?appThemeModeColor"
+                        app:appProgressBarColor="@integer/appThemeColor" />
+
+                    <com.dropo.component.CustomFontTextView
+                        android:id="@+id/tv5StarCount"
+                        style="?appThemeTextViewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_padding"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="00.00"
+                        android:textSize="@dimen/size_app_text_regular" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_padding"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.dropo.component.CustomFontTextView
+                    style="?appThemeTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dimen_app_edit_text_padding"
+                    android:text="4"
+                    android:textSize="@dimen/size_app_text_regular"
+                    app:drawableRightCompat="@drawable/ic_star2_small" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_padding"
+                    android:layout_marginEnd="@dimen/activity_horizontal_padding"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.dropo.component.CustomProgressBar
+                        android:id="@+id/bar4Star"
+                        style="@style/CustomProgressBarHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_weight="1"
+                        android:max="90"
+                        android:progressBackgroundTint="?appThemeModeColor"
+                        app:appProgressBarColor="@integer/appThemeColor" />
+
+                    <com.dropo.component.CustomFontTextView
+                        android:id="@+id/tv4StarCount"
+                        style="?appThemeTextViewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_padding"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="00.00"
+                        android:textSize="@dimen/size_app_text_regular" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_padding"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.dropo.component.CustomFontTextView
+                    style="?appThemeTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dimen_app_edit_text_padding"
+                    android:text="3"
+                    android:textSize="@dimen/size_app_text_regular"
+                    app:drawableRightCompat="@drawable/ic_star2_small" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_padding"
+                    android:layout_marginEnd="@dimen/activity_horizontal_padding"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.dropo.component.CustomProgressBar
+                        android:id="@+id/bar3Star"
+                        style="@style/CustomProgressBarHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_weight="1"
+                        android:max="100"
+                        android:progressBackgroundTint="?appThemeModeColor"
+                        app:appProgressBarColor="@integer/appThemeColor" />
+
+                    <com.dropo.component.CustomFontTextView
+                        android:id="@+id/tv3StarCount"
+                        style="?appThemeTextViewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_padding"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="00.00"
+                        android:textSize="@dimen/size_app_text_regular" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_padding"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.dropo.component.CustomFontTextView
+                    style="?appThemeTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dimen_app_edit_text_padding"
+                    android:text="2"
+                    android:textSize="@dimen/size_app_text_regular"
+                    app:drawableRightCompat="@drawable/ic_star2_small" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_padding"
+                    android:layout_marginEnd="@dimen/activity_horizontal_padding"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.dropo.component.CustomProgressBar
+                        android:id="@+id/bar2Star"
+                        style="@style/CustomProgressBarHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_weight="1"
+                        android:max="100"
+                        android:progressBackgroundTint="?appThemeModeColor"
+                        app:appProgressBarColor="@integer/appThemeColor" />
+
+                    <com.dropo.component.CustomFontTextView
+                        android:id="@+id/tv2StarCount"
+                        style="?appThemeTextViewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_padding"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="00.00"
+                        android:textSize="@dimen/size_app_text_regular" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_padding"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.dropo.component.CustomFontTextView
+                    style="?appThemeTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dimen_app_edit_text_padding"
+                    android:text="1"
+                    android:textSize="@dimen/size_app_text_regular"
+                    app:drawableRightCompat="@drawable/ic_star2_small" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_padding"
+                    android:layout_marginEnd="@dimen/activity_horizontal_padding"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.dropo.component.CustomProgressBar
+                        android:id="@+id/bar1Star"
+                        style="@style/CustomProgressBarHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_weight="1"
+                        android:max="100"
+                        android:progressBackgroundTint="?appThemeModeColor"
+                        app:appProgressBarColor="@integer/appThemeColor" />
+
+                    <com.dropo.component.CustomFontTextView
+                        android:id="@+id/tv1StarCount"
+                        style="?appThemeTextViewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_padding"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="00.00"
+                        android:textSize="@dimen/size_app_text_regular" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/layout_divider_horizontal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvPublicReview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/bottom_sheet_dialog_padding_30dp"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/activity_horizontal_padding"
+        android:paddingEnd="@dimen/activity_horizontal_padding" />
+</LinearLayout>

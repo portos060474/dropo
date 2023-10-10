@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="?appThemeScreenBackgroundStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_horizontal_padding">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/invoiceDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/activity_horizontal_padding"
+                android:paddingTop="@dimen/activity_horizontal_padding"
+                android:paddingEnd="@dimen/activity_horizontal_padding">
+
+                <include
+                    layout="@layout/include_invoice_data"
+                    android:visibility="gone" />
+
+                <include
+                    layout="@layout/include_invoice_data"
+                    android:visibility="gone" />
+
+                <include
+                    layout="@layout/include_invoice_data"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvInvoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:paddingTop="@dimen/dimen_app_edit_text_padding"
+                android:paddingBottom="@dimen/activity_horizontal_margin" />
+
+
+            <LinearLayout
+                android:id="@+id/invoicePayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <include
+                    layout="@layout/include_invoice_data"
+                    android:visibility="gone" />
+
+                <include
+                    layout="@layout/include_invoice_data"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <com.dropo.store.widgets.CustomTextView
+                style="?appThemeLabelTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_padding"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:text="@string/text_total"
+                android:textSize="@dimen/size_app_text_regular"
+                app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+
+            <com.dropo.store.widgets.CustomFontTextViewTitle
+                android:id="@+id/tvInvoiceTotal"
+                style="?appThemeTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/dimen_app_edit_text_padding"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:text="@string/text_total"
+                android:textSize="@dimen/size_app_text_largest"
+                app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

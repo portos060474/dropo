@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dimen_app_edit_text_padding"
+    android:paddingBottom="@dimen/dimen_app_edit_text_padding">
+
+    <com.dropo.store.widgets.CustomCheckBox
+        android:id="@+id/cbRecursionData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_marginEnd="@dimen/dimen_app_edit_text_padding"
+        android:theme="?appThemeCheckBoxStyle" />
+
+    <com.dropo.store.widgets.CustomTextView
+        android:id="@+id/tvRecursionData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_padding"
+        android:textSize="@dimen/size_app_label_regular"
+        style="?appThemeTextViewStyle" />
+</LinearLayout>

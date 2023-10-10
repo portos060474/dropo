@@ -1,0 +1,129 @@
+{
+  "project_info": {
+    "project_number": "966521710311",
+    "project_id": "dropo-7c738",
+    "storage_bucket": "dropo-7c738.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966521710311:android:6c78aa09ffaae76c3a6442",
+        "android_client_info": {
+          "package_name": "com.dropo.provider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966521710311-0qbnpa7ukm4pfcn0n181njvqb2mgde7k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dropo.provider",
+            "certificate_hash": "de1ccfe594fdfd2cd95c61b927cce1100931bd9e"
+          }
+        },
+        {
+          "client_id": "966521710311-vg5fn471nlcnqu2e486vrtkfg9m06rv8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiYBv_sdmuK0UjFiPAXbQZcboIfgYcs-8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966521710311-vg5fn471nlcnqu2e486vrtkfg9m06rv8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966521710311:android:6a616c1639e3c42a3a6442",
+        "android_client_info": {
+          "package_name": "com.dropo.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966521710311-q8oq1drd1vcle7o2gnopfubu9o1tirp9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dropo.store",
+            "certificate_hash": "de1ccfe594fdfd2cd95c61b927cce1100931bd9e"
+          }
+        },
+        {
+          "client_id": "966521710311-vg5fn471nlcnqu2e486vrtkfg9m06rv8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiYBv_sdmuK0UjFiPAXbQZcboIfgYcs-8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966521710311-vg5fn471nlcnqu2e486vrtkfg9m06rv8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966521710311:android:534f5b2aa1f7ac9f3a6442",
+        "android_client_info": {
+          "package_name": "com.dropo.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966521710311-4ut0pqd44s5tttea85jvrkfo4sdo4dra.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dropo.user",
+            "certificate_hash": "d2b48204f0dbfa1f0b971a2301594ca95c7732e7"
+          }
+        },
+        {
+          "client_id": "966521710311-7ddict5a6q7uo77b8c8memuqpp2adgm5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dropo.user",
+            "certificate_hash": "de1ccfe594fdfd2cd95c61b927cce1100931bd9e"
+          }
+        },
+        {
+          "client_id": "966521710311-vg5fn471nlcnqu2e486vrtkfg9m06rv8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiYBv_sdmuK0UjFiPAXbQZcboIfgYcs-8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966521710311-vg5fn471nlcnqu2e486vrtkfg9m06rv8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

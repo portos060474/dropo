@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?appThemeScreenBackgroundStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BankDetailActivity">
+
+    <include layout="@layout/toolbar_app_custom" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvVehicleDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/activity_horizontal_margin">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.dropo.provider.component.CustomFloatingButton
+        android:id="@+id/floatingBtnAddVehicleDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_plus"
+        app:appFBBackgroundColor="@integer/appThemeColor"
+        app:layout_behavior="" />
+</FrameLayout>

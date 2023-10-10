@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CancelReasonCell" customModule="Edelivery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFZ-YU-Wdn">
+                        <rect key="frame" x="54" y="8" width="246" height="51"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsn-OO-K4F">
+                        <rect key="frame" x="20" y="22.5" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="UpP-28-cnb"/>
+                            <constraint firstAttribute="width" secondItem="Hsn-OO-K4F" secondAttribute="height" multiplier="1:1" id="vW7-BC-OtW"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Button" image="radio_btn_unchecked_icon"/>
+                        <state key="selected" image="radio_btn_checked_icon"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rFZ-YU-Wdn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Rm0-2u-vAi"/>
+                    <constraint firstItem="rFZ-YU-Wdn" firstAttribute="leading" secondItem="Hsn-OO-K4F" secondAttribute="trailing" constant="12" id="Ub9-U1-PRp"/>
+                    <constraint firstAttribute="bottom" secondItem="rFZ-YU-Wdn" secondAttribute="bottom" constant="8" id="Xtt-sG-PwY"/>
+                    <constraint firstAttribute="trailing" secondItem="rFZ-YU-Wdn" secondAttribute="trailing" constant="20" id="b8W-eq-Wee"/>
+                    <constraint firstItem="Hsn-OO-K4F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="fcO-Yw-how"/>
+                    <constraint firstItem="Hsn-OO-K4F" firstAttribute="centerY" secondItem="rFZ-YU-Wdn" secondAttribute="centerY" id="mF0-On-Nth"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnRadio" destination="Hsn-OO-K4F" id="hB3-bC-4fw"/>
+                <outlet property="lblReason" destination="rFZ-YU-Wdn" id="8Jl-Sv-l2g"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="115.51339285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="radio_btn_checked_icon" width="19.5" height="19.5"/>
+        <image name="radio_btn_unchecked_icon" width="19.5" height="19.5"/>
+    </resources>
+</document>

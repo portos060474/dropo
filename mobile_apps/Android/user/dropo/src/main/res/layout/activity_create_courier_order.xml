@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?appThemeScreenBackgroundStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dropo.CreateCourierOrderActivity">
+
+    <include layout="@layout/toolbar_app_custom" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <com.dropo.component.CustomFontTextViewTitle
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:text="@string/text_address"
+                    android:textSize="@dimen/size_app_text_medium" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llOptimizedRoute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:gravity="center">
+
+                    <com.dropo.component.CustomFontTextView
+                        style="?appThemeLabelTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/activity_horizontal_padding"
+                        android:text="@string/text_optimized_route"
+                        android:textSize="@dimen/size_app_text_medium" />
+
+                    <com.dropo.component.CustomSwitch
+                        android:id="@+id/switchOptimizedRoute"
+                        style="?appThemeSwitchStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCourierAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:nestedScrollingEnabled="false" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAddCourierAddress"
+                style="?appThemeButtonStyle"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@drawable/bg_dotted_border"
+                android:src="@drawable/ic_plus"
+                android:tint="#999999" />
+
+            <com.dropo.component.CustomFontTextViewTitle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/dimen_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:text="@string/text_add_photo_here"
+                android:textSize="@dimen/size_app_text_medium" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvItemImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:clipToPadding="false" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llContactLess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.dropo.component.CustomFontTextViewTitle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/activity_horizontal_padding"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_contact_less_delivery"
+                    android:textSize="@dimen/size_app_label_regular"
+                    app:drawableLeftCompat="@drawable/ic_contactless" />
+
+                <com.dropo.component.CustomFontTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/dimen_app_edit_text_padding"
+                    android:text="@string/text_only_for_card_payment"
+                    android:textSize="@dimen/size_app_text_cart" />
+
+                <com.dropo.component.CustomFontCheckBox
+                    android:id="@+id/cbContactLess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.dropo.component.CustomFontButton
+        android:id="@+id/btnSubmitDetail"
+        style="?appThemeButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="@string/text_submit" />
+</LinearLayout>

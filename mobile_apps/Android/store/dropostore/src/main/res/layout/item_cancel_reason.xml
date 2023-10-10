@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.dropo.store.widgets.CustomRadioButton
+        android:id="@+id/rbReason"
+        style="?appThemeRadioButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_order_cancel_reason_one" />
+
+    <com.dropo.store.widgets.CustomInputEditText
+        android:id="@+id/etOthersReason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:ems="10"
+        android:hint="@string/hint_enter_reason"
+        android:theme="?appThemeTextInputLayoutStyle"
+        android:visibility="gone" />
+    
+</LinearLayout>

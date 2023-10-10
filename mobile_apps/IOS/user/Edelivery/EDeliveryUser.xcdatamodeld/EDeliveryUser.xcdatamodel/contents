@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="20B29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AddressData" representedClassName="AddressData" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="AppleSignInData" representedClassName="AppleSignInData" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="DeliveryLocation" representedClassName="DeliveryLocation" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="country_code" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="MassNotifications" representedClassName="MassNotifications" syncable="YES" codeGenerationType="class">
+        <attribute name="message" optional="YES" attributeType="String"/>
+        <attribute name="time" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="OrderNotifications" representedClassName="OrderNotifications" syncable="YES" codeGenerationType="class">
+        <attribute name="message" optional="YES" attributeType="String"/>
+        <attribute name="time" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="AddressData" positionX="-63" positionY="-18" width="128" height="133"/>
+        <element name="DeliveryLocation" positionX="-54" positionY="27" width="128" height="133"/>
+        <element name="MassNotifications" positionX="-63" positionY="27" width="128" height="73"/>
+        <element name="OrderNotifications" positionX="-54" positionY="36" width="128" height="73"/>
+        <element name="AppleSignInData" positionX="-54" positionY="54" width="128" height="59"/>
+    </elements>
+</model>

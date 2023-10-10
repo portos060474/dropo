@@ -1,0 +1,1084 @@
+/*
+ Localizable.strings
+ Created by Elluminati on 21/02/17.
+ */
+
+// MARK: APPLICATION
+"TXT_APP_VERSION" = "App Version";
+
+// MARK: - ALERT DIALOG
+
+/*Forget Password*/
+"TXT_FORGOT_PASSWORD" = "Forgot Password?";
+
+/*Logout Dialog*/
+"TXT_LOGOUT" = "Logout";
+"MSG_LOGOUT" =  "Are you sure you want to log out?";
+
+/*Cancel ORder Dialog*/
+"TXT_CANCEL_ORDER" = "Cancel Order";
+
+//Dialog titles
+"TXT_LOGOUT" = "Logout";
+"TXT_WARNING" =  "Warning";
+"TXT_SELECT_IMAGE" = "Choose Photo";
+"TXT_VERIFY_ACCOUNT" = "Verify Account";
+"TXT_INTERNET" = "Internet";
+"TXT_ATTENTION" = "Attention";
+"TXT_EMAIL_OTP" = "Email OTP";
+"TXT_PHONE_OTP" = "Phone OTP";
+
+"TXT_CONFIRMATION_CODE" = "Confirmation Code";
+"TXT_SELECT_FROM_DATE " = "Select From Date";
+"TXT_SELECT_TO_DATE" = "Select To Date";
+"TXT_DELETE_CARD" = "Delete Card";
+"TXT_SELECT_DATE" =  "Select Date";
+"TXT_SELECT_SPECIFICATION_GROUP" =   "Select Specification Group";
+"TXT_SELECT_PRODUCT_CATEGORY" = "Please select product category";
+"TITLE_ORDER_PAYMENT" = "Order Payment";
+"TITLE_CANCEL_REQUEST" = "Cancel Request";
+//Dialog message
+
+"MSG_ARE_YOU_SURE" = "Are you sure?";
+"MSG_INVALID_DATE_WARNING" =  "Please Select From Date First";
+"MSG_UPDATE_APP" =  "App update available with functionality and performance improvement.";
+"MSG_LOGOUT" = "Are you sure you want to log out?";
+"MSG_INTERNET_ENABLE" = "Your Internet seems to be disabled, You must enable it.";
+"MSG_INVALID_DATE_WARNING" =  "Please first select from date";
+//Dialog Common Buttons
+"TXT_CANCEL" = "Cancel";
+"TXT_SELECT" = "SELECT";
+"TXT_OK" = "OK";
+"TXT_EXIT" = "Exit";
+"TXT_GALLERY" = "Gallery";
+"TXT_CAMERA" = "Camera";
+"TXT_RETRY" = "RETRY";
+"TXT_APPLY" = "Apply";
+"TXT_DONE" = "Done";
+"TXT_UPDATE" = "Update";
+"TXT_SHARE" = "Share";
+"TXT_YES" = "Yes";
+"TXT_NO" = "No";
+"TXT_VERIFY" = "Verify";
+"TXT_SUBMIT" = "Submit";
+"TXT_ERROR" = "Error";
+/* Custom Request Dialog*/
+"TXT_REQUEST_ORDER" = "Request Order";
+"TXT_VIEW_MORE" = "View More ";
+"TXT_TOTAL_ORDER_PRICE" = "Total Order Price";
+// MARK: - TOAST/VALIDATION TEXTS
+//Login
+"MSG_PLEASE_ENTER_VALID_EMAIL" = "Please enter a valid email.";
+"MSG_PLEASE_ENTER_PASSWORD" = "Please enter a password.";
+"MSG_PLEASE_ENTER_VALID_PASSWORD" = "Password length should be greater than 6 characters.";
+
+/*Register Profile */
+"MSG_PLEASE_ENTER_VALID_NAME" = "Please enter a valid name.";
+"MSG_PLEASE_SELECT_COUNTRY" = "Please select valid country.";
+"MSG_PLEASE_SELECT_CITY" = "Please select valid city.";
+"MSG_PLEASE_SELECT_STORE_TYPE" = "Please select store type.";
+"MSG_PLEASE_ENTER_ADDRESS" =  "Please enter an address.";
+"MSG_PLEASE_ENTER_MOBILE_NUMBER" =  "Please enter a mobile number.";
+"MSG_PLEASE_ENTER_VALID_MOBILE_NUMBER" = "Please enter a valid mobile number of the length between %@-%@.";
+"MSG_PLEASE_ENTER_VALID_EMAIL_OR_PHONE_NUMBER" =  "Please enter a valid email or mobile number";
+"MSG_PLEASE_ENTER_REFERRAL_CODE" =  "Please Enter Referral Code.";
+"MSG_PLEASE_ENTER_CURRENT_PASSWORD" = "Please enter current password to verify your account.";
+
+/*OTP TOAST*/
+
+"MSG_SMS_OTP_WRONG" = "Please enter correct SMS verification code.";
+
+"MSG_ENTER_COMMENT_RATE" =  "Please rate the user ";
+//History toasts
+"MSG_PLEASE_SELECT_DATE_FIRST" =  "Please select from and to date to get filtered history";
+//Item VC
+"MSG_PLEASE_ITEM_IMAGE" =  "Please insert item image first";
+"MSG_PLEASE_ITEM_NAME" =  "Please enter item name first";
+//Product VC
+"MSG_PLEASE_ENTER_PRODUCT_NAME" =  "Please enter category title first";
+"MSG_PLEASE_SELECT_ANY_PRODUCT" =  "Please select any sub Category.";
+//MARK: - DRAWER ITEMS AND TITLES
+/*Menu Items*/
+"TXT_PROFILE" = "Profile";
+"TXT_HISTORY" = "History";
+"TXT_PRODUCT" = "Products";
+"TXT_EARNING" = "Earning";
+"TXT_DOCUMENT" = "Documents";
+"TXT_SETTING" = "Settings";
+/*Titles*/
+"TXT_LOGIN" = "Sign In";
+"TXT_REGISTER" = "Sign Up";
+"TXT_INVOICE" = "Invoice";
+"TXT_FEEDBACK" = "Feedback";
+"TXT_ADD_ITEM_SPECIFICATION" =  "Item Specifications";
+"TXT_ADD_NEW_SPECIFICATIONS" = "Add Item Specification";
+"TXT_ACCOUNT" = "Account";
+"TXT_REVIEW" = "Review";
+//MARK: - MAIN SCREEN
+"TXT_ORDERS" = "Orders";
+"TXT_DELIVERIES" = "Deliveries";
+"TXT_MENU" = "Menu";
+"TXT_ITEM" = "Item";
+"TXT_ACCOUNT" = "Account";
+//MARK: - LOGIN VC
+"TXT_USER_NAME" = "Email Or Phone";
+"TXT_PHONE" = "Phone";
+"TXT_PASSWORD" = "Password";
+"TXT_EMAIL" = "Email";
+"TXT_LANGUAGE" = "Use App in";
+//MARK: - REFERRAL VC
+"TXT_SHARE" = "Share";
+"TXT_CURRENT_BALANCE" = "Current Balance";
+"TXT_REFERRAL" = "Referral";
+"SHARE_REFERRAL" =  "Store Use my referral code : %@";
+"TXT_REFERRAL_CODE" = "Enter referral code";
+
+//MARK: - REGISTER/PROFILE/SETTING
+"TXT_NAME" = "Name";
+"TXT_CONFIRM_REGISTER_PASSWORD" = "Confirm Password";
+"TXT_ADDRESS" = "Address";
+"TXT_LATITUDE" = "Latitude";
+"TXT_LONGITUDE" = "Longitude";
+"TXT_MOBILE_NO" = "Mobile No.";
+"TXT_SELECT_COUNTRY" = "Select Country";
+"TXT_SELECT_CITY" = "Select City";
+"TXT_SELECT_STORE_TYPE" = "Select store type";
+"TXT_SLOGAN" = "Slogan";
+"TXT_NEW_PASSWORD" = "New Password";
+"TXT_CONFIRM_PASSWORD" = "Confirm New Password";
+"TXT_REFERRAL" = "Referral";
+"TXT_REFERRAL_CODE" = "Enter referral code";
+"TXT_FREE_DELIVERY_ABOVE_ORDER_PRICE" = "Free delivery for above order price";
+"TXT_IS_BUSINESS" = "Your Business";
+"TXT_COMMENT" = "Comment";
+"TXT_OR" = "-OR-";
+
+//MARK: - DOCUMENT VC
+"TXT_ID_NUMBER" = "ID Number :";
+"TXT_ENTER_ID_NUMBER" = "Document ID";
+"TXT_MANDATORY_FIELDS" = "* - indicates mandatory fields";
+"TXT_SAVE" = "Save";
+
+//MARK: - ORDER HISTORY VC
+"TXT_PRICE" = "Price";
+"TXT_PROFIT" = "Profit";
+"TXT_ORDER_NO" = "Order No.";
+"TXT_FROM" = "From";
+"TXT_TO" = "To";
+//MARK: HISTORY DETAIL
+
+"TXT_GIVE_RATE" = "Give Rate";
+"TXT_COMMENT_PLACEHOLDER" =  "Enter your review here.";
+
+//MARK: - STORE TIME VC
+"SUN" = "SUN";
+"MON" = "MON";
+"TUE" = "TUE";
+"WED" = "WED";
+"THU" = "THU";
+"FRI" = "FRI";
+"SAT" = "SAT";
+"TXT_STORE_TIME" =  "Store Time";
+"TXT_SELECTED_OPEN_TIME" = "Store Open";
+"TXT_ADD_TIME" = "Add Time";
+"MSG_INVALID_OPEN_TIME" =  "please select valid open time";
+"MSG_INVALID_CLOSE_TIME" =  "please select valid close time";
+"MSG_PLEASE_SELECT_TIME" =  "please select valid time";
+//Mark: - Cart VC
+"TXT_CHECKOUT" = "Checkout";
+//MARK: - PRODUCT VC
+"TXT_SPECIFICATIONS" = "Specifications";
+"TXT_VISIBLE" = "Visible";
+"TXT_PRODUCT_TITLE" = "Product Title";
+"TXT_DESCRIPTION" = "Description";
+"TXT_PRICE" = "Price";
+"TXT_SPECIFICATION_GROUP" = "Specification Groups";
+//"TXT_CATEGORY_GROUP" =  "Category Group";
+
+//MARK: - ITEM VC
+"TXT_ITEMS" = "Item";
+"TXT_ITEM_SPECIFICATION_NAME" = "Specification Name";
+"TXT_IS_REQUIRED_OR_NOT" =  "Is required/Not ?";
+"TXT_ADD_SPECIFICATION" = "Add Specification";
+"TXT_IN_STOCK" = "In Stock";
+"TXT_OUT_OF_STOCK" =  "Out Of Stock";
+"TXT_ITEM_NAME" = "Item Name";
+
+//MARK: INVOICE
+"TXT_BASE_PRICE" = "Base Price";
+"TXT_DISTANCE_PRICE" = "Distance Price";
+"TXT_TIME_PRICE" = "Time Price";
+"TXT_TIME" = "Time";
+"TXT_TIME_HH_MM" = "Time(h:m)";
+"TXT_SERVICE_TAX" = "Service Tax";
+"TXT_ITEM_PRICE" = "Item Price";
+"TXT_TOTAL_ITEM_PRICE" = "Total Item Price";
+"TXT_SPECIFICATION_PRICE" = "Specification Price";
+"TXT_SURGE_PRICE" = "Surge Price";
+"TXT_ORDER_PRICE" = "Order Price";
+"TXT_TAX" = "Tax";
+"TXT_PROMO_BONUS" =  "Promo Bonus";
+"TXT_TIME" = "Time";
+"TXT_DISTANCE" = "Distance";
+"TXT_WALLET" = "Wallet";
+"TXT_CARD" = "Card";
+"TXT_CASH" = "Cash";
+"TXT_PLACEORDER" = "Place Order";
+"TXT_PROMO_CODE" =  "Enter Promo Code";
+"TXT_DELIVERY_DETAILS" = "Delivery Details";
+"TXT_DELIVERY_ADDRESS" = "Delivery Address";
+"TXT_TOTAL" = "Total";
+//MARK: OrderVC
+"TXT_DEFAULT" =  "--";
+"TXT_TOTAL_ORDER_PRICE" = "Total Order Price";
+"TXT_REJECT" = "Reject";
+"TXT_ACCEPT" = "Accept";
+"TXT_ASSIGN_PROVIDER" =  "Assign deliveryman";
+"TXT_START_PREPARING_ORDER" = "Start preparing order";
+"TXT_ORDER_READY" = "Order ready";
+"TXT_PICKUP_CODE" = "Pickup Code :";
+"TXT_REASSIGN" = "Reassign";
+"TXT_NOTE" = "Note";
+//Status code
+"MSG_WAIT_FOR_ACCEPT_STORE" = "Waiting for accept";
+"MSG_WAIT_FOR_CONFIRMATION" = "Waiting for confirmation.";
+
+"MSG_CANCELED_BY_USER" = "Order has been canceled by the user.";
+"MSG_STORE_ACCEPTED" = "Accepted";
+"MSG_STORE_REJECTED" =  "Rejected";
+"MSG_STORE_CANCELLED" =  "Canceled";
+"MSG_STORE_PREPARING_ORDER" = "Preparing order";
+"MSG_ORDER_READY" = "Order ready";
+"MSG_WAITING_FOR_DELIVERY_MAN" = "Waiting for deliveryman";
+"MSG_DELIVERY_MAN_ACCEPTED" = "Delivery man has accepted the order";
+"MSG_DELIVERY_MAN_COMING" = "Delivery man is coming to pick up the order.";
+"MSG_DELIVERY_MAN_ARRIVED" = "Delivery man has arrived";
+"MSG_DELIVERY_MAN_PICKED_ORDER" = "Delivery man has picked up the order.";
+"MSG_DELIVERY_MAN_REJECTED_ORDER" = "Delivery man has rejected the order.";
+"MSG_DELIVERY_MAN_CANCELLED" = "Delivery man canceled the request.";
+"MSG_DELIVERY_MAN_STARTED_DELIVERY" = "Delivery man has started the delivery.";
+"MSG_DELIVERY_MAN_ARRIVED_AT_DESTINATION" = "Delivery man has arrived at the destination.";
+"MSG_DELIVERY_MAN_COMPLETE_DELIVERY" = "Delivery man has completed delivery.";
+"MSG_NO_DELIVERY_MAN_FOUND" = "Delivery Man Not Found.";
+"MSG_STORE_CANCELLED_REQUEST" =  "Store Canceled Request.";
+
+//MARK: Earning
+"TXT_OTHER_EARNING" = "Other Earning";
+"TXT_TOTAL_SERVICE_PRICE" = "Total Service Price";
+"TXT_TAX_PRICE" = "Tax Price";
+"TXT_ADMIN_PROFIT" = "Admin Profit";
+"TXT_STORE_PROFIT" = "Store Profit";
+"TXT_TOTAL_EARNING" = "Total Earning";
+"TXT_PAY_TO_STORE" = "Pay To Store";
+"TXT_TOTAL_ORDER" = "Total Order";
+"TXT_COMPLETED_ORDER" = "Completed Order";
+"TXT_COMPLETED_RATIO" = "Completion Ratio";
+"TXT_ACCEPTED_ORDER" = "Accepted Order";
+"TXT_ACCEPTED_RATIO" = "Accepted Ratio";
+"TXT_REJECTED_ORDER" = "Rejected Order";
+"TXT_REJECTED_RATIO" = "Rejection Ratio";
+"TXT_CANCELLED_ORDER" = "Cancelled Order";
+"TXT_CANCELLED_RATIO" = "Cancellation Ratio";
+"TXT_ORDER" = "Orders";
+"TXT_PROFIT" = "Profit";
+"TXT_PAID_SERVICE_FEE" = "Service Payment";
+"TXT_PAYMENT" = "Payments";
+"TXT_RECEIVED_ORDER_AMOUNT" =  "Received Order Payment";
+"TXT_TOTAL_ITEM_SOLD" = "Total Item Sold";
+"TXT_EARN" = "Earnings";
+"TXT_PAID" = "Paid";
+"TXT_REMAINING_TO_PAY" =  "Remaining To Pay";
+"TXT_DAY" = "Day";
+"TXT_WEEK" = "Week";
+
+//MARK: - MESSAGE CODE.
+"MSG_CODE_5001" = "Email sent successfully.";
+"MSG_CODE_121" = "You are successfully registered.";
+"MSG_CODE_122" = "You are successfully logged in.";
+"MSG_CODE_123" = "Your profile has been updated successfully.";
+"MSG_CODE_951" = "Updated an item in the cart successfully.";
+"MSG_CODE_952" = "Add an item in cart successfully.";
+"MSG_CODE_953" = "Cart fetched successfully.";
+"MSG_CODE_954" = "Cart has been cleared successfully.";
+"MSG_CODE_955" =  "Address has been changed successfully.";
+
+"MSG_CODE_253" = "Order completed successfully.";
+"MSG_CODE_113" = "Order invoice generation successful.";
+"MSG_CODE_241" = "Created order successfully.";
+"MSG_CODE_142" = "Feedback submitted successfully.";
+"MSG_CODE_143" = "Feedback submitted successfully.";
+"MSG_CODE_921" = "Promo code added successfully.";
+"MSG_CODE_923" = "Promo code updated successfully.";
+"MSG_CODE_148" = "Order Created Successfully.";
+"MSG_CODE_150" = "Order Updated Successfully.";
+"MSG_CODE_314" =  "Wallet Request Created Successfully.";
+"MSG_CODE_244" = "Request Created Successfully.";
+
+
+//MARK: - ERROR CODE
+"ERROR_CODE_999" = "Invalid token.";
+"ERROR_CODE_601" = "Registration failed";
+"ERROR_CODE_602" = "Email is already registered";
+"ERROR_CODE_603" = "Phone number is already registered";
+"ERROR_CODE_605" =  "Store already register with social media account";
+"ERROR_CODE_606" = "Store not register with social media account";
+"ERROR_CODE_611" = "Log in failed";
+"ERROR_CODE_612" = "You are not registered";
+"ERROR_CODE_613" = "Your password is invalid";
+"ERROR_CODE_621" = "Profile update failed";
+"ERROR_CODE_622" = "Failed to update device token";
+"ERROR_CODE_623" = "Failed to logout";
+"ERROR_CODE_631" = "Invalid referral code";
+"ERROR_CODE_632" = "Referral code already applied";
+"ERROR_CODE_633" = "Referral process failed";
+"ERROR_CODE_634" = "Store data not found";
+"ERROR_CODE_635" = "Store business off";
+"ERROR_CODE_636" = "Order history not found";
+"ERROR_CODE_637" = "Order detail not found";
+"ERROR_CODE_638" = "OTP verification failed";
+"ERROR_CODE_639" = "Email and mobile number are registered already";
+"ERROR_CODE_640" = "Pay by cash on delivery failed";
+"ERROR_CODE_641" = "Daily earning not found";
+"ERROR_CODE_642" = "Weekly earning not found";
+"ERROR_CODE_651" = "Order failed";
+"ERROR_CODE_652" = "Order not found";
+"ERROR_CODE_653" = "Set order status failed";
+"ERROR_CODE_654" = "Request failed";
+"ERROR_CODE_655" = "Change order status failed";
+"ERROR_CODE_656" = "Order cancellation failed";
+"ERROR_CODE_801" = "Country details not found";
+"ERROR_CODE_811" = "City details not found";
+"ERROR_CODE_821" = "eApp key not found";
+"ERROR_CODE_831" = "Setting details not found";
+"ERROR_CODE_845" = "Category data not found";
+"ERROR_CODE_871" = "Failed to add product";
+"ERROR_CODE_872" = "Product not found";
+"ERROR_CODE_873" = "Failed to update product details";
+"ERROR_CODE_881" = "Failed to add specification";
+"ERROR_CODE_882" = "Specification not found";
+"ERROR_CODE_891" = "Failed to add item";
+"ERROR_CODE_892" = "Item not found";
+"ERROR_CODE_876" = "No Categories found.";
+
+"ERROR_CODE_893" = "Failed to upload item image";
+"ERROR_CODE_894" = "Failed to update item image";
+"ERROR_CODE_895" = "Failed to update item";
+"ERROR_CODE_426" = "No provider found";
+"ERROR_CODE_550" = "Referral code is out of usage limit in your country.";
+"ERROR_CODE_541" = "Referral code is not valid.";
+"ERROR_CODE_547" = "Referral code is not valid for your country.";
+"ERROR_CODE_1002" = "Document not found.";
+"ERROR_CODE_965" = "Change delivery address failed.";
+"ERROR_CODE_535" =  "Invoice Fetching Failed.";
+"ERROR_CODE_833" = "Wallet history is empty";
+"ERROR_CODE_413" = "Invalid Password.";
+"ERROR_CODE_413" =  "INVALID PASSWORD";
+"ERROR_CODE_962" = "Cart not found.";
+"ERROR_CODE_645" =  "Create Order Failed.";
+"ERROR_CODE_647" = "Store order update failed.";
+
+"ERROR_CODE_897" = "Item Already Added.";
+"ERROR_CODE_875" = "Product Already Added.";
+"ERROR_CODE_1010" =  "No Promo Added.";
+"ERROR_CODE_815" =   "Wallet Transaction History is Empty";
+"ERROR_CODE_1014" = "Card Addition Failed.";
+"ERROR_CODE_2022" = "Bank detail not found.";
+"ERROR_CODE_1016" = "Card data not found.";
+"ERROR_CODE_1042" =   "Specification List Not Added.";
+"ERROR_CODE_0" =  "Something went wrong with server";
+"ERROR_CODE_2003" =  "Something went wrong with server";
+"ERROR_CODE_536" = "Adding wallet amount failed";
+
+
+//MARK: - HTTP ERROR CODE
+"HTTP_ERROR_CODE_404" = "URL not found\nPlease check your internet connection";
+"HTTP_ERROR_CODE_502" = "Bad gateway";
+"HTTP_ERROR_CODE_504" = "Gateway timeout";
+"HTTP_ERROR_CODE_503" = "Service unavailable";
+"HTTP_ERROR_CODE_500" = "Internal server error";
+"HTTP_ERROR_CODE_408" = "Request timeout";
+"HTTP_ERROR_CODE_413" = "Requested entity is too large";
+//MARK: - Tranlatable False String used by developer
+"UNIT_MIN" = "mins";
+"UNIT_MILE" = "mile";
+"UNIT_KM" = "km";
+///Added on 26/10/2017
+//Wallet payment vc
+"TXT_WALLET" = "Wallet";
+"TXT_SELECT_PAYMENT_METHOD" = "Select Payment Method";
+"TXT_ADD" = "+ Add";
+"TXT_WALLET_HINT" =  "add amount to your wallet";
+"TXT_SELECT_WITHDRAWAL_METHOD" = "Select Withdrawal Method";
+"TXT_HOW_WOULD_YOU_LIKE_TO_REQUEST" = "How would you like to request?";
+"TXT_TRANSFER_TO_BANK_ACCOUNT" = "Transfer to Bank Account";
+"TXT_REQUEST_CASH" = "Request a Cash";
+"TXT_ENTER_AMOUNT_TO_WITHDRAW" = "Enter amount to want withdraw";
+"TXT_AMOUNT" = "Amount";
+"TXT_BANK_ACCOUNT" = "Bank Account";
+"TXT_SELECT_BANK_ACCOUNT" =  "Select Bank Account";
+"TXT_DESCRIPTION" = "Description";
+"TXT_REQUEST_WITHDRAWAL" = "Request Withdrawal";
+"TXT_01" =  "01";
+"TXT_02" =  "02";
+"TXT_03" =  "03";
+"TXT_04" =  "04";
+"TXT_WALLET_HISTORY" = "Wallet History";
+"TXT_ID" = "ID";
+"TXT_TOTAL_WALLET_AMOUNT" = "Total Wallet Amount";
+"TXT_CANCEL_WALLET_REQUEST" = "Cancel Wallet Request";
+"WALLET_STATUS_CREATED" = "Created";
+"WALLET_STATUS_ACCEPTED" = "Accepted";
+"WALLET_STATUS_TRANSFERRED" = "Transferred";
+"WALLET_STATUS_COMPLETED" = "Completed";
+"WALLET_STATUS_CANCELLED" = "Cancelled";
+//Wallet history Status
+"WALLET_STATUS_ADDED_BY_ADMIN" = "Added By Admin";
+"WALLET_STATUS_ADDED_BY_CARD" = "Added By Card";
+"WALLET_STATUS_ADDED_BY_REFERRAL" = "Added By Referral";
+"WALLET_STATUS_ORDER_CHARGED" = "Order Charge";
+"WALLET_STATUS_ORDER_REFUND" = "Order Refund";
+"WALLET_STATUS_ORDER_PROFIT" = "Order Profit";
+"WALLET_STATUS_ORDER_CANCELLATION_CHARGE" = "Order Cancellation Charge";
+"WALLET_STATUS_WALLET_REQUEST_CHARGE" = "Wallet Request Charge";
+
+//Earning
+"TXT_ORDER_EARNING" = "Order Earning";
+"TXT_STORE_TRANSACTIONS" = "Store Transactions";
+"TXT_PAID_IN_WALLET" = "Paid in wallet";
+"TXT_DEDUCT_FROM_WALLET" = "Deduct from wallet";
+"TXT_ADDED_IN_WALLET" = "Added in wallet";
+//Messages
+"MSG_PLEASE_SELECT_BANK_ACCOUNT_FIRST" =  "Please Select Bank Account First";
+"MSG_ENTER_VALID_AMOUNT" =  "Please Enter Valid Amount";
+/*Bank Toast*/
+"MSG_PLEASE_ENTER_ACCOUNT_NUMBER" = "Please enter Account Number";
+"MSG_PLEASE_ENTER_ACCOUNT_HOLDER_NAME" =  "Please enter Account Holder Name";
+"MSG_PLEASE_ENTER_ROUTING_NUMBER" =  "Please enter routing number";
+"MSG_PLEASE_ENTER_PERSONAL_ID_NUMBER" =  "Please enter Personal ID number must be 9 characters long";
+"MSG_PLEASE_ENTER_DOB" = "Please enter Birthdate";
+"MSG_PLEASE_ENTER_BANK_CODE" =  "Please add valid bank code";
+"MSG_ENTER_CONFIRMATION_CODE" =  "Confirmation code is invalid";
+"MSG_ENTER_CODE" =  "Please enter code.";
+"MSG_PLEASE_SELECT_DATE_FIRST" =  "Please select from and to date to get filtered history";
+"TXT_BANK_DETAILS" =  "Bank Details";
+//MARK: - Bank VC
+"TXT_ACCOUNT_NUMBER" = "Account Number";
+"TXT_ACCOUNT_HOLDER_NAME" = "Account Holder Name";
+"TXT_ROUTING_NUMBER" = "Routing Number";
+"TXT_PERSONAL_ID_NUMBER" = "Personal Id Number";
+"TXT_DOB" = "D.O.B";
+"TXT_BANK_CODE" = "Bank code";
+
+//Cart Product VC
+"TXT_ADD_TO_CART" = "Add To Cart";
+"TXT_REQUIRED" = "Required";
+"TXT_NOTE" =  "Enter note for Item";
+"TXT_PRICE" = "Price";
+"TXT_PLUS" = "+";
+"TXT_MINUS" = "-";
+"TXT_REMOVE" = "Remove";
+
+//Create Order
+"TXT_FIRST_NAME" = "First Name";
+"TXT_LAST_NAME" = "Last Name";
+"TXT_ADD_NOTE" = "Add Delivery Note";
+"TXT_CONTACT_NO" =  "Contact Number";
+"TXT_APSA" = "As Soon As Possible";
+"TXT_CREATE_ORDER" = "Create Order";
+"TXT_BASKET" = "Cart";
+"TXT_GO_TO_CART" = "Go to cart";
+"TXT_CUSTOMER_DETAIL" =  "Customer Details";
+//Setting
+"TXT_ORDER_CANCELLATION_CHARGE_TYPE" = "Order cancellation charge type";
+"TXT_MAX_ITEM_QUANTITY_ADD_BY_USER" = "Maximum item quantity added by user";
+"TXT_MINIMUM_ORDER_PRICE" = "Minimum order price";
+"TXT_SCHEDULE_ORDER_CREATE_AFTER_MINUTE" = "Scheduled order created after minute";
+"TXT_INFORM_SCHEDULE_ORDER_BEFORE_MINUTE" = "Send notification for scheduled order before minute";
+"TXT_DELIVERY_RADIUS" = "Delivery radius";
+"TXT_TAKING_ORDER_CANCELLATION_CHARGE" = "Order cancellation charge type";
+"TXT_ORDER_CANCELLATION_CHARGE" =  "Order Cancellation Charge";
+"TXT_PROVIDE_DELIVERY_ANYWHERE" = "Provide delivery anywhere";
+"TXT_TAKING_SCHEDULE_ORDER" = "Taking scheduled order";
+"TXT_ORDER_CANCELLATION_CHARGE_ABOVE_ORDER_PRICE" = "Cancellation charges are above order price";
+"TXT_ABSOLUTE" = "Absolute";
+"TXT_PERCENTAGE" = "Percentage";
+"TXT_PAY_DELIVERY_FEES" = "Are you paying delivery fees ?";
+"TXT_COMPLETE_ORDER" = "Completed Order";
+
+/*Confirmation Code Dialog*/
+"TXT_CONFIRMATION_CODE" = "Confirmation Code";
+"TXT_ENTER_CODE" =  "Enter confirmation code";
+"TXT_ENTER_CODE_MESSAGE" =  "Enter the confirmation code to delivery order.";
+/*Free Delivery Radius*/
+"TXT_FREE_DELIVERY_RADIUS" = "Free delivery radius";
+"TXT_IS_STORE_BUSY" = "Are you busy in delivering other orders ?";
+"TXT_FAMOUS_FOR" = "Famous For";
+/*Promo Code Details*/
+"TXT_ACTIVE" = "Active";
+"TXT_EXPIRED" =  "Expired";
+"TXT_EXPIRE_DATE" = "Expire Date";
+"TXT_START_DATE" = "Start Date";
+"TXT_PROMO_LIST" =  "Promo List";
+"TXT_STORE_IS_CLOSED_ON" =  "Store is closed on";
+"TXT_EDIT" = "Edit";
+//Prepare Order VC
+"TXT_HINT_ENTER_ESTIMATE_TIME" = "Enter Estimation Time Minute";
+"MSG_ENTER_ESTIMATE_TIME" =  "Please enter estimate time";
+"MSG_ENTER_VALID_ESTIMATE_TIME" =  "Please enter valid estimate time";
+"TXT_TITLE_ESTIMATE_TIME" = "Order Estimation Time";
+"MSG_DIALOG_ENTER_ESTIMATE_TIME_MESSAGE" = "Order prepare estimated time shown to the delivery man.";
+"TXT_IS_ESTIMATE_TIME" = "Ask Estimated Time For Ready Order";
+"TXT_CALL_NOW" = "Call Now";
+"TXT_MAIL" = "Mail";
+"TXT_TERMS_AND_CONDITIONS" =  "Terms & Conditions";
+"TXT_PRIVACY_POLICIES" =  "Privacy Policies ";
+"TXT_SIGN_UP_PRIVACY" = "By continuing, you agree to our";
+"text_and" = "and";
+"TXT_HELP_CENTER" = "Help";
+"MSG_PLEASE_ACCEPT_TERMS_AND_CONDITION_FIRST" =  "Please Accept the terms and condition first.";
+"TXT_HELP" = "Help";
+"TXT_REOPEN_AT" =  "Reopen At - ";
+"TXT_I_WILL_PICKUP_A_DELIVERY" =  "User will pickup delivery";
+"TXT_ADD_ITEM" = "Add Item";
+//Instant order
+"TXT_INSTANT_ORDER" = "Instant Order";
+"TXT_WHO_PAY" = "Pay?";
+"TXT_OTHER_DETAILS" = "Other Details";
+"TXT_CART" = "Cart";
+/*Add Card Dialog*/
+"TXT_ADD_NEW_CARD" = "+  Add New Card";
+"TXT_ADD_CARD" = "Add Card";
+"TXT_CREDIT_CARD_NUMBER" = "Credit card number";
+"TXT_CARD_HOLDER_NAME" =  "Card holder name (Firstname Surname)";
+"TXT_MM" = "mm";
+"TXT_YY" = "yy";
+"TXT_CVV" = "CVV";
+"MSG_ENTER_VALID_CREDIT_CARD_NUMBER" =  "Enter Valid Credit Card Number";
+"MSG_ENTER_VALID_CVV_NUMBER" =  "Enter Valid CVV number";
+"MSG_ENTER_VALID_MONTH" =  "Enter Valid Month";
+"MSG_ENTER_VALID_YEAR" =  "Enter Valid Year";
+"MSG_INVALID_CARD" =  "Your card is invalid";
+"MSG_ENTER_CARD_HOLDER_NAME_FIRST" =  "Please enter card holder name.";
+"TXT_CASH_MESSAGE" =  "You should pay cash when the delivery arrives at your doorstep";
+"TXT_WALLET_HINT" =  "add amount to your wallet";
+"TXT_PAYPAL_MESSAGE" = "Pay with PayPal a simpler and safer way to pay.";
+"TXT_PROMO_START_DATE" =  "Promo Start Date" ;
+"TXT_PROMO_CODE" = "Promo Code";
+"TXT_PROMO_EXP_DATE" =  "Promo Expiry Date" ;
+"TXT_PROMO_DETAIL" = "Detail";
+"TXT_PROMO_MINIMUM_AMOUNT" = "Promo Apply On Minimum Amount";
+"TXT_PROMO_MAX_DISCOUNT" = "Promo Max Discount";
+"TXT_PROMO_REQUIRED_USAGE" = "Promo Required Usage";
+"TXT_USAGE" = "Usage";
+"TXT_PROMO_CODE_TYPE" = "Promo Code Type";
+"TXT_PROMO_FOR" = "Promo For";
+"TXT_START_DATE" = "Start Date";
+"TXT_EXP_DATE" = "Expire Date";
+"TXT_PROMO_ACTIVE" = "Active Promo";
+"TXT_STORE" = "Store";
+"TXT_PROMO" = "Promo";
+"MSG_ENTER_VALID_DATA" = "Please enter valid details";
+"TXT_SERVICE_PRICE" = "Service Price";
+"MSG_PLEASE_ENTER_VALID_COUNTRYCODE" =  "Please enter valid country code";
+"TXT_NO_CITY_FOUND_IN_SELECTED_COUNTRY" =  "No City Found In Selected Country.";
+"TXT_NO_STORE_TYPE_FOUND_IN_SELECTED_CITY" =  "No Store Type Found In Selected City.";
+"MSG_PLEASE_ACCEPT_TERMS_AND_CONDITION_FIRST" =  "Please Accept Terms & Condition First.";
+"MSG_PLEASE_ADD_CARD_FIRST" =  "Please Add Card First.";
+"MSG_SELECT_OTHER_PAYMENT_MODE" =  "Please Select Other Payment mode then cash.";
+"MSG_PLEASE_ITEM_PRICE" =  "Please enter item price.";
+"MSG_REQUEST_IS_ALREADY_CANCELLED" =  "Request has been canceled already.";
+/*New Promo Design*/
+"TXT_NONE" = "No";
+"TXT_DAILY" = "Daily";
+"TXT_WEEKLY" = "Weekly";
+"TXT_MONTHLY" = "Monthly";
+"TXT_ANNUALLY" = "Annually";
+"TXT_PROMO_HAVE_DATE" =  "Promo Have Date";
+"TXT_PROMO_RECURSION_TYPE" =  "Promo Recursion Type";
+
+"Sunday" = "Sunday";
+"Monday" = "Monday";
+"Tuesday" = "Tuesday";
+"Wednesday" = "Wednesday";
+"Thursday" = "Thursday";
+"Friday" = "Friday";
+"Saturday" = "Saturday";
+
+"January" = "January";
+"February" = "February";
+"March" = "March";
+"April" = "April";
+"May" = "May";
+"June" = "June";
+"July" = "July";
+"August" = "August";
+"September" = "September";
+"October" = "October";
+"November" = "November";
+"December" = "December";
+
+"TXT_PROMO_HAVE_DATE" = "Promo Have Date";
+"TXT_PROMO_RECURSION_TYPE" = "Promo Recursion Type";
+"TXT_PROMO_APPLY_ON_ITEM_COUNT" = "Promo Apply On Item Count";
+"TXT_PROMO_APPLY_ON_COMPLETED_ORDER" = "Promo Apply On Completed Order";
+"TXT_COUNT" = "Count";
+"TXT_PLEASE_SELECT_START_TIME_FIRST" =  "Please Select Start Time First";
+"TXT_SELECT_PROMO_START_TIME" = "Promo Start Time";
+"TXT_SELECT_PROMO_END_TIME" = "Promo End Time";
+
+"TXT_DAYS" = "Promo Days";
+"TXT_MONTHS" = "Promo Monthly";
+"TXT_WEEKS" = "Promo Weekly";
+
+"TXT_MIN_INVOICE_AMOUNT_MSG" =  "The configuration allows you to specify a minimum amount that a placed order should meet";
+"TXT_ADD_MORE_ITEMS" =  "Add More Items";
+"TXT_MIN_AMOUNT" =  "Minimum Order Amount";
+"TXT_WITHOUT_OFFER_PRICE" = "Price Without Offer";
+"TXT_OFFER_MSG" = "Offer Message";
+
+"TXT_CURRENT_RATE" = "Current Rate";
+
+"TXT_UPDATE_ORDER" = "Update Order";
+"TXT_PRODUCTS" = "Products";
+"TXT_AMOUNT_DEDUCTED" =  "Amount Deducted";
+"TXT_AMOUNT_ADDED" =  "Amount Added";
+"TXT_MODE_OF_TRANSACTION" = "Mode of transactions";
+"TXT_REMOVE_ALL" = "Remove All";
+"TXT_ADMIN_APPROVED_AMOUNT" = "Admin Approved Amount";
+"TXT_DELIVERY_TIME" = "Delivery Time (min)";
+"TXT_MAX_DELIVERY_TIME" =  "Max Delivery Time (min.)";
+"TXT_ENTER_VALID_RADIUS" = "Please enter valid delivery radius";
+
+"TXT_ENTER_VALID_DELIVERY_TIME" =  "Enter Valid Delivery Time";
+"TXT_ENTER_VALID_TIME" =  "Enter Valid Time";
+
+"TXT_ENTER_VALID_MAX_DELIVERY_TIME" =  "Maximum delivery time must be greater than defined delivery time.";
+
+"TITLE_PLEASE_SELECT_CANCELATION_TYPE" =  "Please select order cancellation  type";
+"TITLE_PLEASE_SELECT_PROMO_TYPE" =  "Please select promo type ";
+"TITLE_PLEASE_SELECT_PRICE_RATE" =  "Please select price rate of your store";
+"OPTION_TO_SELECT" =  "Options to select";
+"TXT_ORDER_CANCELLED" =  "Order has been canceled";
+"TXT_NOTE_FOR_ITEM" = "Note For Item";
+"TXT_SELECT_WEEK" = "Select Week";
+
+//5/3/2018
+"TXT_NO_SEARCH_ITEM_NOT_AVAILABLE" = "Searched item not available.";
+"MSG_UNABLE_TO_CALL" =  "Unable to call.";
+"TXT_CURRENT_ORDERS" = "As Soon As Possible";
+"TXT_SCHEDULE_ORDERS" = "Schedule";
+"MSG_PLEASE_SELECT_PRODUCT" = "Please select product first";
+"MSG_PLZ_GIVE_VALID_REASON" =  "Please give valid reason.";
+//21/05/2018
+"TOAST_MSG_YOU_ARE_NOT_PROVIDE_ANY_DELIVERY" =  "You have not selected any delivery type, please select any one type of delivery ";
+"TXT_PROVIDE_PICKUP_DELIVERY" = "Provide Pickup Delivery";
+
+//MARK: - 28/07/2018
+
+"TXT_MAX_RANGE" =  "Max Range";
+"TXT_MIN_RANGE" =  "Min Range";
+"TXT_FIX_RANGE" =  "Fix Range";
+"MSG_PLEASE_ENTER_VALID_MAX_RANGE" = "Please enter a valid max range.";
+"TXT_CHOOSE" =  "Choose";
+"TXT_CHOOSE_UP_TO" =  "Choose upto";
+"MSG_SELECT_AT_LEAST_SPECIFICATION_TO_SATISFY_RANGE" =  "Select specifications to satisfy the specific range. ";
+"TXT_SELECT" = "SELECT";
+"TXT_RANGE" = "Select Range";
+"TXT_SPECIFICATION_GROUP_NAME" = "Specification Group Name";
+"TXT_SPECIFICATION_NAME" = "Specification Name";
+"TXT_SPECIFICATION_PRICE" = "Specification Price";
+"TXT_PRODUCT_SPECIFICATION_GROUP" = "Specification Groups";
+"TXT_PRODUCT_CATEGORY_GROUP" = "Categories";
+"TXT_DEFAULT_COUNT_MSG" = "Please select default specification according specification range";
+"TXT_IS_USE_ITEM_TAX" = "Use item tax?";
+"TXT_ADD_PRODUCT" =  "+ Product";
+"TXT_ADD_ITEM" = "Add Item";
+"TXT_SELECT_DOB_DATE" =  "Select Birth Date";
+"TXT_SELECT_PROMO_START_DATE" =  "Select Start Date";
+"MSG_PLEASE_UPLOAD_PICTURE" =  "Please upload picture";
+"ERROR_CODE_549" = "Customer payment pending.";
+"TXT_GET_CODE" = "Get Code";
+"MSG_PLEASE_SELECT_ANY_VEHICLE" = "Please select any vehicle";
+"TXT_SELECT_VEHICLE" = "Select vehicle";
+"TXT_NO_VEHICLE_AVAILABLE" =  "No Vehicle available please contact admin";
+"TXT_SELECT_EXPIRY_DATE" =  "Select Expiry Date";
+"ERROR_CODE_2002" = "Insufficient wallet balance.";
+"MSG_LOCATION_ENABLE" = "Without this permission, the app will be unable to get your location and address. allow the app to access your location for better use \n1. Go to Settings > Privacy > Location Services. \n2. Make sure that Location Services is on";
+"ERROR_CODE_569" = "User has insufficient wallet balance.";
+"TXT_ENTER_ITEM_NAME" = "Enter Item Name";
+"TXT_DISCOUNT" = "Discount";
+/*Localize remaing*/
+"ERROR_CODE_1000" = "Details not found.";
+"TXT_PRICE_RATING" =  "Price Rate";
+"MSG_LOCATION_NOT_GETTING" =  "Error in getting location.";
+"ERROR_CODE_662" = "Order has been canceled already";
+"ERROR_CODE_2024" = "Bank Detail Deletion Failed";
+"ERROR_CODE_558" =  "Delivery services are not available in your city";
+"TXT_CHANGE_LANGUAGE" =  "Change language";
+"MSG_CODE_2001" = "Added bank details successfully.";
+"TXT_ASSIGN_DELIVERYMAN" =  "Assign Deliveryman to deliver the order!";
+"TXT_ASSIGN" =  "Assign";
+"TXT_SUB_CATEGORY" =  "Sub-Categories";
+"TXT_NO_SUB_CATEGORY_AVAILABLE" =  "No Subcategories available";
+"TXT_CATEGORY_TITLE" = "Category Title";
+"TXT_ASSIGN_AUTOMATICALLY" = "Assign Automatically";
+"TXT_ASSIGN_MANUALLY" =  "Assign Manually";
+"MSG_PLEASE_SELECT_VEHICLE_TYPE" =  "Please select Vehicle Type";
+"TXT_CHAT_WITH" =  "Chat with ";
+"PLACE_HOLDER_ENTER_MESSAGE" =  "Enter message";
+"TXT_SEND" = "Send";
+"TXT_READ" = "Read";
+"2074" = "User accepted update in cart.";
+"ERROR_CODE_663" =  "Order has not accepted";
+"TXT_ADD_CATEGORY_TITLE" = "Add Category";
+"ERROR_CODE_538" = "Payment Failed.";
+"ERROR_CODE_2021" = "Adding a bank detail failed.";
+"ERROR_CODE_967" =  "Store not deliverying on this address.";
+"TXT_SELECT_ASSIGN_DELIVERYMAN" = "Assign a deliveryman to deliver the order!";
+"TXT_SUB_STORE" = "Sub Store";
+"TXT_NOTIFICATION" = "Notification";
+"2088" =  "Store order changed";
+"ERROR_CODE_1013" =  "Promo code already added try other one";
+"TXT_ORDER_NOTI" = "Order Notification";
+"TXT_MASS_NOTI" = "Mass Notification";
+"MSG_PLEASE_ENTER_ADDRESS" = "Please enter Address";
+"MSG_PLEASE_ENTER_POSTALCODE" =  "Please enter Postal Code";
+"TXT_MALE" = "Male";
+"TXT_FEMALE" = "Female";
+"TXT_ADDRESS" = "Address";
+"TXT_GENDER" = "Gender";
+"TXT_POSTALCODE" = "Postal Code";
+"ERROR_CODE_888" =  "Invalid OTP";
+"TXT_RESEND" =  "Resend";
+"TXT_RESET_PWD" = "Reset Password";
+"MSG_ENTER_NEW_PWD" =  "Enter New Password";
+"TITLE_ENTER_NEW_PWD" =  "Enter your New Password to login into the app again.";
+"TXT_CONFIRM_NEW_PWD" = "Confirm New Password";
+"MSG_ENTER_VALID_OTP" = "Please enter valid otp.";
+"MSG_NEW_CONFIRM_PWD_NOT_MATCHED" =  "New and Confirm Passwords doesn't match";
+"TXT_RESEND_CODE_IN" = "Resend Code in";
+"TXT_SEQUENCE_NUMBER" = "Sequence Number";
+"TXT_ADD" =  "+Add";
+"TXT_PHOTO_ID_FRONT" = "Photo Id\nFront";
+"TXT_PHOTO_ID_BACK" = "Photo Id\nBack";
+"TXT_PHOTO_ID_ADDITIONAL" = "Photo Id\nAdditional";
+"TXT_ADMIN" = "Admin";
+"TXT_USER" =  "User";
+"TXT_STORE" = "Store";
+"TXT_DELIVERYMAN" = "Deliveryman";
+"TXT_UPDATE_CATEGORY_TITLE" = "Update Category";
+/*********/
+//changed
+//---Removed duplicates---//
+//MARK : - PUSH MESSAGES
+"2070" = "You have received a new scheduled order.";
+"2071" = "You have received a new order.";
+"2072" = "You have been approved by admin.";
+"2073" = "You have been declined by admin.";
+"2061" = "Deliveryman has accepted the request.";
+"2062" = "Deliveryman is on the way.";
+"2063" = "Deliveryman has arrived.";
+"2064" = "Deliveryman has picked up order.";
+"2065" = "Deliveryman has started delivery.";
+"2066" = "Deliveryman has arrived at the destination.";
+"2067" = "Deliveryman has completed the delivery.";
+"2068" = "User has cancelled order.";
+"2069" = "Deliveryman can not found.";
+"2093" = "Logged in from another device.";
+//"TXT_GPS" = "GPS";
+"TXT_CONFIRMATION_DIALOG" = "Confirm Details";
+"MSG_SERVER_ERROR" = "Problem in downloading data from the server. Please restart your app or try again.";
+"MSG_REASON_FOR_CAMERA_PERMISSION" = "Without this permission app will be unable to access the camera and your external storage.\nStep 1: Go to Settings>Privacy>Camera. find the store app to allow camera access.\nStep 2: switch it so that the switch is green.";
+"MSG_CONFIRMATION_EMAIL_PHONE" = "We will send you a verification code on the following email and phone number details.";
+"MSG_CONFIRMATION_EMAIL" = "We will send you a verification code on the following email.";
+"MSG_CONFIRMATION_PHONE" = "We will send you a verification code on the following phone number details.";
+"MSG_ADVANCE_PAY_FOR_ORDER" =  "Did you receive the order from Deliveryman ?\nReceive the confirmation code for delivery.";
+"MSG_CANCEL_REQUEST" = "Are you sure you want to cancel request?";
+"MSG_PLEASE_ENTER_EMAIL" = "Please enter email id.";
+"MSG_PLEASE_ENTER_VALID_PHONE_NUMBER" = "Please enter a valid phone number.";
+"MSG_PLEASE_UPLOAD_PROFILE_PICTURE" =  "Please upload your profile picture";
+"MSG_INCORRECT_CONFIRM_PASSWORD" = "Your entered passwords are not matching";
+"MSG_EMAIL_OTP_WRONG" = "Please enter the correct email verification code.";
+"MSG_VERIFY_DETAIL" =  "Please enter the OTP you have received.";
+"MSG_PLEASE_SELECT_DOCUMENT_IMAGE" =  "Please select a document image first";
+"MSG_PLEASE_ENTER_DOCUMENT_ID" =  "Please enter the document unique code ";
+"MSG_PLEASE_ENTER_DOCUMENT_EXP_DATE" = "Please enter document expiry date.";
+"MSG_PLEASE_FIRST_ADD_PRODUCT_CATEGORIES" =  "Please first mention product categories to add an item.";
+"MSG_ENTER_VALID_AMOUNT" = "Please enter a valid amount.";
+"MSG_NO_EARNING_FOR_FUTURE_DATE" =  "You cannot see future earning details for this date";
+"MSG_REFERRAL" = "You can use this code to refer your friends and get rewarded.";
+"TXT_WEBSITE" = "Your website";
+"TXT_CHANGE_PASSWORD" = "Change Password?";
+"TXT_TAX_ON_ORDER_BILL" =  "Tax on total bill amount";
+"TXT_EXP_DATE" =  "Expiry Date:";
+"TXT_ENTER_EXP_DATE" = "Document Expiry Date";
+"TXT_DELIVERY_DETAILS" = "Delivery Details";
+"TXT_ORDER_DETAILS" = "Order Details";
+"TITLE_HISTORY_DETAIL" = "History Details";
+"TXT_QTY" = "Quantity";
+"TXT_SELECT_OPEN_TIME" =  "Select Opening Time";
+"TXT_SELECT_CLOSE_TIME" =  "Select Closing Time";
+"TXT_START_TIME" = "Opening Time";
+"TXT_END_TIME" = "Closing Time";
+"TXT_MAKE_VISIBLE_OR_NOT" =  "Make Details Visible/Invisible ?";
+"TXT_DEFAULT_TEXT" = "Default";
+"IN_STOCK_OR_NOT" =  "In Stock/Out of Stock?";
+"TXT_ENTER_PRICE" = "Enter price";
+"ERROR_CODE_557" = "Your order price less then store minimum order price.";
+
+//---need to remove duplicates---//
+"TXT_REJECT" = "Reject";
+"TXT_ACCEPT" = "Accept";
+"TXT_PICKUP_CODE" = "Pickup Code :";
+"MSG_WAIT_FOR_ACCEPT_STORE" = "Waiting for accept";
+"MSG_CANCELED_BY_USER" = "Order has been canceled by the user.";
+"MSG_STORE_CANCELLED" =  "Canceled";
+"MSG_DELIVERY_MAN_ACCEPTED" = "Delivery man has accepted the order";
+"MSG_DELIVERY_MAN_COMING" = "Delivery man is coming to pick up the order.";
+"MSG_DELIVERY_MAN_ARRIVED" = "Delivery man has arrived";
+"MSG_DELIVERY_MAN_PICKED_ORDER" = "Delivery man has picked up the order.";
+"MSG_DELIVERY_MAN_REJECTED_ORDER" = "Delivery man has rejected the order.";
+"MSG_DELIVERY_MAN_CANCELLED" = "Delivery man canceled the request.";
+"MSG_DELIVERY_MAN_STARTED_DELIVERY" = "Delivery man has started the delivery.";
+"MSG_DELIVERY_MAN_ARRIVED_AT_DESTINATION" = "Delivery man has arrived at the destination.";
+"MSG_DELIVERY_MAN_COMPLETE_DELIVERY" = "Delivery man has completed delivery.";
+"TXT_COMPLETED_RATIO" = "Completion Ratio";
+"TXT_CANCELLED_RATIO" = "Cancellation Ratio";
+"TXT_PAID_SERVICE_FEE" = "Service Payment";
+"MSG_CODE_5001" = "Email sent successfully.";
+"MSG_CODE_951" = "Updated an item in the cart successfully.";
+"MSG_CODE_952" = "Add an item in cart successfully.";
+"MSG_CODE_953" = "Cart fetched successfully.";
+"MSG_CODE_954" = "Cart has been cleared successfully.";
+"MSG_CODE_955" =  "Address has been changed successfully.";
+"MSG_CODE_113" = "Order invoice generation successful.";
+"MSG_CODE_241" = "Created order successfully.";
+"MSG_CODE_142" = "Feedback submitted successfully.";
+"MSG_CODE_143" = "Feedback submitted successfully.";
+"MSG_CODE_921" = "Promo code added successfully.";
+"MSG_CODE_923" = "Promo code updated successfully.";
+"MSG_CODE_148" = "Order Created Successfully.";
+"MSG_CODE_150" = "Order Updated Successfully.";
+"MSG_CODE_314" =  "Wallet Request Created Successfully.";
+"MSG_CODE_244" = "Request Created Successfully.";
+"ERROR_CODE_605" = "Store already register with social media account";
+"ERROR_CODE_606" = "Store not register with social media account";
+"ERROR_CODE_638" = "OTP Verification failed.";
+"ERROR_CODE_639" = "Email and mobile number are already registered.";
+"ERROR_CODE_656" = "Order Cancellation failed.";
+"ERROR_CODE_801" = "Country details not found.";
+"ERROR_CODE_811" = "City details not found.";
+"ERROR_CODE_831" = "Setting details not found";
+"ERROR_CODE_873" = "Failed to update product details";
+"ERROR_CODE_550" = "Referral code is out of usage limit in your country.";
+"ERROR_CODE_541" = "Referral code is not valid.";
+"ERROR_CODE_547" = "Referral code is not valid for your country.";
+"ERROR_CODE_535" =  "Invoice Fetching Failed.";
+"ERROR_CODE_1014" = "Card Addition Failed.";
+"ERROR_CODE_557" = "Your order price less then store minimum order price.";
+"ERROR_CODE_536" = "Adding wallet amount failed";
+"HTTP_ERROR_CODE_404" = "URL not found\nPlease check your internet connection";
+"HTTP_ERROR_CODE_413" = "Requested entity is too large";
+"TXT_BANK_DETAILS" =  "Bank Details";
+"TXT_CUSTOMER_DETAIL" =  "Customer Details";
+"TXT_MAX_ITEM_QUANTITY_ADD_BY_USER" = "Maximum item quantity added by user";
+"TXT_SCHEDULE_ORDER_CREATE_AFTER_MINUTE" = "Scheduled order created after minute";
+"TXT_INFORM_SCHEDULE_ORDER_BEFORE_MINUTE" = "Send notification for scheduled order before minute";
+"TXT_TAKING_SCHEDULE_ORDER" = "Taking scheduled order";
+"TXT_ORDER_CANCELLATION_CHARGE_ABOVE_ORDER_PRICE" = "Cancellation charges are above order price";
+"TXT_COMPLETE_ORDER" = "Completed Order";
+"TXT_IS_STORE_BUSY" = "Are you busy in delivering other orders ?";
+"MSG_DIALOG_ENTER_ESTIMATE_TIME_MESSAGE" = "Order prepare estimated time shown to the delivery man.";
+"TXT_CASH_MESSAGE" =  "You should pay cash when the delivery arrives at your doorstep";
+"TXT_PROMO_CODE_TYPE" = "Promo For";
+"TXT_EXP_DATE" =  "Expiry Date" ;
+"MSG_ENTER_VALID_DATA" = "Please enter valid details";
+"MSG_REQUEST_IS_ALREADY_CANCELLED" =  "Request has been canceled already.";
+"TXT_MIN_INVOICE_AMOUNT_MSG" =  "The configuration allows you to specify a minimum amount that a placed order should meet";
+"TXT_ENTER_VALID_MAX_DELIVERY_TIME" =  "Maximum delivery time must be greater than defined delivery time.";
+"TITLE_PLEASE_SELECT_CANCELATION_TYPE" =  "Please select order cancellation  type";
+"TITLE_PLEASE_SELECT_PROMO_TYPE" =  "Please select promo type ";
+"TITLE_PLEASE_SELECT_PRICE_RATE" =  "Please select price rate of your store";
+"TXT_ORDER_CANCELLED" =  "Order has been canceled";
+"TOAST_MSG_YOU_ARE_NOT_PROVIDE_ANY_DELIVERY" =  "You have not selected any delivery type, please select any one type of delivery ";
+"MSG_PLEASE_ENTER_VALID_MAX_RANGE" = "Please enter a valid max range.";
+"ERROR_CODE_1000" = "Details not found.";
+"ERROR_CODE_662" = "Order has been canceled already";
+"ERROR_CODE_2024" = "Bank Detail Deletion Failed";
+"ERROR_CODE_558" =  "Delivery services are not available in your city";
+"MSG_CODE_2001" = "Added bank details successfully.";
+"TXT_NO_SUB_CATEGORY_AVAILABLE" =  "No Subcategories available";
+"TXT_SELECT_ASSIGN_DELIVERYMAN" = "Assign a deliveryman to deliver the order!";
+"TITLE_ENTER_NEW_PWD" =  "Enter your New Password to login into the app again.";
+"MSG_ENTER_VALID_OTP" = "Please enter valid OTP.";
+/***NEW*/
+"TXT_PHONE_NO" = "Phone No";
+"TXT_SELECT_LANG" = "Select Language";
+"TXT_PROMO_CODE_TYPE" = "Promo Code Type";
+"TXT_SEARCH_DELIVERYMAN" = "Search Deliveryman";
+//substore Strings
+"TXT_PROVIDER" = "Deliveryman";
+"TXT_SERVICE" = "Service";
+"TXT_GROUP" = "Group";
+"TXT_PRODUCT_" = "Product";
+"TXT_PROMO_CODE_ONLY" = "Promo Code";
+"TXT_SETTING_" =  "Setting";
+"TXT_WEEKLY_EARNING" = "Weekly Earning";
+"MSG_ENTER_COMMENT_RATE_PROVIDER" =  "Please rate the deliveryman ";
+"TXT_CALL" = "Call";
+"TXT_VIEW_INVOICE" = "View Invoice";
+"TXT_ORDER_CANCELLED" =  "Order Cancelled";
+"TXT_TOTAL_AMOUNT" =  "Total Amount";
+"TXT_LANGUAGE" = "Use App in";
+"TXT_WITHDRAWAL" = "Withdrawal";
+"TXT_WALLET_TRANSACTION_HISTORY" = "Wallet Transaction";
+"TXT_PICKUP" = "Pickup";
+"TXT_CALL_USER" = "Call User";
+"TXT_CALL_DELIVERYMAN" = "Call Deliveryman";
+"TXT_STORE_OPEN_FOR_FULL_TIME" =  "Store Open for 24 hours";
+"TXT_OPEN_TIME" = "Open Time";
+"TXT_CLOSE_TIME" = "Closed Time";
+"TXT_STORE_PROVIDE_PICKUP_DELIVERY" = "Provide Pickup Delivery";
+"TXT_IS_SET_DELIVERY_STORE_TIME" = "Schedule Delivery Time";
+"MSG_NO_PRINTERS" =  "No Printers Found";
+"MSG_TURN_ON_BLUETOOTH" =  "Please turn on Bluetooth";
+"TXT_RESCAN" =  "RESCAN";
+"TXT_CHOOSE_BLUETOOTH_PRINTER" =  "Choose Your Bluetooth Printer";
+
+
+"TXT_MANAGE_STORE_TIME_SCHEDULE" = "Store opening time ";
+"TXT_SCREENS" = "Screen Access";
+"TXT_SCREEN_PERMISSION" =  "Store Accessibility Permission";
+"TITLE_MSG_ENTER_MOBILE_EMAIL_FOR_VERIFICATION" =  "To reset password, enter the user credentials used for registration. We will send the code to registered credentials.";
+"TXT_RESET_PWD" = "Reset Password";
+"TXT_REGISTER_NOW" =  "Register Now";
+"TXT_LOGIN_AS" = "Log in as";
+"TXT_SELECT_LANGUAGE" = "Select Language";
+"TXT_DONT_HAVE_YOUR_STORE" = "Don't have your own store?";
+"TXT_FILTERS" = "Filters";
+"TXT_INVOICE_DETAILS" = "Invoice Details";
+
+"TXT_PAYMENT_IN" =  "Payment in";
+"TXT_PAYMENT_BY" =  "Payment by";
+"TXT_PICKUP_DELIVERY" =  "Pickup Delivery";
+"TX_PROVIDER_DELIVERY" = "Delivery";
+"TXT_FILTER_HISTORY" = "Filter History";
+"TXT_RESET" = "Reset";
+"MSG_PLEASE_ENTER_PRODUCT_TITLE" =  "Please enter product title first";
+"TXT_CHAT" = "Chat";
+"MSG_PLEASE_ADD_SPECIFICATION_NAME" =  "Please Add Specification name";
+"TXT_HAVE_YOUR_OWN_STORE" =  "Have your own Store?";
+"TXT_LOGIN_NOW" =  "Login Now";
+"MSG_APPROVE_ERROR" =  "You will receiver confirmation email once admin approves you.";
+"TXT_PAYMENT_DETAILS" =  "Payment Details";
+"TXT_CANCEL_ORDER_REASON3" =  "The store is no longer accepting orders";
+"TXT_CANCEL_ORDER_REASON2" =  "The store is closed";
+"TXT_CANCEL_ORDER_REASON" =  "Enter Other Cancellation Reason Here.";
+"TXT_CANCEL_ORDER_REASON1" =  "Product is out of stock";
+"TXT_OTHER" =  "Any other";
+"TXT_STORE_OPEN" = "Store Open";
+"ERROR_CODE_968" =  "Item Tax Miss Matched";
+"ERROR_CODE_899" =  "No Wallet History Found.";
+"TXT_WARNING" =  "Warning!";
+"TXT_EDIT_ORDER_WARNING_MSG" =  "Item price or tax settings are changed.\nUpdated figures will be applied in the following order.";
+"TXT_CONTINUE" =  "Continue";
+
+"TXT_ACCEPTED" = "Accepted";
+"TXT_START_PREPARE" = "Start preparing";
+"TXT_ORDER_READY" = "Order ready";
+"TXT_PICKEDUP" = "Picked up";
+"TXT_ARRIVED" = "Arrived";
+
+"TXT_TAX_INC_EXC" =  "Tax Inclusive/Exclusive?";
+"ERROR_CODE_666" =  "Store location is outside city range";
+
+
+"TXT_NO_ITEMS_FOUND" =  "No Items Found";
+"TXT_SELECT_PROMO_FOR" =  "Please Select Promo For";
+"TXT_SELECT_APPLY_CANCELLATION_CHARGE_END_STATE" =  "Select apply cancellation charge end state";
+"TXT_SELECT_APPLY_CANCELLATION_CHARGE_START_STATE" =  "Select apply cancellation charge start state";
+"TXT_CANCELLATION_CHARGE_APPLY_BETWEEN_STATES" =  "Cancellation charge apply between states :";
+"TXT_CANCELLATION_CHARGE_APPLY_TILL_STATES" =  "Cancellation charge apply till state :";
+
+"TXT_VIEW_CART" =  "View cart";
+"TXT_CALL_DELIVERYMAN" =  "Call Deliveryman";
+"TXT_START_TIME" =  "Start Time";
+"TXT_END_TIME" =  "End Time";
+"TXT_APPROVED" =  "Approved";
+"TXT_PAID_DELIVERY" =  "Paid Delivery";
+"TXT_SERVICE_FEE" =  "Paid Service Fee";
+"TXT_PAID_ORDER" =  "Paid Order";
+"TXT_TODAY" =  "Today";
+"TXT_YESTERDAY" =  "Yesterday";
+"TXT_MOBILE_NUMBER" =  "Mobile Number";
+"TXT_ORDER_RECEIVED_BY" =  "Order Received By";
+"TXT_CREATED" =  "Created";
+"TXT_DELIVERED" =  "Delivered";
+"MSG_CODE_140" =  "OTP Verified Successfully";
+"MSG_ENTER_VALID_MOBILE_NUMBER" = "Please enter a valid mobile number.";
+"ERROR_CODE_1021" =  "Promo code with same name already exists";
+
+"PLEASE_ENTER_PIN" =  "Please enter Pin";
+"EG_1234" =  "Eg.1234";
+"ENTER_PIN" =  "Enter Pin";
+"PLEASE_ENTER_OTP" =  "Please enter OTP";
+"ENTER_OTP" =  "Enter OTP";
+"EG_123456" =  "Eg.123456";
+"PLEASE_ENTER_PHONE_NO" =  "Please enter Phone no.";
+"ENTER_PHONE_NUMBER" =  "Enter Phone Number";
+"MINIMUM_10_DIGITS" =  "Minimum 10 digits (Eg.1234567890)";
+"PLEASE_ENTER_BIRTHDATE" =  "Please enter Birthdate";
+"ENTER_BIRTHDATE" =  "Enter Birthdate";
+"EG_DD-MM-YYYY" =  "Eg.dd-mm-yyyy";
+"MSG_CODE_114" =  "Wallet amount added successfully";
+
+//Table Booking
+"btn_arrived" =  "Arrived";
+"text_status27" =  "Arrived";
+"text_table_no_booked_for_people" =  "Table no-%d booked for %d people";
+"text_booking_fees" =  "Booking Fees";
+"text_persons" =  "Persons";
+"text_table_no" =  "Table No";
+"text_complete_order" =  "Complete Order";
+"text_note" =  "Note";
+"TXT_FD_MSG" =  "How much did you like us?";
+"MSG_ENTER_RATE" =  "Please select user rate";
+"MSG_ENTER_RATE_PROVIDER" =  "Please select provider rate";
+"STATE" =  "State";
+"MSG_ENTER_STATE" =  "Please enter valid state name";
+"MSG_SELECT_PROMO_IMAGE" =  "Please select promo image";
+"Enter verification code received on email" =  "Enter verification code received on email";
+"Enter verification code received on phone number" =  "Enter verification code received on phone number";
+"Verification code sent successfully" =  "Verification code sent successfully";
+"TXT_CASH_PAYMENT" =  "Cash Payment";
+
+//27-Jan Validation Cases Strings
+"msg_enter_valid_email_min_max_length" = "Please enter an email address between %@-%@ characters";
+"msg_enter_valid_password_min_max_length" = "Please enter a password between %@-%@ characters";
+"msg_enter_valid_phone_number" = "Please enter a valid mobile number.";
+
+"TXT_DELIVERY_RADIUS_MORE_THEN_CITY" = "The store can not add more radius compare to city radius";
+
+"TXT_ENTER_VALID_FREE_RADIUS" = "Please enter valid free delivery radius";
+"TXT_SEARCH_COUNTRY" = "Search Country";
+"TXT_SEARCH_CITY" = "Search City";
+
+"txt_flat_no_name" = "Flat No and Name";
+"txt_street_no" = "Street";
+"txt_landmark" = "Landmark";
+"txt_user_can_add_modifier_qty" = "Can User Add Modifier Quantity?";
+"txt_associate_modifier" = "Associate modifier group";
+"txt_editing_conflict_modifier" = "Modifier is associated to another modifiers, editing it will result in deletion of associated modifiers.";
+"txt_deleting_conflict_modifier" = "Modifier is associated to another modifiers, deleting it will result in deletion of associated modifiers.";
+"txt_there_is_no_modifier" = "There is no modifier available to associate";
+"txt_specification_already_added" = "Specification is already added";
+"txt_select_modifier_group" = "Please select modifier group";
+"txt_select_specification" = "Please select specification";
+"txt_provider_delivery" = "Provide Delivery";
+
+"txt_unapprove_user" = "Your account is unapproved or deleted. Please contact admin";
+"txt_are_you_sure_account_delete" = "Are you sure you want to delete your account?";
+"txt_delete_account" = "Delete Account";
+
+"TXT_CALL_MESSAGE" = "Please wait until call assign to you";
+"TXT_CLOSE" = "Close";

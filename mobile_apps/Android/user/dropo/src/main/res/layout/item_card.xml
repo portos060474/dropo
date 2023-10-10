@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/activity_horizontal_padding"
+    android:paddingBottom="@dimen/activity_horizontal_padding">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.dropo.component.CustomFontTextView
+        android:id="@+id/tvCardNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:textSize="@dimen/size_app_text_regular" />
+
+    <com.dropo.component.CustomImageView
+        android:id="@+id/ivDeleteCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_app_edit_text_padding"
+        android:src="@drawable/ic_cross" />
+
+</LinearLayout>

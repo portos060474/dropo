@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/card_view_space_12dp"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    app:cardBackgroundColor="?appThemeModeColor"
+    app:cardCornerRadius="@dimen/app_card_radius"
+    app:cardElevation="@dimen/app_card_elevation">
+
+
+    <LinearLayout
+        android:id="@+id/llProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_padding">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.dropo.provider.component.CustomFontTextView
+                android:id="@+id/tvTransactionState"
+                style="?appThemeLabelTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/text_empty_string"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textSize="@dimen/size_app_label_regular" />
+
+            <com.dropo.provider.component.CustomFontTextViewTitle
+                android:id="@+id/tvWithdrawalID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:gravity="start"
+                android:text="@string/text_empty_string"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/size_app_text_medium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.dropo.provider.component.CustomFontTextView
+                    android:id="@+id/tvTransactionDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_app_edit_text_padding"
+                    android:gravity="start"
+                    android:text="@string/text_empty_string"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/size_app_text_small" />
+
+                <com.dropo.provider.component.CustomFontTextView
+                    android:id="@+id/tvTransactionTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/text_empty_string"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/size_app_text_small" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.dropo.provider.component.CustomFontTextViewTitle
+            android:id="@+id/tvTransactionAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_padding"
+            android:gravity="end|top"
+            android:text="@string/text_empty_string"
+            android:textAllCaps="true"
+            android:textSize="@dimen/size_app_text_medium" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

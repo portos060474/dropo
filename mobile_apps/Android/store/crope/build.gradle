@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+apply plugin: 'signing'
+
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion '30.0.3'
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 33
+
+        testApplicationId 'com.soundcloud.android.crop.test'
+        testInstrumentationRunner 'android.test.InstrumentationTestRunner'
+    }
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+    namespace 'com.soundcloud.android.crop'
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    androidTestImplementation 'com.squareup:fest-android:1.0.7'
+    androidTestImplementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    androidTestImplementation 'org.mockito:mockito-core:2.23.4'
+    androidTestImplementation 'com.google.dexmaker:dexmaker:1.0'
+    androidTestImplementation 'com.google.dexmaker:dexmaker-mockito:1.0'
+}
+

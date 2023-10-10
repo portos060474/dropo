@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_app_edit_text_padding"
+    android:layout_marginBottom="@dimen/dimen_app_edit_text_padding"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.dropo.component.CustomFontTextViewTitle
+        android:id="@+id/tvSectionSpeci"
+        style="?appThemeTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingEnd="@dimen/activity_horizontal_padding"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/size_app_label_regular" />
+
+    <com.dropo.component.CustomFontTextViewTitle
+        android:id="@+id/tvSectionSpeciPrice"
+        style="?appThemeTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/size_app_label_regular" />
+
+</LinearLayout>

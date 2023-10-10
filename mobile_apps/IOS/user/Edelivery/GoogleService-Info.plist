@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>966521710311-aqlo8stjnv8umv36cvars1809knou758.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.966521710311-aqlo8stjnv8umv36cvars1809knou758</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>966521710311-0qbnpa7ukm4pfcn0n181njvqb2mgde7k.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBum_qZ3mneXBVuf7cPkJ6Vj_JqZLVfb2g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>966521710311</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.dropo.user</string>
+	<key>PROJECT_ID</key>
+	<string>dropo-7c738</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dropo-7c738.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:966521710311:ios:eb9994a0265397e33a6442</string>
+</dict>
+</plist>

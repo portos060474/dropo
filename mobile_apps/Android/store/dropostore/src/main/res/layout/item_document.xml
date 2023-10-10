@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ivWithdrawal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/bottom_sheet_dialog_padding_20dp"
+    app:cardBackgroundColor="?appThemeModeColor"
+    app:cardCornerRadius="@dimen/app_card_radius"
+    app:cardElevation="@dimen/app_card_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_padding">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.dropo.store.widgets.CustomTextView
+                    android:id="@+id/tvDocumentTittle"
+                    style="?appThemeLabelTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:text="@string/app_name"
+                    android:textSize="@dimen/size_app_text_regular"
+                    app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+                <com.dropo.store.widgets.CustomTextView
+                    android:id="@+id/tvOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text="*"
+                    android:textColor="@color/color_app_heading"
+                    app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+            </LinearLayout>
+
+
+            <com.dropo.store.widgets.CustomTextView
+                android:id="@+id/tvIdNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:layout_marginTop="@dimen/activity_horizontal_padding"
+                android:text="@string/text_id_number"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/size_app_label_regular"
+                android:visibility="visible"
+                app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+            <com.dropo.store.widgets.CustomTextView
+                android:id="@+id/tvExpireDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:layout_marginTop="3dp"
+                android:text="@string/text_expire_date"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/size_app_label_regular"
+                android:visibility="visible"
+                app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+        </LinearLayout>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivDocumentImage"
+            android:layout_width="@dimen/bottom_margin_floatingBtn"
+            android:layout_height="@dimen/bottom_margin_floatingBtn"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder"
+            android:visibility="visible"
+            app:riv_corner_radius="@dimen/cardview_default_radius" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

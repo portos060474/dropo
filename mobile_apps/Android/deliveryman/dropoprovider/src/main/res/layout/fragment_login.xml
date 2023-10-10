@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="?appThemeScreenBackgroundStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.dropo.provider.component.CustomFontTextViewTitle
+                android:id="@+id/tvSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="?actionBarSize"
+                android:gravity="start"
+                android:text="@string/text_login"
+                android:textSize="@dimen/size_app_text_largest" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.dropo.provider.component.CustomFontTextView
+                    style="?appThemeLabelTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/text_use_app_in" />
+
+                <Spinner
+                    android:id="@+id/spinnerLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_app_edit_text_padding"
+                    android:background="@null"
+                    android:dropDownVerticalOffset="40dp"
+                    android:popupBackground="?appThemeModeColor"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <include
+                layout="@layout/layout_social_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEmail"
+                style="?appThemeTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp">
+
+                <com.dropo.provider.component.CustomFontEditTextView
+                    android:id="@+id/etLoginEmail"
+                    style="?appThemeEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/text_description"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:minLines="1"
+                    android:textAlignment="viewStart" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPassword"
+                style="?appThemeTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:hint="@string/text_password"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="?appThemeIcon">
+
+                <com.dropo.provider.component.CustomFontEditTextView
+                    android:id="@+id/etLoginPassword"
+                    style="?appThemeEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/text_description"
+                    android:ems="10"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:minLines="1"
+                    android:textAlignment="viewStart" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.dropo.provider.component.CustomFontTextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:paddingTop="@dimen/dimen_app_edit_text_padding"
+                android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+                android:text="@string/text_forgot_password"
+                android:textSize="@dimen/size_app_text_small"
+                app:appTextColor="@integer/appThemeColor" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.dropo.provider.component.CustomFontButton
+        android:id="@+id/btnLogin"
+        style="?appThemeButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:contentDescription="@string/text_description"
+        android:text="@string/text_login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.dropo.provider.component.CustomFontTextView
+            style="?appThemeLabelTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/text_don_t_have_your_account"
+            android:textSize="@dimen/size_app_label_regular" />
+
+        <com.dropo.provider.component.CustomFontTextViewTitle
+            android:id="@+id/btnRegisterNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_app_edit_text_padding"
+            android:gravity="start"
+            android:paddingTop="@dimen/dimen_app_edit_text_padding"
+            android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+            android:text="@string/text_register_now"
+            android:textSize="@dimen/size_app_text_regular"
+            app:appTextColorTitle="@integer/appThemeColor" />
+    </LinearLayout>
+
+</LinearLayout>

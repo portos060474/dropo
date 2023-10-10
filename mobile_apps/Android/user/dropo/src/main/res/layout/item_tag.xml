@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.dropo.component.CustomFontTextView
+        android:id="@+id/tv_tag_item_contain"
+        style="?appThemeTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_filter_button_stroke"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:padding="@dimen/card_view_space_8dp"
+        android:singleLine="true"
+        android:textSize="@dimen/size_app_text_regular" />
+
+</LinearLayout>

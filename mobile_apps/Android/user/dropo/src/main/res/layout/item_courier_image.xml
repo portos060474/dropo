@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_padding">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivProduct"
+            android:layout_width="@dimen/dimen_app_profile_image"
+            android:layout_height="@dimen/dimen_app_profile_image"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="3dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="false" />
+
+        <com.dropo.component.CustomImageView
+            android:id="@+id/itemImageDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/ivProduct"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/dimen_app_edit_text_padding"
+            android:src="@drawable/ic_cross" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivAddImage"
+        android:layout_width="@dimen/dimen_app_profile_image"
+        android:layout_height="@dimen/dimen_app_profile_image"
+        android:src="@drawable/ic_add_image"
+        android:visibility="visible"
+        android:padding="@dimen/bottom_sheet_dialog_padding_30dp"
+        tools:ignore="ContentDescription" />
+</LinearLayout>

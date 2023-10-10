@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?appThemeScreenBackgroundStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="1dp"
+    android:paddingBottom="1dp">
+
+    <com.dropo.component.CustomFontTextView
+        android:id="@+id/tvTimeSlot"
+        style="?appThemeTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:maxLines="1"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/dimen_app_text_padding"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/dimen_app_text_padding"
+        android:singleLine="true"
+        android:text="09:00 - 11:00"
+        android:textSize="@dimen/size_app_text_medium" />
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Default Color-->
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+
+    <!--App Color-->
+    <color name="color_app_background">#ffffff</color>
+    <color name="color_app_text">#1a1a19</color>
+    <color name="color_app_headings">#cb202e</color>
+    <color name="color_app_trans_white">#7fffffff</color>
+
+    <!--    light theme color-->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="color_app_label">#b41a1a19</color>
+
+    <color name="color_app_heading">#E53935</color>
+    <color name="color_app_divider">#E1E1E1</color>
+    <color name="color_app_theme">#ffffffff</color>
+    <color name="color_app_transparent_white">#19F6F6F6</color>
+    <color name="color_app_wallet_deduct">#E64143</color>
+    <color name="color_app_wallet_added">#578E12</color>
+
+
+    <!--    light theme color-->
+    <color name="color_app_bg_light">#FFFFFF</color>
+    <color name="color_app_text_light">#383838</color>
+    <color name="color_app_button_text_light">#FFFFFF</color>
+    <color name="color_app_hint_light">#949494</color>
+    <color name="color_app_label_light">#949494</color>
+    <color name="color_app_icon_light">#383838</color>
+    <color name="color_app_tag_light">#f6f6f6</color>
+    <color name="color_app_divider_light">#EAEAEA</color>
+
+    <!--    dark theme color-->
+    <color name="color_app_bg_dark">#383838</color>
+    <color name="color_app_text_dark">#FFFFFF</color>
+    <color name="color_app_button_text_dark">#FFFFFF</color>
+    <color name="color_app_label_dark">#949494</color>
+    <color name="color_app_icon_dark">#FFFFFF</color>
+    <color name="color_app_tag_dark">#474747</color>
+    <color name="color_app_divider_dark">#615E5E</color>
+
+
+    <!--    order status color-->
+    <color name="color_status0">#E53935</color>
+    <color name="color_status1">#E53935</color>
+    <color name="color_status3">#FF8A65</color>
+    <color name="color_status5">#FFB300</color>
+    <color name="color_status7">#7CB342</color>
+    <color name="color_status9">#E53935</color>
+    <color name="color_status109">#E53935</color>
+    <color name="color_status11">#FF8A65</color>
+    <color name="color_status112">#FF8A65</color>
+    <color name="color_status13">#FFB300</color>
+    <color name="color_status15">#FFB300</color>
+    <color name="color_status17">#FFB300</color>
+    <color name="color_status19">#7CB342</color>
+    <color name="color_status21">#00897B</color>
+    <color name="color_status23">#00897B</color>
+    <color name="color_status101">#E53935</color>
+    <color name="color_status103">#E53935</color>
+    <color name="color_status104">#E53935</color>
+    <color name="color_status105">#E53935</color>
+</resources>

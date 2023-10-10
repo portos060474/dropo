@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="BMP-ri-dl4" customClass="CustomOTPVerificationDialog" customModule="Edelivery_Provider" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VU5-HK-mhE">
+                    <rect key="frame" x="0.0" y="687" width="414" height="209"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iC6-Ko-0dU">
+                            <rect key="frame" x="20" y="10" width="374" height="129"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uEY-Gu-I0t">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Verification Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jF5-wC-hNG">
+                                            <rect key="frame" x="0.0" y="0.0" width="330" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="34" id="RlG-o8-7iv"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffY-0y-OmA">
+                                            <rect key="frame" x="340" y="0.0" width="34" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="34" id="giS-tZ-ut3"/>
+                                                <constraint firstAttribute="width" constant="34" id="jDU-dX-Wel"/>
+                                            </constraints>
+                                            <state key="normal" image="close">
+                                                <color key="titleColor" systemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="onClickBtnCancel:" destination="BMP-ri-dl4" eventType="touchUpInside" id="hlj-nl-mWc"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vMV-yR-nBE">
+                                    <rect key="frame" x="0.0" y="44" width="374" height="25"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Verification message" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oww-as-CGh">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="9jo-Zk-j1I"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yqI-hi-n3X">
+                                    <rect key="frame" x="0.0" y="79" width="374" height="50"/>
+                                    <subviews>
+                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JfR-cr-uvp" customClass="VPMOTPView" customModule="Edelivery_Provider" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="Y0l-VD-CEr"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8kG-dc-3Vh">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rqd-5P-dEa">
+                                                    <rect key="frame" x="57" y="8" width="260" height="34"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yR1-RM-cN0" customClass="CustomOTPField" customModule="Edelivery_Provider" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="36.5" height="34"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                                        </textField>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nXf-9q-WGE" customClass="CustomOTPField" customModule="Edelivery_Provider" customModuleProvider="target">
+                                                            <rect key="frame" x="44.5" y="0.0" width="37" height="34"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                                        </textField>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a1E-o3-sWY" customClass="CustomOTPField" customModule="Edelivery_Provider" customModuleProvider="target">
+                                                            <rect key="frame" x="89.5" y="0.0" width="36.5" height="34"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                                        </textField>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nR2-6a-gWd" customClass="CustomOTPField" customModule="Edelivery_Provider" customModuleProvider="target">
+                                                            <rect key="frame" x="134" y="0.0" width="36.5" height="34"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                                        </textField>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ER0-I4-x8S" customClass="CustomOTPField" customModule="Edelivery_Provider" customModuleProvider="target">
+                                                            <rect key="frame" x="178.5" y="0.0" width="37" height="34"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                                        </textField>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Muj-n0-2LT" customClass="CustomOTPField" customModule="Edelivery_Provider" customModuleProvider="target">
+                                                            <rect key="frame" x="223.5" y="0.0" width="36.5" height="34"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                                        </textField>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="260" id="C2M-ai-TXs"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="rqd-5P-dEa" firstAttribute="height" secondItem="8kG-dc-3Vh" secondAttribute="height" multiplier="0.68" id="2om-V5-TqL"/>
+                                                <constraint firstItem="rqd-5P-dEa" firstAttribute="centerX" secondItem="8kG-dc-3Vh" secondAttribute="centerX" id="HUG-Ac-zpa"/>
+                                                <constraint firstItem="rqd-5P-dEa" firstAttribute="centerY" secondItem="8kG-dc-3Vh" secondAttribute="centerY" id="aWv-HU-gaS"/>
+                                                <constraint firstAttribute="height" constant="50" id="zTM-28-4it"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="py4-cm-FBZ" customClass="CustomBottomButton" customModule="Edelivery_Provider" customModuleProvider="target">
+                            <rect key="frame" x="30" y="149" width="354" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="R8a-bj-o8V"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="Ok">
+                                <color key="titleColor" systemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="onCliclBtnOk:" destination="BMP-ri-dl4" eventType="touchUpInside" id="Ydy-ab-vTE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="RMt-II-YI2"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="iC6-Ko-0dU" secondAttribute="trailing" constant="20" id="2Az-wH-oa2"/>
+                        <constraint firstItem="iC6-Ko-0dU" firstAttribute="leading" secondItem="VU5-HK-mhE" secondAttribute="leading" constant="20" id="A5O-uU-Pnb"/>
+                        <constraint firstAttribute="bottom" secondItem="py4-cm-FBZ" secondAttribute="bottom" constant="20" id="D70-Ez-5sq"/>
+                        <constraint firstItem="py4-cm-FBZ" firstAttribute="centerX" secondItem="VU5-HK-mhE" secondAttribute="centerX" id="Tw9-Jx-VJA"/>
+                        <constraint firstItem="py4-cm-FBZ" firstAttribute="top" secondItem="iC6-Ko-0dU" secondAttribute="bottom" constant="10" id="W1i-8e-0lm"/>
+                        <constraint firstItem="py4-cm-FBZ" firstAttribute="leading" secondItem="VU5-HK-mhE" secondAttribute="leading" constant="30" id="gzE-9a-Gku"/>
+                        <constraint firstItem="iC6-Ko-0dU" firstAttribute="top" secondItem="VU5-HK-mhE" secondAttribute="top" constant="10" id="mXD-v6-fGd"/>
+                        <constraint firstAttribute="trailing" secondItem="py4-cm-FBZ" secondAttribute="trailing" constant="30" id="s19-c7-agp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="zgI-q8-mzX"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VU5-HK-mhE" firstAttribute="leading" secondItem="zgI-q8-mzX" secondAttribute="leading" id="Oro-x0-gss"/>
+                <constraint firstAttribute="trailing" secondItem="VU5-HK-mhE" secondAttribute="trailing" id="b30-79-cdt"/>
+                <constraint firstAttribute="bottom" secondItem="VU5-HK-mhE" secondAttribute="bottom" id="cul-PW-KtQ"/>
+            </constraints>
+            <connections>
+                <outlet property="alertView" destination="VU5-HK-mhE" id="bvq-ZC-74O"/>
+                <outlet property="bottomAnchorView" destination="cul-PW-KtQ" id="JgT-6d-icI"/>
+                <outlet property="btnCancle" destination="ffY-0y-OmA" id="ykX-Or-zqz"/>
+                <outlet property="btnOk" destination="py4-cm-FBZ" id="pjQ-eB-eaM"/>
+                <outlet property="editTextResendFive" destination="ER0-I4-x8S" id="h6o-lu-Lik"/>
+                <outlet property="editTextResendFour" destination="nR2-6a-gWd" id="3CN-Ol-vr5"/>
+                <outlet property="editTextResendOne" destination="yR1-RM-cN0" id="iff-sP-dh7"/>
+                <outlet property="editTextResendSix" destination="Muj-n0-2LT" id="Mz7-AR-5XY"/>
+                <outlet property="editTextResendThree" destination="a1E-o3-sWY" id="rib-9I-Fng"/>
+                <outlet property="editTextResendTwo" destination="nXf-9q-WGE" id="Edv-L6-0Rw"/>
+                <outlet property="lblMessage" destination="oww-as-CGh" id="bge-H2-Xri"/>
+                <outlet property="lblTitle" destination="jF5-wC-hNG" id="tvC-5b-dDf"/>
+                <outlet property="otpView" destination="JfR-cr-uvp" id="mWs-43-M20"/>
+            </connections>
+            <point key="canvasLocation" x="111.59420289855073" y="-563.16964285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close" width="15.5" height="15.5"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

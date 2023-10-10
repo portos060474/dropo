@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomCountryCell" customModule="Edelivery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpe-Md-szB">
+                    <rect key="frame" x="10" y="10" width="100" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Iyb-Xd-PFg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZX3-Dy-geN">
+                    <rect key="frame" x="125" y="10" width="225" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZX3-Dy-geN" firstAttribute="leading" secondItem="Bpe-Md-szB" secondAttribute="trailing" constant="15" id="5tZ-fS-het"/>
+                <constraint firstItem="ZX3-Dy-geN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Q4f-mj-5T9"/>
+                <constraint firstAttribute="bottom" secondItem="ZX3-Dy-geN" secondAttribute="bottom" constant="10" id="RAW-BF-iXK"/>
+                <constraint firstAttribute="trailing" secondItem="ZX3-Dy-geN" secondAttribute="trailing" constant="25" id="cBX-EU-nIw"/>
+                <constraint firstItem="Bpe-Md-szB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="pSA-ja-WXM"/>
+                <constraint firstItem="Bpe-Md-szB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="rny-O6-3oq"/>
+                <constraint firstAttribute="bottom" secondItem="Bpe-Md-szB" secondAttribute="bottom" constant="10" id="sQ0-hQ-70S"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblCountryName" destination="ZX3-Dy-geN" id="APO-pK-OMc"/>
+                <outlet property="lblCountryPhoneCode" destination="Bpe-Md-szB" id="IbE-aO-eE8"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52"/>
+        </view>
+    </objects>
+</document>

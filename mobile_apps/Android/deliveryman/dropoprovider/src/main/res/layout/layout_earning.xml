@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llOrderPayment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?appThemeTagStyle"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.dropo.provider.component.CustomFontTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_app_edit_text_padding"
+        android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+        android:text="@string/text_order"
+        android:textSize="10sp" />
+
+    <com.dropo.provider.component.CustomFontTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_app_edit_text_padding"
+        android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+        android:text="@string/text_payment_by"
+
+        android:textSize="10sp" />
+
+    <com.dropo.provider.component.CustomFontTextView
+        android:id="@+id/tvTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_app_edit_text_padding"
+        android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+        android:text="@string/text_total"
+        android:textSize="10sp" />
+
+    <com.dropo.provider.component.CustomFontTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_app_edit_text_padding"
+        android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+        android:text="@string/text_service_fees"
+        android:textSize="10sp" />
+
+    <com.dropo.provider.component.CustomFontTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_app_edit_text_padding"
+        android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+        android:text="@string/text_profit"
+        android:textSize="10sp" />
+
+    <com.dropo.provider.component.CustomFontTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_app_edit_text_padding"
+        android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+        android:text="@string/text_paid_order"
+        android:textSize="10sp" />
+
+    <com.dropo.provider.component.CustomFontTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_app_edit_text_padding"
+        android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+        android:text="@string/text_cash_have"
+
+        android:textSize="10sp" />
+
+    <com.dropo.provider.component.CustomFontTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_app_edit_text_padding"
+        android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+        android:text="@string/text_Earn"
+        android:textSize="10sp" />
+
+</LinearLayout>

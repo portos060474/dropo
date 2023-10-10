@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?appThemeScreenBackgroundStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CourierOrderInvoiceActivity">
+
+    <include layout="@layout/toolbar_app_custom" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsvCourierData"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvSpecificationItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+            <LinearLayout
+                android:id="@+id/llInvoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/divProductSpecification"
+                    layout="@layout/include_divider_design" />
+
+                <com.dropo.component.CustomFontTextViewTitle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:text="@string/text_invoice"
+                    android:textSize="@dimen/size_app_text_medium_2" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvInvoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llInvoiceTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/activity_horizontal_padding"
+                android:paddingBottom="@dimen/activity_horizontal_padding">
+
+                <com.dropo.component.CustomFontTextView
+                    style="?appThemeLabelTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_total"
+                    android:textSize="@dimen/size_app_text_regular" />
+
+                <com.dropo.component.CustomFontTextViewTitle
+                    android:id="@+id/tvInvoiceOderTotal"
+                    style="?appThemeTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_app_edit_text_padding"
+                    android:text="@string/text_total"
+                    android:textSize="@dimen/size_app_text_largest" />
+            </LinearLayout>
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvReopenAt"
+                style="@style/CustomTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/activity_horizontal_padding"
+                android:text="@string/text_empty_string"
+                android:textColor="@color/color_app_headings"
+                android:textSize="@dimen/size_app_text_regular"
+                android:visibility="gone" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.dropo.component.CustomFontTextView
+        android:id="@+id/tvMinFare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:gravity="start"
+        android:padding="@dimen/activity_vertical_padding"
+        android:text="@string/text_min_fare_applied"
+        android:textColor="@color/color_app_headings"
+        android:textSize="@dimen/size_app_label_small"
+        android:visibility="visible" />
+
+    <com.dropo.component.CustomFontButton
+        android:id="@+id/btnShowInvoice"
+        style="?appThemeButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="@string/text_show_invoice" />
+
+    <com.dropo.component.CustomFontButton
+        android:id="@+id/btnPlaceOrder"
+        style="?appThemeButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="@string/text_place_order"
+        android:visibility="visible" />
+</LinearLayout>

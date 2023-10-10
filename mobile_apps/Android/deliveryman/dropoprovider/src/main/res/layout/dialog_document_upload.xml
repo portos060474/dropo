@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/bottom_sheet_dialog_padding_20dp"
+    android:paddingTop="@dimen/bottom_sheet_dialog_padding_30dp"
+    android:paddingEnd="@dimen/bottom_sheet_dialog_padding_20dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.dropo.provider.component.CustomFontTextViewTitle
+            android:id="@+id/tvDialogAlertTitle"
+            style="?appThemeTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:text="@string/text_set_document_photos"
+            android:textSize="@dimen/size_app_text_large" />
+
+        <com.dropo.provider.component.CustomFontTextView
+            android:id="@+id/tvOption"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="@dimen/dimen_app_tab_elevation"
+            android:layout_weight="1"
+            android:text="*"
+            android:textColor="@color/color_app_heading"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <com.dropo.provider.component.CustomImageView
+                android:id="@+id/btnNegative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dimen_app_edit_text_padding"
+                android:paddingTop="@dimen/dimen_app_edit_text_padding"
+                android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+                android:src="@drawable/ic_cross" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llDocumentInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNumberId"
+                style="?appThemeTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_padding"
+
+                android:hint="@string/text_document_id"
+                android:visibility="visible">
+
+                <com.dropo.provider.component.CustomFontEditTextView
+                    android:id="@+id/etIdNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/text_description"
+                    android:ellipsize="end"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:textAlignment="viewStart"
+                    style="?appThemeEditTextStyle"
+                    android:visibility="visible"
+                    app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilExpireDate"
+                style="?appThemeTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_app_edit_text_padding"
+                android:hint="@string/text_document_expire_date"
+                android:visibility="visible"
+                app:endIconDrawable="@drawable/ic_calendar"
+                app:endIconMode="custom"
+
+                app:endIconTint="?appThemeIcon">
+
+                <com.dropo.provider.component.CustomFontEditTextView
+                    android:id="@+id/etExpireDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/text_description"
+                    android:ellipsize="end"
+                    android:ems="10"
+                    android:focusableInTouchMode="false"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:textAlignment="viewStart"
+                    style="?appThemeEditTextStyle"
+                    android:visibility="visible"
+                    app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivDialogDocumentImage"
+            android:layout_width="@dimen/dimen_size_document"
+            android:layout_height="@dimen/dimen_size_document"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:scaleType="centerCrop"
+            android:src="@drawable/uploading"
+            android:visibility="visible"
+            app:riv_corner_radius="@dimen/cardview_default_radius" />
+    </LinearLayout>
+
+    <com.dropo.provider.component.CustomFontButton
+        android:id="@+id/btnPositive"
+        style="?appThemeButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="30dp"
+        android:text="@string/text_done" />
+</LinearLayout>
+

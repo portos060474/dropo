@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+    <com.dropo.store.widgets.CustomTextView
+        android:id="@+id/btnDecrease"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_round_left_black_stroke"
+        android:gravity="center"
+        android:text="@string/text_minus"
+        android:textSize="@dimen/size_app_text_medium"
+        app:appBackgroundStroke="1dp"
+        app:appBackgroundStrokeColor="@integer/appThemeColor"
+        app:appTextColor="@integer/appThemeColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.dropo.store.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:background="@drawable/shape_custom_rect"
+            app:appBackgroundColor="@integer/appThemeColor"
+            android:layout_height="1dp">
+
+        </com.dropo.store.widgets.CustomTextView>
+
+        <com.dropo.store.widgets.CustomTextView
+            android:id="@+id/tvItemQuantity"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="1"
+            android:paddingStart="@dimen/dimen_app_edit_text_padding"
+            android:paddingEnd="@dimen/dimen_app_edit_text_padding"
+            android:autoSizeMinTextSize="@dimen/size_app_text_small"
+            android:autoSizeMaxTextSize="@dimen/size_app_text_medium"
+            android:autoSizeTextType="uniform"
+            android:textSize="@dimen/size_app_text_medium"
+            app:appBackgroundStroke="1dp"
+            app:appBackgroundStrokeColor="@integer/appThemeColor"
+            app:appTextColor="@integer/appThemeColor" />
+
+
+        <com.dropo.store.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:background="@drawable/shape_custom_rect"
+            app:appBackgroundColor="@integer/appThemeColor"
+            android:layout_height="1dp">
+
+        </com.dropo.store.widgets.CustomTextView>
+    </LinearLayout>
+
+
+    <com.dropo.store.widgets.CustomTextView
+        android:id="@+id/btnIncrease"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_round_right_black_stroke"
+        android:gravity="center"
+        android:text="@string/text_plus"
+        android:textSize="@dimen/size_app_text_medium"
+        app:appBackgroundStroke="1dp"
+        app:appBackgroundStrokeColor="@integer/appThemeColor"
+        app:appTextColor="@integer/appThemeColor" />
+</LinearLayout>

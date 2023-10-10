@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?appThemeScreenBackgroundStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderDetailActivity">
+
+    <include layout="@layout/toolbar_app_custom" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            tools:context=".OrderDetailActivity">
+
+            <View
+                android:id="@+id/div"
+                android:layout_width="2dp"
+                android:layout_height="0dp"
+                android:background="?appThemeTagStyle"
+                app:layout_constraintBottom_toTopOf="@id/ivOrderReceived"
+                app:layout_constraintEnd_toEndOf="@id/ivOrderAccepted"
+                app:layout_constraintStart_toStartOf="@id/ivOrderAccepted"
+                app:layout_constraintTop_toBottomOf="@id/ivOrderAccepted" />
+
+
+            <com.dropo.component.CustomFontTextViewTitle
+                android:id="@+id/tvOrderDate"
+                style="?appThemeTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="@string/text_empty_string"
+                android:textSize="@dimen/size_app_text_medium_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivStoreImage"
+                android:layout_width="@dimen/dimen_app_item_image_size"
+                android:layout_height="@dimen/dimen_app_icon_size"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvOrderDate"
+                app:riv_corner_radius="@dimen/app_card_radius" />
+
+            <com.dropo.component.CustomFontTextViewTitle
+                android:id="@+id/tvStoreName"
+                style="?appThemeTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:maxLines="2"
+                android:text="@string/text_empty_string"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/size_app_text_medium"
+                app:layout_constraintBottom_toTopOf="@id/tvStoreAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivStoreImage"
+                app:layout_constraintTop_toTopOf="@id/ivStoreImage" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvStoreAddress"
+                style="?appThemeTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_app_edit_text_padding"
+                android:maxLines="2"
+                android:text="@string/text_empty_string"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/size_app_text_regular"
+                app:layout_constraintEnd_toEndOf="@id/tvStoreName"
+                app:layout_constraintStart_toStartOf="@id/tvStoreName"
+                app:layout_constraintTop_toBottomOf="@id/tvStoreName" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:adjustViewBounds="true"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvStoreAddress"
+                app:srcCompat="@drawable/ic_table_reservation"
+                tools:visibility="visible" />
+
+            <com.dropo.component.CustomFontTextViewTitle
+                android:id="@+id/tvTableBooking"
+                style="?appThemeTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:maxLines="2"
+                android:text="@string/text_empty_string"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/size_app_text_medium"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivIcon"
+                app:layout_constraintTop_toBottomOf="@id/tvStoreAddress"
+                app:layout_constraintTop_toTopOf="@+id/ivIcon"
+                tools:visibility="visible" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvScheduleDate"
+                style="?appThemeTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="@string/text_empty_string"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/size_app_text_regular"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@id/tvTableBooking"
+                app:layout_constraintStart_toStartOf="@id/tvTableBooking"
+                app:layout_constraintTop_toBottomOf="@id/tvTableBooking"
+                tools:text="Schedule at 2021 Nov 12 10:00 PM"
+                tools:visibility="visible" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/ivOrderAccepted"
+                style="?appThemeTextViewStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/bottom_sheet_dialog_padding_30dp"
+                android:background="@drawable/shape_custom_status"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="@dimen/size_app_text_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTableBooking" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvAccepted"
+                style="?appThemeTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="3dp"
+                android:maxLines="1"
+                android:text="@string/text_order_accepted"
+                android:textSize="@dimen/size_app_text_medium"
+                app:layout_constraintBottom_toTopOf="@id/tvOrderAcceptedTime"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivOrderAccepted"
+                app:layout_constraintTop_toTopOf="@id/ivOrderAccepted"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvOrderAcceptedTime"
+                style="?appThemeLabelTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_app_edit_text_padding"
+                android:maxLines="1"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/size_app_text_small"
+                app:layout_constraintBottom_toTopOf="@id/btnCancelOrder"
+                app:layout_constraintEnd_toEndOf="@id/tvAccepted"
+                app:layout_constraintStart_toStartOf="@id/tvAccepted"
+                app:layout_constraintTop_toBottomOf="@id/tvAccepted" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/btnCancelOrder"
+                style="?appThemeTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingTop="@dimen/card_view_space_8dp"
+                android:paddingBottom="@dimen/card_view_space_8dp"
+                android:text="@string/text_cancel_order"
+                android:textSize="@dimen/size_app_text_medium"
+                android:visibility="visible"
+                app:appTextColor="@integer/appThemeColor"
+                app:layout_constraintBottom_toTopOf="@id/ivOrderReady"
+                app:layout_constraintStart_toStartOf="@id/tvAccepted"
+                app:layout_constraintTop_toBottomOf="@id/tvOrderAcceptedTime" />
+
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/ivOrderReady"
+                style="?appThemeTextViewStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/shape_custom_status"
+                android:gravity="center"
+                android:text="2"
+                android:textSize="@dimen/size_app_text_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnCancelOrder"
+                app:layout_goneMarginTop="45dp" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvOrderReady"
+                style="?appThemeTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="3dp"
+                android:maxLines="1"
+                android:text="@string/text_order_ready"
+                android:textSize="@dimen/size_app_text_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivOrderReady"
+                app:layout_constraintTop_toTopOf="@id/ivOrderReady"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvOrderReadyTime"
+                style="?appThemeLabelTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_app_edit_text_padding"
+                android:maxLines="1"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/size_app_text_small"
+                app:layout_constraintEnd_toEndOf="@id/tvOrderReady"
+                app:layout_constraintStart_toStartOf="@id/tvOrderReady"
+                app:layout_constraintTop_toBottomOf="@id/tvOrderReady" />
+
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/btnCourierPickupCode"
+                style="?appThemeTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingTop="@dimen/card_view_space_8dp"
+                android:paddingBottom="@dimen/card_view_space_8dp"
+                android:text="@string/text_get_code"
+                android:textSize="@dimen/size_app_text_medium"
+                android:visibility="gone"
+                app:appTextColor="@integer/appThemeColor"
+                app:layout_constraintStart_toStartOf="@id/tvOrderReady"
+                app:layout_constraintTop_toBottomOf="@id/tvOrderReadyTime"
+                tools:visibility="visible" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/btnOderDetail"
+                style="?appThemeTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingTop="@dimen/card_view_space_8dp"
+                android:paddingBottom="@dimen/card_view_space_8dp"
+                android:text="@string/text_view_order_detail"
+                android:textSize="@dimen/size_app_text_medium"
+                app:appTextColor="@integer/appThemeColor"
+                app:layout_constraintStart_toStartOf="@id/tvOrderReady"
+                app:layout_constraintTop_toBottomOf="@id/btnCourierPickupCode" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/ivDeliverymanOneTheWay"
+                style="?appThemeTextViewStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/shape_custom_status"
+                android:gravity="center"
+                android:text="3"
+                android:textSize="@dimen/size_app_text_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnOderDetail" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvDeliveryManOneTheWay"
+                style="?appThemeTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_padding"
+                android:maxLines="1"
+                android:text="@string/text_delivery_man_oth_way"
+                android:textSize="@dimen/size_app_text_medium"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toTopOf="@id/tvDeliveryManOneTime"
+                app:layout_constraintEnd_toStartOf="@id/btnRateUsDeliveryman"
+                app:layout_constraintStart_toEndOf="@id/ivDeliverymanOneTheWay"
+                app:layout_constraintTop_toTopOf="@id/ivDeliverymanOneTheWay"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/btnRateUsDeliveryman"
+                style="?appThemeTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dimen_app_edit_text_padding"
+                android:maxLines="1"
+                android:paddingTop="@dimen/activity_horizontal_padding"
+                android:paddingBottom="@dimen/activity_horizontal_padding"
+                android:text="@string/text_rate_us"
+                android:textSize="@dimen/size_app_text_medium"
+                android:visibility="gone"
+                app:appTextColor="@integer/appThemeColor"
+                app:layout_constraintBottom_toBottomOf="@id/tvDeliveryManOneTheWay"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvDeliveryManOneTheWay"
+                tools:visibility="visible" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvDeliveryManOneTime"
+                style="?appThemeLabelTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_app_edit_text_padding"
+                android:maxLines="1"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/size_app_text_small"
+                app:layout_constraintBottom_toTopOf="@id/btnDeliveryManDetail"
+                app:layout_constraintEnd_toEndOf="@id/tvDeliveryManOneTheWay"
+                app:layout_constraintStart_toStartOf="@id/tvDeliveryManOneTheWay"
+                app:layout_constraintTop_toBottomOf="@id/tvDeliveryManOneTheWay" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/btnDeliveryManDetail"
+                style="?appThemeTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingTop="@dimen/card_view_space_8dp"
+                android:paddingBottom="@dimen/card_view_space_8dp"
+                android:text="@string/text_view_delivery_man"
+                android:textSize="@dimen/size_app_text_medium"
+                app:appTextColor="@integer/appThemeColor"
+                app:layout_constraintStart_toStartOf="@id/tvDeliveryManOneTheWay"
+                app:layout_constraintTop_toBottomOf="@id/tvDeliveryManOneTime" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/btnPickupDetail"
+                style="?appThemeTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingTop="@dimen/card_view_space_8dp"
+                android:paddingBottom="@dimen/card_view_space_8dp"
+                android:text="@string/text_pickup_image"
+                android:textSize="@dimen/size_app_text_medium"
+                android:visibility="gone"
+                app:appTextColor="@integer/appThemeColor"
+                app:layout_constraintStart_toStartOf="@id/tvDeliveryManOneTheWay"
+                app:layout_constraintTop_toBottomOf="@id/btnDeliveryManDetail"
+                tools:visibility="visible" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/ivOrderReceived"
+                style="?appThemeTextViewStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/shape_custom_status"
+                android:gravity="center"
+                android:text="4"
+                android:textSize="@dimen/size_app_text_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnPickupDetail" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvOrderReceived"
+                style="?appThemeTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="3dp"
+                android:maxLines="1"
+                android:text="@string/text_order_delivered"
+                android:textSize="@dimen/size_app_text_medium"
+                app:layout_constraintBottom_toTopOf="@id/tvOrderReceivedTime"
+                app:layout_constraintEnd_toStartOf="@id/btnRateUsStore"
+                app:layout_constraintStart_toEndOf="@id/ivOrderReceived"
+                app:layout_constraintTop_toTopOf="@id/ivOrderReceived"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/btnRateUsStore"
+                style="?appThemeTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dimen_app_edit_text_padding"
+                android:maxLines="1"
+                android:paddingTop="@dimen/activity_horizontal_padding"
+                android:paddingBottom="@dimen/activity_horizontal_padding"
+                android:text="@string/text_rate_us"
+                android:textSize="@dimen/size_app_text_medium"
+                android:visibility="gone"
+                app:appTextColor="@integer/appThemeColor"
+                app:layout_constraintBottom_toBottomOf="@id/tvOrderReceived"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvOrderReceived"
+                tools:visibility="visible" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvOrderReceivedTime"
+                style="?appThemeLabelTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_app_edit_text_padding"
+                android:maxLines="1"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/size_app_text_small"
+                app:layout_constraintBottom_toTopOf="@id/btnViewInvoice"
+                app:layout_constraintEnd_toEndOf="@id/tvOrderReceived"
+                app:layout_constraintStart_toStartOf="@id/tvOrderReceived"
+                app:layout_constraintTop_toBottomOf="@id/tvOrderReceived" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/btnViewInvoice"
+                style="?appThemeTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingTop="@dimen/card_view_space_8dp"
+                android:paddingBottom="@dimen/card_view_space_8dp"
+                android:text="@string/text_view_invoice"
+                android:textSize="@dimen/size_app_text_medium"
+                android:visibility="gone"
+                app:appTextColor="@integer/appThemeColor"
+                app:layout_constraintStart_toStartOf="@id/tvOrderReceived"
+                app:layout_constraintTop_toBottomOf="@id/tvOrderReceivedTime"
+                tools:visibility="visible" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/btnDeliveryDetail"
+                style="?appThemeTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingTop="@dimen/card_view_space_8dp"
+                android:paddingBottom="@dimen/card_view_space_8dp"
+                android:text="@string/text_delivery_image"
+                android:textSize="@dimen/size_app_text_medium"
+                android:visibility="gone"
+                app:appTextColor="@integer/appThemeColor"
+                app:layout_constraintStart_toStartOf="@id/tvOrderReceived"
+                app:layout_constraintTop_toBottomOf="@id/btnViewInvoice"
+                tools:visibility="visible" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/btnGetCode"
+                style="?appThemeTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingTop="@dimen/card_view_space_8dp"
+                android:paddingBottom="@dimen/card_view_space_8dp"
+                android:text="@string/text_get_code"
+                android:textSize="@dimen/size_app_text_medium"
+                android:visibility="gone"
+                app:appTextColor="@integer/appThemeColor"
+                app:layout_constraintStart_toStartOf="@id/tvOrderReceived"
+                app:layout_constraintTop_toBottomOf="@id/btnDeliveryDetail"
+                tools:visibility="visible" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/btnCourierDeliveryDetail"
+                style="?appThemeTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingTop="@dimen/card_view_space_8dp"
+                android:paddingBottom="@dimen/card_view_space_8dp"
+                android:text="@string/text_delivery_details"
+                android:textSize="@dimen/size_app_text_medium"
+                android:visibility="gone"
+                app:appTextColor="@integer/appThemeColor"
+                app:layout_constraintStart_toStartOf="@id/tvOrderReceived"
+                app:layout_constraintTop_toBottomOf="@id/btnGetCode"
+                tools:visibility="visible" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvEtaLabel"
+                style="?appThemeTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:maxLines="1"
+                android:text="@string/text_estimated_delivery_time"
+                android:textSize="@dimen/size_app_text_regular"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnGetCode"
+                app:layout_goneMarginTop="@dimen/bottom_sheet_dialog_padding_30dp" />
+
+            <com.dropo.component.CustomFontTextViewTitle
+                android:id="@+id/tvEta"
+                style="?appThemeTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_app_edit_text_padding"
+                android:layout_marginBottom="@dimen/bottom_sheet_dialog_padding_30dp"
+                android:maxLines="1"
+                android:text="@string/text_empty_string"
+                android:textSize="@dimen/size_app_text_largest"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvEtaLabel" />
+
+
+            <androidx.constraintlayout.widget.Group
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:constraint_referenced_ids="ivStoreImage,tvStoreName,tvStoreAddress" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/groupOrderOnTheWay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:constraint_referenced_ids="ivDeliverymanOneTheWay,tvDeliveryManOneTheWay,tvDeliveryManOneTime,btnDeliveryManDetail" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

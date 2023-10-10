@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.dropo.provider.component.CustomFontRadioButton
+        android:id="@+id/rbReason"
+        style="?appThemeRadioButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_order_cancel_reason_one" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilOtherReason"
+        style="?appThemeTextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:hint="@string/hint_enter_reason"
+        android:visibility="gone">
+
+        <com.dropo.provider.component.CustomFontEditTextView
+            android:id="@+id/etOthersReason"
+            style="?appThemeEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="?colorAccent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>

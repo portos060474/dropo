@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?appThemeScreenBackgroundStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.dropo.store.StoreTimeActivity">
+
+    <include layout="@layout/include_toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/activity_horizontal_padding" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/card_view_space_12dp"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            app:cardBackgroundColor="?appThemeModeColor"
+            app:cardCornerRadius="@dimen/app_card_radius"
+            app:cardElevation="@dimen/app_card_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_horizontal_padding">
+
+                <com.dropo.store.widgets.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/text_open_for_24_hrs"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/size_app_text_regular" />
+
+                <com.dropo.store.widgets.CustomSwitch
+                    android:id="@+id/switchStore24HrsOpen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="?appThemeSwitchStyle" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/card_view_space_12dp"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            app:cardBackgroundColor="?appThemeModeColor"
+            app:cardCornerRadius="@dimen/app_card_radius"
+            app:cardElevation="@dimen/app_card_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_horizontal_padding">
+
+                <com.dropo.store.widgets.CustomTextView
+                    android:id="@+id/tvStoreOpen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/text_store_open"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/size_app_text_regular" />
+
+                <com.dropo.store.widgets.CustomSwitch
+                    android:id="@+id/switchStoreOpen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="?appThemeSwitchStyle" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/llSelectTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="?appThemeTextInputLayoutStyle">
+
+                <com.dropo.store.widgets.CustomInputEditText
+                    android:id="@+id/etStartTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dimen_app_edit_text_padding"
+                    android:enabled="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/text_open_time" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:theme="?appThemeTextInputLayoutStyle">
+
+                <com.dropo.store.widgets.CustomInputEditText
+                    android:id="@+id/etEndTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_app_edit_text_padding"
+                    android:enabled="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/text_closed_time" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/card_view_space_12dp"
+            app:cardBackgroundColor="?appThemeModeColor"
+            app:cardCornerRadius="@dimen/app_card_radius"
+            app:cardElevation="@dimen/app_card_elevation">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvStoreTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <com.dropo.store.widgets.CustomButton
+        android:id="@+id/btnAddTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="@string/text_add_time" />
+</LinearLayout>

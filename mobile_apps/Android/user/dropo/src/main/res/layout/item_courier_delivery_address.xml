@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.dropo.component.CustomFontTextViewTitle
+        android:id="@+id/tvNumber"
+        style="?appThemeTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/circle_theme"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/size_app_text_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.dropo.component.CustomFontTextViewTitle
+        android:id="@+id/tvDeliveredTo"
+        style="?appThemeTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:maxLines="1"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/size_app_text_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvNumber"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.dropo.component.CustomFontTextView
+        android:id="@+id/tvDeliveredAddress"
+        style="?appThemeTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginTop="3dp"
+        android:maxLines="2"
+        android:text="@string/text_empty_string"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/size_app_text_regular"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvNumber"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeliveredTo" />
+
+    <com.dropo.component.CustomFontTextView
+        android:id="@+id/tvPhoneNumber"
+        style="?appThemeTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginTop="3dp"
+        android:maxLines="1"
+        android:text="@string/text_empty_string"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/size_app_text_regular"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvNumber"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeliveredAddress" />
+
+    <com.dropo.component.CustomFontTextView
+        android:id="@+id/tvArrivedTime"
+        style="?appThemeLabelTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginTop="3dp"
+        android:maxLines="1"
+        android:text="@string/text_empty_string"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/size_app_text_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvNumber"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhoneNumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

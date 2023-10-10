@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?appThemeScreenBackgroundStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        layout="@layout/include_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </include>
+
+    <LinearLayout
+        android:id="@+id/ivEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_service_graphics" />
+
+        <com.dropo.store.widgets.CustomTextView
+            android:id="@+id/tvEmptyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:text="@string/text_no_item"
+            android:textAllCaps="true"
+            android:textColor="@color/color_app_label"
+            android:textSize="@dimen/size_app_text_regular"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?appThemeScreenBackgroundStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <com.dropo.store.widgets.CustomTextView
+            style="?appThemeLabelTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/text_use_app_in"
+            app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+        <Spinner
+            android:id="@+id/spinnerLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="@dimen/dimen_app_edit_text_padding"
+            android:background="@null"
+            android:dropDownVerticalOffset="40dp"
+            android:popupBackground="?appThemeModeColor"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:focusable="false"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        tools:listitem="@layout/adapter_profile_menu">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.dropo.store.widgets.CustomTextView
+        android:id="@+id/tvVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="AppVersion 0.0"
+        android:textSize="@dimen/size_app_text_small"
+        android:visibility="visible"
+        app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+</LinearLayout>

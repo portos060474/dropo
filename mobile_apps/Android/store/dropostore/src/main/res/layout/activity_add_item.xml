@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?appThemeScreenBackgroundStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dropo.store.AddItemActivity">
+
+    <include layout="@layout/include_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:visibility="gone"
+                app:cardBackgroundColor="?appThemeModeColor"
+                app:cardCornerRadius="@dimen/app_card_radius"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/ivItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cover_image"
+                    android:contentDescription="@string/text_image"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/placeholder"
+                    android:transitionName="@string/text_transition_image" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvItemImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_padding"
+                android:layout_marginTop="@dimen/bottom_sheet_dialog_padding_20dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_padding"
+                android:layout_marginBottom="@dimen/activity_horizontal_padding"
+                android:clipToPadding="false" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:hint="@string/text_product_title"
+                android:theme="?appThemeTextInputLayoutStyle">
+
+                <com.dropo.store.widgets.CustomEditText
+                    android:id="@+id/etProductName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:transitionName="@string/text_transition_text1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:hint="@string/text_item_name"
+                android:theme="?appThemeTextInputLayoutStyle">
+
+                <com.dropo.store.widgets.CustomInputEditText
+                    android:id="@+id/etItemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="false"
+                    android:inputType="textCapSentences"
+                    android:transitionName="@string/text_transition_text1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:hint="@string/text_description"
+                android:theme="?appThemeTextInputLayoutStyle">
+
+                <com.dropo.store.widgets.CustomInputEditText
+                    android:id="@+id/etItemDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="false"
+                    android:inputType="textCapSentences"
+                    android:transitionName="@string/text_transition_text1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <include
+                    layout="@layout/include_switch_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1">
+
+                </include>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.dropo.store.widgets.CustomTextView
+                        android:id="@+id/tvSwitchStock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/general_margin"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_in_stock"
+                        android:textSize="@dimen/size_app_text_small" />
+
+                    <com.dropo.store.widgets.CustomSwitch
+                        android:id="@+id/switchInStock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_app_edit_text_padding"
+                        app:theme="?appThemeSwitchStyle" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <include
+                layout="@layout/include_specification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin">
+
+            </include>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1">
+
+                    <com.dropo.store.widgets.CustomTextView
+                        android:id="@+id/tvCurrency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginEnd="@dimen/com_facebook_auth_dialog_corner_radius_oversized"
+                        android:paddingBottom="@dimen/activity_horizontal_padding"
+                        android:text="$"
+                        android:textSize="@dimen/size_app_text_regular"
+                        app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/text_price"
+                        android:theme="?appThemeTextInputLayoutStyle">
+
+                        <com.dropo.store.widgets.CustomInputEditText
+                            android:id="@+id/etItemPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="0123456789."
+                            android:inputType="numberDecimal"
+                            android:maxLines="2"
+                            android:paddingTop="@dimen/general_small_margin" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <com.dropo.store.widgets.CustomTextView
+                        android:id="@+id/tvCurrency2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginEnd="@dimen/com_facebook_auth_dialog_corner_radius_oversized"
+
+                        android:paddingBottom="@dimen/activity_horizontal_padding"
+                        android:text="$"
+                        android:textSize="@dimen/size_app_text_regular"
+                        app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/general_top_margin"
+                        android:layout_weight="1"
+                        android:hint="@string/text_price_without_offer"
+                        android:theme="@style/CustomTextInputLayout">
+
+                        <com.dropo.store.widgets.CustomInputEditText
+                            android:id="@+id/etItemPriceWithoutOffer"
+                            style="@style/CustomEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="0123456789."
+                            android:inputType="numberDecimal"
+                            android:paddingTop="@dimen/general_small_margin" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:hint="@string/text_sequence_number"
+                    android:theme="?appThemeTextInputLayoutStyle">
+
+                    <com.dropo.store.widgets.CustomInputEditText
+                        android:id="@+id/etSequenceNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="0123456789"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/general_small_margin" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/text_price_offer"
+                    android:theme="@style/CustomTextInputLayout"
+                    android:visibility="gone">
+
+                    <com.dropo.store.widgets.CustomInputEditText
+                        android:id="@+id/etOfferMessage"
+                        style="@style/CustomEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences"
+                        android:paddingTop="@dimen/general_small_margin"
+                        android:visibility="gone" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <com.dropo.store.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_item_tax"
+                    android:textSize="@dimen/size_app_text_medium"
+                    app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+                <com.dropo.store.component.tag.TagLayout
+                    android:id="@+id/tagViewTax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tag_layout_bg_color="?appThemeModeColor"
+                    app:tag_layout_border_color="?appThemeModeColor"
+                    app:tag_layout_horizontal_interval="4dp"
+                    app:tag_layout_mode="multi_choice"
+                    app:tag_layout_press_feedback="true"
+                    app:tag_layout_random_color="false"
+                    app:tag_layout_shape="arc"
+                    app:tag_layout_vertical_interval="8dp"
+                    app:tag_view_text_size="@dimen/size_app_label_regular" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirLTStd_Medium.otf">
+            <string>AvenirLTStd-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChooseOrRepeat" customModule="Edelivery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gk2-v8-irM">
+                    <rect key="frame" x="0.0" y="728" width="414" height="168"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="f3Q-TP-vfV">
+                            <rect key="frame" x="20" y="20" width="374" height="68"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="QhE-I9-KLZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat last used customization?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1i-v0-9gv">
+                                            <rect key="frame" x="0.0" y="0.0" width="319" height="34"/>
+                                            <fontDescription key="fontDescription" name="AvenirLTStd-Medium" family="Avenir LT Std" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9y-fj-iek">
+                                            <rect key="frame" x="334" y="0.0" width="40" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="jUT-5g-jgP"/>
+                                            </constraints>
+                                            <state key="normal">
+                                                <color key="titleColor" systemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="onClickBtnLeft:" destination="iN0-l3-epB" eventType="touchUpInside" id="zfS-CD-imR"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat last used customization?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpD-Ex-T5v">
+                                    <rect key="frame" x="0.0" y="34" width="374" height="34"/>
+                                    <fontDescription key="fontDescription" name="AvenirLTStd-Medium" family="Avenir LT Std" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zEU-1z-hXa">
+                            <rect key="frame" x="20" y="108" width="374" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxp-dW-fi8" customClass="CustomBottomButton" customModule="Edelivery" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="177" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="8B4-4R-3nC"/>
+                                    </constraints>
+                                    <state key="normal" title="Ok">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onClickBtnRight:" destination="iN0-l3-epB" eventType="touchUpInside" id="aia-E5-PkQ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYv-Ib-GYB" customClass="CustomBottomButton" customModule="Edelivery" customModuleProvider="target">
+                                    <rect key="frame" x="197" y="0.0" width="177" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="LxC-jV-gtq"/>
+                                    </constraints>
+                                    <state key="normal" title="Ok">
+                                        <color key="titleColor" systemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onClickBtnRight:" destination="iN0-l3-epB" eventType="touchUpInside" id="1pB-3A-04I"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="zEU-1z-hXa" secondAttribute="trailing" constant="20" id="4tL-Cj-D8X"/>
+                        <constraint firstItem="f3Q-TP-vfV" firstAttribute="leading" secondItem="Gk2-v8-irM" secondAttribute="leading" constant="20" id="9XE-vK-Qfy"/>
+                        <constraint firstItem="zEU-1z-hXa" firstAttribute="top" secondItem="f3Q-TP-vfV" secondAttribute="bottom" constant="20" id="X2y-N3-56P"/>
+                        <constraint firstItem="zEU-1z-hXa" firstAttribute="leading" secondItem="Gk2-v8-irM" secondAttribute="leading" constant="20" id="a9M-1q-x4c"/>
+                        <constraint firstItem="f3Q-TP-vfV" firstAttribute="top" secondItem="Gk2-v8-irM" secondAttribute="top" constant="20" id="hrm-4g-lAd"/>
+                        <constraint firstAttribute="bottom" secondItem="zEU-1z-hXa" secondAttribute="bottom" constant="20" id="jwL-a7-E0A"/>
+                        <constraint firstAttribute="trailing" secondItem="f3Q-TP-vfV" secondAttribute="trailing" constant="20" id="vp2-oH-UO9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.2461476293" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Gk2-v8-irM" secondAttribute="trailing" id="Dvi-VM-e3m"/>
+                <constraint firstItem="Gk2-v8-irM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HW7-uo-f3I"/>
+                <constraint firstAttribute="bottom" secondItem="Gk2-v8-irM" secondAttribute="bottom" id="WzH-Q0-BGf"/>
+            </constraints>
+            <connections>
+                <outlet property="alertView" destination="Gk2-v8-irM" id="usf-yd-RiR"/>
+                <outlet property="btnChoose" destination="Oxp-dW-fi8" id="Pa1-a7-1X4"/>
+                <outlet property="btnLeft" destination="b9y-fj-iek" id="gr4-WD-Llm"/>
+                <outlet property="btnRight" destination="LYv-Ib-GYB" id="YPP-a2-Boj"/>
+                <outlet property="lblCustomization" destination="NpD-Ex-T5v" id="vwg-h8-VIc"/>
+                <outlet property="lblTitle" destination="H1i-v0-9gv" id="zhC-AM-Ifv"/>
+                <outlet property="stkDialog" destination="QhE-I9-KLZ" id="sCx-84-fg4"/>
+            </connections>
+            <point key="canvasLocation" x="23.199999999999999" y="50.824587706146929"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

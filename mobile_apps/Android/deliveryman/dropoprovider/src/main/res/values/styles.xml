@@ -1,0 +1,393 @@
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge"></style>
+
+
+    <!--//////////////////////////////////////////////////////////////////////////////////-->
+    <!--App Light Theme -->
+    <!--//////////////////////////////////////////////////////////////////////////////////-->
+
+    <style name="Theme.App.Light" parent="AppTheme">
+        <item name="colorAccent">@color/color_app_text_light</item>
+        <item name="colorControlActivated">@color/color_app_text_light</item>
+        <item name="colorControlHighlight">@color/color_app_text_light</item>
+        <item name="colorPrimary">@color/color_app_text_light</item>
+        <item name="appThemeScreenBackgroundStyle">@style/AppBackgroundLight</item>
+        <item name="android:editTextStyle">@style/CustomEditTextLight</item>
+        <item name="android:textViewStyle">@style/CustomTextViewLight</item>
+        <item name="appThemeTextViewStyle">@style/CustomTextViewLight</item>
+        <item name="android:buttonStyle">@style/CustomButtonLight</item>
+        <item name="appThemeButtonStyle">@style/CustomButtonLight</item>
+        <item name="appThemeTextInputLayoutStyle">@style/CustomTextInputLayoutLight</item>
+        <item name="appThemeTextInputLayoutDropDownStyle">@style/CustomTextInputLayoutDropDownLight
+        </item>
+        <item name="appThemeLabelTextStyle">@style/CustomTextViewLabelLight</item>
+        <item name="appThemeBottomLineDividerStyle">@style/AppCustomBottomLineDividerLight</item>
+        <item name="appThemeEditTextStyle">@style/CustomEditTextLight</item>
+        <item name="appThemeIcon">@color/color_app_icon_light</item>
+        <item name="appThemeDialogBackgroundStyle">@color/color_app_bg_light</item>
+        <item name="appThemeModeColor">@color/color_app_bg_light</item>
+        <item name="appThemeCheckBoxStyle">@style/CustomCheckBoxLight</item>
+        <item name="appThemeRadioButtonStyle">@style/CustomRadioButtonLight</item>
+        <item name="appThemeSwitchStyle">@style/CustomSwitchLight</item>
+        <item name="appThemeTabStyle">@style/CustomTabStyleLight</item>
+        <item name="appThemeTagStyle">@color/color_app_tag_light</item>
+        <item name="appThemeDividerColor">@color/color_app_divider_light</item>
+        <item name="android:timePickerDialogTheme">@style/TimePickerLight</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerLight</item>
+        <item name="appThemeModeTextColor">@color/color_app_text_light</item>
+        <item name="appThemeTextInputLayoutStyleForLib">@style/CustomTextInputLayoutLightForLib</item>
+        <item name="android:statusBarColor">@color/color_app_bg_light</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/color_app_bg_light</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowBackground">@color/color_app_bg_light</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogThemeLight</item>
+
+    </style>
+    <!--//////////////////////////////////////////////////////////////////////////////////-->
+    <!--App Dark Theme -->
+    <!--//////////////////////////////////////////////////////////////////////////////////-->
+
+    <style name="Theme.App.Dark" parent="AppTheme">
+        <item name="colorAccent">@color/color_app_text_dark</item>
+        <item name="colorPrimary">@color/color_app_text_dark</item>
+        <item name="colorControlActivated">@color/color_app_text_dark</item>
+        <item name="colorControlHighlight">@color/color_app_text_dark</item>
+        <item name="appThemeScreenBackgroundStyle">@style/AppBackgroundDark</item>
+        <item name="android:editTextStyle">@style/CustomEditTextDark</item>
+        <item name="android:textViewStyle">@style/CustomTextViewDark</item>
+        <item name="appThemeTextViewStyle">@style/CustomTextViewDark</item>
+        <item name="android:buttonStyle">@style/CustomButtonDark</item>
+        <item name="appThemeButtonStyle">@style/CustomButtonDark</item>
+        <item name="appThemeTextInputLayoutStyle">@style/CustomTextInputLayoutDark</item>
+        <item name="appThemeTextInputLayoutDropDownStyle">@style/CustomTextInputLayoutDropDownDark</item>
+        <item name="appThemeLabelTextStyle">@style/CustomTextViewLabelDark</item>
+        <item name="appThemeBottomLineDividerStyle">@style/AppCustomBottomLineDividerDark</item>
+        <item name="appThemeEditTextStyle">@style/CustomEditTextDark</item>
+        <item name="appThemeIcon">@color/color_app_icon_dark</item>
+        <item name="appThemeDialogBackgroundStyle">@color/color_app_bg_dark</item>
+        <item name="appThemeModeColor">@color/color_app_bg_dark</item>
+        <item name="appThemeCheckBoxStyle">@style/CustomCheckBoxDark</item>
+        <item name="appThemeRadioButtonStyle">@style/CustomRadioButtonDark</item>
+        <item name="appThemeSwitchStyle">@style/CustomSwitchDark</item>
+        <item name="appThemeTabStyle">@style/CustomTabStyleDark</item>
+        <item name="appThemeTagStyle">@color/color_app_tag_dark</item>
+        <item name="appThemeDividerColor">@color/color_app_divider_dark</item>
+        <item name="android:timePickerDialogTheme">@style/TimePickerDark</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerDark</item>
+        <item name="appThemeModeTextColor">@color/color_app_text_dark</item>
+        <item name="appThemeTextInputLayoutStyleForLib">@style/CustomTextInputLayoutDarkForLib</item>
+        <item name="android:statusBarColor">@color/color_app_bg_dark</item>
+        <item name="android:navigationBarColor">@color/color_app_bg_dark</item>
+        <item name="android:windowBackground">@color/color_app_bg_dark</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogThemeDark</item>
+    </style>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////-->
+    <!--Light Theme Style-->
+    <!--//////////////////////////////////////////////////////////////////////////////////-->
+    <style name="AppBackgroundLight">
+        <item name="android:background">@color/color_app_bg_light</item>
+    </style>
+
+    <style name="AppCustomBottomLineDividerLight">
+        <item name="android:background">@color/color_app_text_light</item>
+    </style>
+
+    <style name="CustomTextViewLight" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_app_text_light</item>
+        <item name="android:textColorLink">@color/color_app_text_light</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing</item>
+        <item name="android:textSize">@dimen/size_app_text_regular</item>
+    </style>
+
+    <style name="CustomTextViewLabelLight" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_app_label_light</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing</item>
+        <item name="android:textSize">@dimen/size_app_label_regular</item>
+    </style>
+
+    <style name="CustomButtonLight" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/size_app_button_text</item>
+        <item name="android:textColor">@color/color_app_button_text_light</item>
+        <item name="android:background">@drawable/shape_custom_button</item>
+    </style>
+
+    <style name="CustomEditTextLight" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">@dimen/size_app_text_regular</item>
+        <item name="android:textColor">@color/color_app_text_light</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">255</item>
+        <item name="colorControlActivated">@color/color_app_text_light</item>
+        <item name="colorControlHighlight">@color/color_app_text_light</item>
+        <item name="colorAccent">@color/color_app_text_light</item>
+    </style>
+
+    <style name="CustomTextInputLayoutLight" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/text_input_outbox</item>
+        <item name="hintTextColor">@color/color_app_text_light</item>
+        <item name="android:textColorHint">@color/color_app_label_light</item>
+        <item name="android:textColor">@color/color_app_text_light</item>
+        <item name="colorPrimary">@color/color_app_text_light</item>
+
+    </style>
+
+    <style name="CustomTextInputLayoutDropDownLight" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/text_input_outbox</item>
+        <item name="endIconTint">?appThemeIcon</item>
+        <item name="endIconDrawable">@drawable/ic_arrow_drop_down</item>
+        <item name="hintTextColor">@color/color_app_text_light</item>
+        <item name="android:textColorHint">@color/color_app_label_light</item>
+        <item name="android:textColor">@color/color_app_text_light</item>
+
+    </style>
+
+    <style name="CustomTextInputLayoutLightForLib" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">@dimen/size_app_text_regular</item>
+        <item name="android:textColorHint">@color/color_app_hint_light</item>
+        <item name="colorControlNormal">@color/color_app_text_light</item>
+        <item name="colorControlActivated">@color/color_app_text_light</item>
+        <item name="colorControlHighlight">@color/color_app_text_light</item>
+        <item name="android:textColorPrimary">@color/color_app_text_light</item>
+    </style>
+
+    <style name="CustomRadioButtonLight" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="colorControlNormal">@color/color_app_text_light</item>
+        <item name="colorControlActivated">@color/color_app_text_light</item>
+        <item name="android:textSize">@dimen/size_app_text_regular</item>
+        <item name="android:textColor">@color/color_app_label_light</item>
+    </style>
+
+    <style name="CustomCheckBoxLight" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="colorControlNormal">@color/color_app_text_light</item>
+        <item name="colorControlActivated">@color/color_app_text_light</item>
+        <item name="android:textSize">@dimen/size_app_text_regular</item>
+        <item name="android:textColor">@color/color_app_text_light</item>
+    </style>
+
+    <style name="CustomSwitchLight" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="colorControlNormal">@color/color_app_text_light</item>
+        <item name="colorControlActivated">@color/color_app_text_light</item>
+        <item name="android:textSize">@dimen/size_app_text_regular</item>
+        <item name="android:textColor">@color/color_app_text_light</item>
+    </style>
+
+    <style name="CustomTabStyleLight" parent="Widget.Design.TabLayout">
+        <item name="tabGravity">fill</item>
+        <item name="tabIndicatorColor">@color/color_app_heading</item>
+        <item name="tabIndicatorHeight">@dimen/app_tab_indicator_height</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabSelectedTextColor">@color/color_app_text_light</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:background">@color/color_app_bg_light</item>
+        <item name="tabTextAppearance">@style/TabTextAppearanceLight</item>
+    </style>
+
+    <style name="TabTextAppearanceLight" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">@dimen/size_app_text_regular</item>
+        <item name="android:textColor">@color/color_app_label_dark</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="DatePickerLight" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/color_app_bg_dark</item>                   <!--header background-->
+        <item name="android:windowBackground">@color/color_app_bg_light</item>     <!--calendar background-->
+        <item name="android:colorControlActivated">@color/color_app_text_light</item> <!--selected day-->
+        <item name="android:textColorPrimary">@color/color_app_text_light</item> <!--days of the month-->
+        <item name="android:textColorSecondary">@color/color_app_text_light</item>    <!--days of the week-->
+        <item name="android:textColor">@color/color_app_text_light</item>
+    </style>
+
+    <style name="TimePickerLight" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/color_app_bg_dark</item>                   <!--header background-->
+        <item name="android:windowBackground">@color/color_app_bg_light</item>     <!--calendar background-->
+        <item name="android:colorControlActivated">@color/color_app_text_light</item> <!--selected day-->
+        <item name="android:textColorPrimary">@color/color_app_text_light</item> <!--days of the month-->
+        <item name="android:textColorSecondary">@color/color_app_text_light</item>    <!--days of the week-->
+        <item name="android:textColor">@color/color_app_text_light</item>
+    </style>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////-->
+    <!--Dark Theme Style-->
+    <!--//////////////////////////////////////////////////////////////////////////////////-->
+
+    <style name="AppBackgroundDark">
+        <item name="android:background">@color/color_app_bg_dark</item>
+    </style>
+
+    <style name="AppCustomBottomLineDividerDark">
+        <item name="android:background">@color/color_app_text_dark</item>
+    </style>
+
+    <style name="CustomTextViewDark" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_app_text_dark</item>
+        <item name="android:textColorLink">@color/color_app_text_dark</item>
+        <item name="android:textSize">@dimen/size_app_text_regular</item>
+    </style>
+
+    <style name="CustomTextViewLabelDark" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_app_label_dark</item>
+        <item name="android:textSize">@dimen/size_app_label_regular</item>
+    </style>
+
+    <style name="CustomButtonDark" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/size_app_button_text</item>
+        <item name="android:textColor">@color/color_app_button_text_dark</item>
+        <item name="android:background">@drawable/shape_custom_button</item>
+    </style>
+
+    <style name="CustomEditTextDark" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">@dimen/size_app_text_regular</item>
+        <item name="android:textColor">@color/color_app_text_dark</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">255</item>
+        <item name="colorControlActivated">@color/color_app_text_dark</item>
+        <item name="colorControlHighlight">@color/color_app_text_dark</item>
+        <item name="colorAccent">@color/color_app_text_dark</item>
+    </style>
+
+    <style name="CustomTextInputLayoutDark" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/text_input_outbox</item>
+        <item name="hintTextColor">@color/color_app_text_dark</item>
+        <item name="android:textColorHint">@color/color_app_label_dark</item>
+        <item name="android:textColor">@color/color_app_text_dark</item>
+        <item name="colorPrimary">@color/color_app_text_dark</item>
+    </style>
+
+    <style name="CustomTextInputLayoutDropDownDark" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/text_input_outbox</item>
+        <item name="endIconDrawable">@drawable/ic_arrow_drop_down</item>
+        <item name="endIconTint">?appThemeIcon</item>
+        <item name="hintTextColor">@color/color_app_text_dark</item>
+        <item name="android:textColorHint">@color/color_app_label_dark</item>
+        <item name="android:textColor">@color/color_app_text_dark</item>
+    </style>
+
+    <style name="CustomTextInputLayoutDarkForLib" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">@dimen/size_app_text_regular</item>
+        <item name="android:textColorHint">@color/color_app_hint_light</item>
+        <item name="colorControlNormal">@color/color_app_text_dark</item>
+        <item name="colorControlActivated">@color/color_app_text_dark</item>
+        <item name="colorControlHighlight">@color/color_app_text_dark</item>
+        <item name="android:textColorPrimary">@color/color_app_text_dark</item>
+    </style>
+
+    <style name="TabTextAppearanceDark" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">@dimen/size_app_text_regular</item>
+        <item name="android:textColor">@color/color_app_label_dark</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="CustomRadioButtonDark" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="colorControlNormal">@color/color_app_text_dark</item>
+        <item name="colorControlActivated">@color/color_app_text_dark</item>
+        <item name="android:textSize">@dimen/size_app_text_regular</item>
+        <item name="android:textColor">@color/color_app_label_dark</item>
+    </style>
+
+    <style name="CustomCheckBoxDark" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="colorControlNormal">@color/color_app_text_dark</item>
+        <item name="colorControlActivated">@color/color_app_text_dark</item>
+        <item name="android:textSize">@dimen/size_app_text_regular</item>
+        <item name="android:textColor">@color/color_app_text_dark</item>
+    </style>
+
+    <style name="CustomSwitchDark" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="colorControlNormal">@color/color_app_text_dark</item>
+        <item name="colorControlActivated">@color/color_app_text_dark</item>
+        <item name="android:textSize">@dimen/size_app_text_regular</item>
+        <item name="android:textColor">@color/color_app_text_dark</item>
+    </style>
+
+    <style name="CustomTabStyleDark" parent="Widget.Design.TabLayout">
+        <item name="tabGravity">fill</item>
+        <item name="tabIndicatorColor">@color/color_app_heading</item>
+        <item name="tabIndicatorHeight">@dimen/app_tab_indicator_height</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabSelectedTextColor">@color/color_app_text_dark</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:background">@color/color_app_bg_dark</item>
+        <item name="tabTextAppearance">@style/TabTextAppearanceDark</item>
+    </style>
+
+
+    <style name="DatePickerDark" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/color_app_bg_dark</item>                   <!--header background-->
+        <item name="android:windowBackground">@color/color_app_bg_dark</item>     <!--calendar background-->
+        <item name="android:colorControlActivated">@color/color_app_tag_dark</item> <!--selected day-->
+        <item name="android:textColorPrimary">@color/color_app_text_dark</item> <!--days of the month-->
+        <item name="android:textColorSecondary">@color/color_app_text_dark</item>    <!--days of the week-->
+        <item name="android:textColor">@color/color_app_text_dark</item>
+    </style>
+
+    <style name="TimePickerDark" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/color_app_bg_dark</item>                   <!--header background-->
+        <item name="android:windowBackground">@color/color_app_bg_dark</item>     <!--calendar background-->
+        <item name="android:colorControlActivated">@color/color_app_text_dark</item> <!--selected day-->
+        <item name="android:textColorPrimary">@color/color_app_text_dark</item> <!--days of the month-->
+        <item name="android:textColorSecondary">@color/color_app_text_dark</item>    <!--days of the week-->
+        <item name="android:textColor">@color/color_app_text_dark</item>
+    </style>
+
+    <style name="AppBottomSheetDialogThemeLight" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/color_app_bg_light</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <style name="AppBottomSheetDialogThemeDark" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/color_app_bg_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_dialog</item>
+        <item name="behavior_fitToContents">true</item>
+
+    </style>
+
+    <!--    old style-->
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/color_white</item>
+    </style>
+
+    <style name="BottomNavigationBar" parent="AppTheme">
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="CustomTextViewStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_app_text_light</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing</item>
+        <item name="android:textSize">@dimen/size_app_text_regular</item>
+    </style>
+
+    <style name="CustomTabAppearance" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">@dimen/size_app_text_regular</item>
+        <item name="android:textColor">@color/color_app_label</item>
+    </style>
+
+    <style name="CustomTabStyle2" parent="Widget.Design.TabLayout">
+        <item name="tabGravity">fill</item>
+        <item name="tabIndicatorColor">@color/color_app_headings</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabMode">fixed</item>
+        <item name="android:background">@color/color_app_theme</item>
+        <item name="tabSelectedTextColor">@color/color_black</item>
+        <item name="tabTextAppearance">@style/CustomTabAppearance</item>
+    </style>
+</resources>

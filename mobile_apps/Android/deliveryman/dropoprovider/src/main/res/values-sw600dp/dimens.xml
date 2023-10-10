@@ -1,0 +1,43 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!--App Dimens-->
+    <dimen name="dimen_app_horizontal_divider">1dp</dimen>
+    <dimen name="dimen_app_edit_text_padding">5dp</dimen>
+    <dimen name="dimen_app_text_padding">10dp</dimen>
+    <dimen name="dimen_app_button_text_padding">16dp</dimen>
+    <dimen name="dimen_app_profile_image">120dp</dimen>
+    <dimen name="dimen_app_tab_elevation">4dp</dimen>
+    <dimen name="dimen_app_progress_bar">30dp</dimen>
+    <dimen name="activity_vertical_padding">10dp</dimen>
+    <dimen name="activity_horizontal_padding">10dp</dimen>
+    <dimen name="dimen_app_card_radius">3dp</dimen>
+    <dimen name="dimen_app_item_image_size">50dp</dimen>
+    <dimen name="dimen_app_menu_item_margin">32dp</dimen>
+    <dimen name="dimen_horizontal_margin">32dp</dimen>
+    <dimen name="dimen_size_document">80dp</dimen>
+
+
+    <!--App text Dimen-->
+
+
+    <dimen name="size_app_text_regular">14sp</dimen>
+    <dimen name="size_app_text_medium">15sp</dimen>
+    <dimen name="size_app_text_small">11sp</dimen>
+    <dimen name="size_app_text_large">21sp</dimen>
+    <dimen name="size_app_text_largest">26sp</dimen>
+    <dimen name="size_app_label_regular">13sp</dimen>
+    <dimen name="size_app_label_small">10sp</dimen>
+    <dimen name="size_app_button_text">15sp</dimen>
+
+    <dimen name="line_spacing">4dp</dimen>
+
+
+    <dimen name="size_logo">100dp</dimen>
+    <dimen name="vehicle_pin_width">19.33dp</dimen>
+    <dimen name="vehicle_pin_height">42.33dp</dimen>
+    <dimen name="vertical_line_size">45dp</dimen>
+</resources>

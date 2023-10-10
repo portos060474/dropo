@@ -1,0 +1,6 @@
+framework module Pods_Dropo_Store {
+  umbrella header "Pods-Dropo Store-umbrella.h"
+
+  export *
+  module * { export * }
+}

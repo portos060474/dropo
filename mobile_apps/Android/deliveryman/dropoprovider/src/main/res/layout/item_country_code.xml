@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_app_text_padding"
+        android:paddingBottom="@dimen/dimen_app_text_padding">
+
+        <com.dropo.provider.component.CustomFontTextView
+            android:id="@+id/tvCountryCodeDigit"
+            style="?appThemeTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="+91" />
+
+
+        <com.dropo.provider.component.CustomFontTextView
+            android:id="@+id/tvItemCountryName"
+            style="?appThemeTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="3"
+            android:gravity="start"
+            android:text="County Name"
+
+            android:textAlignment="viewStart" />
+
+    </LinearLayout>
+
+</LinearLayout>

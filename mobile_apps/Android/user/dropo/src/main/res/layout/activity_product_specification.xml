@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="?appThemeScreenBackgroundStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/specificationAppBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/specificationCollapsingToolBar"
+                style="?appThemeScreenBackgroundStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:scrimAnimationDuration="200"
+                app:scrimVisibleHeightTrigger="84dp">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_collapseMode="parallax">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/imageViewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_app_bar_image"
+                        android:transitionName="@string/transition_string_store_product"
+                        app:layout_collapseMode="parallax"
+                        app:layout_constraintBottom_toTopOf="@id/tvCollapsingProductName"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_chainStyle="packed" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivDefaultItemImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_app_bar_image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/placeholder"
+                        app:layout_collapseMode="parallax"
+                        app:layout_constraintBottom_toBottomOf="@id/imageViewPager"
+                        app:layout_constraintBottom_toTopOf="@id/tvCollapsingProductName"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="@id/imageViewPager"
+                        app:layout_constraintBottom_toTopOf="@id/tvCollapsingProductName"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/llDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/dimen_app_bar_image"
+                        android:gravity="start|top"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="@id/imageViewPager"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <com.dropo.component.CustomFontTextViewTitle
+                        android:id="@+id/tvCollapsingProductName"
+                        style="?appThemeScreenBackgroundStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:maxLines="2"
+                        android:paddingStart="@dimen/activity_horizontal_margin"
+                        android:paddingTop="@dimen/activity_horizontal_margin"
+                        android:paddingEnd="@dimen/activity_horizontal_margin"
+                        android:text="@string/app_name"
+                        android:textSize="@dimen/size_app_text_medium_2"
+                        app:layout_collapseMode="parallax"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageViewPager" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <include layout="@layout/toolbar_app_custom" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_horizontal_margin">
+
+                <com.dropo.component.CustomFontTextView
+                    android:id="@+id/tvCollapsingProductDescription"
+                    style="?appThemeLabelTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:gravity="start"
+                    android:text="@string/text_description"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/size_app_text_small"
+                    android:visibility="visible" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvSpecificationItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:paddingBottom="@dimen/activity_horizontal_margin"
+                    android:visibility="visible"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="?appThemeTextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:hint="@string/text_note_for_item">
+
+                    <com.dropo.component.CustomFontEditTextView
+                        android:id="@+id/etAddNote"
+                        style="?appThemeEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:imeOptions="actionNext"
+                        android:inputType="textMultiLine"
+                        android:maxLines="3"
+                        android:minLines="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <include
+            layout="@layout/layout_item_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin" />
+
+        <LinearLayout
+            android:id="@+id/llAddToCart"
+            style="?appThemeButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_padding"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dimen_app_edit_text_padding"
+            android:paddingEnd="@dimen/dimen_app_edit_text_padding"
+            android:visibility="visible">
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvAddToCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoSizeMaxTextSize="@dimen/size_app_label_regular"
+                android:autoSizeMinTextSize="@dimen/size_app_label_small"
+                android:autoSizeTextType="uniform"
+                android:gravity="start"
+                android:text="@string/text_add_to_cart"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_app_label_regular" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="@dimen/activity_horizontal_padding"
+                android:layout_marginEnd="@dimen/activity_horizontal_padding"
+                android:background="@color/colorWhite" />
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvItemAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00.00"
+                android:textAllCaps="true"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/size_app_button_text" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dimen_app_edit_text_padding"
+    android:paddingBottom="@dimen/dimen_app_edit_text_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.dropo.component.CustomFontTextViewTitle
+            android:id="@+id/tvDow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_weight="0.5"
+            android:text="@string/text_empty_string"
+            android:textColor="@color/color_app_label"
+
+            android:textSize="@dimen/size_app_label_regular"
+            android:visibility="invisible" />
+
+        <com.dropo.component.CustomFontTextView
+            android:id="@+id/tvStoreTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/text_empty_string"
+
+            android:textSize="@dimen/size_app_label_regular" />
+    </LinearLayout>
+
+</LinearLayout>

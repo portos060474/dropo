@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/card_view_space_12dp"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    app:cardBackgroundColor="?appThemeModeColor"
+    app:cardCornerRadius="@dimen/app_card_radius"
+    app:cardElevation="@dimen/app_card_elevation">
+
+    <LinearLayout
+        android:id="@+id/llProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_padding">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <com.dropo.store.widgets.CustomSwitch
+                android:id="@+id/switchActivePromo"
+                style="?appThemeSwitchStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/cardview_default_elevation"
+                android:gravity="start" />
+
+            <com.dropo.store.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_is_active" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.dropo.store.widgets.CustomFontTextViewTitle
+                    android:id="@+id/tvPromoCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="PROMO200"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/size_app_text_medium" />
+
+                <com.dropo.store.widgets.CustomFontTextViewTitle
+                    android:id="@+id/tvPromoPricing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:text="$88.8" />
+            </LinearLayout>
+
+            <com.dropo.store.widgets.CustomTextView
+                android:id="@+id/tvPromoDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_app_edit_text_padding"
+                android:layout_marginBottom="@dimen/dimen_app_edit_text_padding"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="A promotion code, also know as a coupon code, is a code that is associated with a marketing discount."
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/size_app_text_small" />
+
+            <LinearLayout
+                android:id="@+id/llIsPromoHaveDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_padding"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:theme="?appThemeTextInputLayoutStyle">
+
+                    <com.dropo.store.widgets.CustomInputEditText
+                        android:id="@+id/etPromoStartDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/text_start_date"
+                        android:inputType="textCapSentences"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/size_app_label_small"
+                        app:typefaceInputEt="fonts/AvenirLTStd-Medium.otf" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:theme="?appThemeTextInputLayoutStyle">
+
+                    <com.dropo.store.widgets.CustomInputEditText
+                        android:id="@+id/etPromoExpDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/text_exp_date"
+                        android:inputType="textCapSentences"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/size_app_label_small"
+                        app:typefaceInputEt="fonts/AvenirLTStd-Medium.otf" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

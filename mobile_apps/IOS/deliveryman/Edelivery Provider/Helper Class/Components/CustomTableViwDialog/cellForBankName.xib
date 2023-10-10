@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellForBankName" id="KGk-i7-Jjw" customClass="CustomCell" customModule="Edelivery_Provider" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCH-vT-zwM">
+                        <rect key="frame" x="5" y="5" width="313" height="34"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="cellForCity" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3v-mW-b62">
+                                <rect key="frame" x="5" y="0.0" width="298" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U3v-mW-b62" firstAttribute="top" secondItem="jCH-vT-zwM" secondAttribute="top" id="Kut-8b-Ul5"/>
+                            <constraint firstAttribute="bottom" secondItem="U3v-mW-b62" secondAttribute="bottom" id="Ofa-Dj-Dlg"/>
+                            <constraint firstItem="U3v-mW-b62" firstAttribute="leading" secondItem="jCH-vT-zwM" secondAttribute="leading" constant="5" id="lBQ-zW-pPB"/>
+                            <constraint firstAttribute="trailing" secondItem="U3v-mW-b62" secondAttribute="trailing" constant="10" id="utc-BD-W0q"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jCH-vT-zwM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Tnq-ka-Jci"/>
+                    <constraint firstAttribute="bottom" secondItem="jCH-vT-zwM" secondAttribute="bottom" constant="5" id="YIS-R5-zPC"/>
+                    <constraint firstAttribute="trailing" secondItem="jCH-vT-zwM" secondAttribute="trailing" constant="2" id="nnX-vz-xu2"/>
+                    <constraint firstItem="jCH-vT-zwM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="zn9-Vk-h0J"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblBankName" destination="U3v-mW-b62" id="aG5-hY-mwN"/>
+            </connections>
+            <point key="canvasLocation" x="-315" y="101"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

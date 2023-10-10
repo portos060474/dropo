@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llFab"
+    android:clickable="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="end|bottom"
+    android:gravity="end|bottom"
+    android:orientation="vertical">
+
+
+    <com.dropo.store.widgets.CustomTextView
+        android:id="@+id/btnAddProduct"
+        style="?appThemeButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/general_top_margin"
+        android:background="@drawable/shape_red_btn"
+        android:drawablePadding="@dimen/activity_horizontal_padding"
+        android:elevation="6dp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:text="@string/text_product"
+        android:textSize="@dimen/size_app_text_regular"
+        app:appBackgroundColor="@integer/appThemeColor"
+        app:drawableLeftCompat="@drawable/ic_plus" />
+
+
+    <com.dropo.store.widgets.CustomTextView
+        android:id="@+id/btnAddItem"
+        style="?appThemeButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/general_top_margin"
+        android:background="@drawable/shape_red_btn"
+        android:drawablePadding="@dimen/activity_horizontal_padding"
+        android:elevation="6dp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:text="@string/text_item"
+        android:textSize="@dimen/size_app_text_regular"
+        app:appBackgroundColor="@integer/appThemeColor"
+        app:drawableLeftCompat="@drawable/ic_plus" />
+
+    <com.dropo.store.widgets.CustomFloatingButton
+        android:id="@+id/fbAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:clickable="true"
+        android:src="@drawable/ic_plus"
+        app:appFBBackgroundColor="@integer/appThemeColor"
+        app:layout_behavior="" />
+
+
+</LinearLayout>

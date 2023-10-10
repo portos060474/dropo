@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="?appThemeScreenBackgroundStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_app_custom" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_horizontal_margin">
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/ivProfileImage"
+                    android:layout_width="@dimen/dimen_app_profile_image"
+                    android:layout_height="@dimen/dimen_app_profile_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/man_user"
+                    android:visibility="visible"
+                    app:riv_corner_radius="360dip"
+                    app:riv_oval="true" />
+
+                <com.dropo.component.CustomImageView
+                    android:id="@+id/ivProfileImageSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|top"
+                    android:layout_marginTop="@dimen/dimen_app_edit_text_padding"
+                    android:layout_marginEnd="@dimen/dimen_app_edit_text_padding"
+                    app:srcCompat="@drawable/ic_photo_camera" />
+            </FrameLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="?appThemeTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_first_name">
+
+                <com.dropo.component.CustomFontEditTextView
+                    android:id="@+id/etProfileFirstName"
+                    style="?appThemeEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:minLines="1"
+                    android:textAlignment="viewStart" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="?appThemeTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:hint="@string/text_last_name">
+
+                <com.dropo.component.CustomFontEditTextView
+                    android:id="@+id/etProfileLastName"
+                    style="?appThemeEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:minLines="1"
+                    android:textAlignment="viewStart" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="?appThemeTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:hint="@string/text_email">
+
+                <com.dropo.component.CustomFontEditTextView
+                    android:id="@+id/etProfileEmail"
+                    style="?appThemeEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:minLines="1"
+                    android:textAlignment="viewStart" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="?appThemeTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:hint="@string/text_select_country"
+                android:longClickable="false"
+                android:visibility="visible">
+
+                <com.dropo.component.CustomFontEditTextView
+                    android:id="@+id/etSelectCountry"
+                    style="?appThemeEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:contentDescription="@string/text_description"
+                    android:ems="10"
+                    android:focusableInTouchMode="false"
+                    android:longClickable="false"
+                    android:minLines="1"
+                    android:textAlignment="viewStart" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="?appThemeTextInputLayoutStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_weight="0.3"
+                    android:hint="@string/text_code"
+                    android:longClickable="false">
+
+                    <com.dropo.component.CustomFontEditTextView
+                        android:id="@+id/etSelectCountryPhCode"
+                        style="?appThemeEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="false"
+                        android:imeOptions="actionNext"
+                        android:longClickable="false"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:textAlignment="viewStart" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="?appThemeTextInputLayoutStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/text_phone">
+
+                    <com.dropo.component.CustomFontEditTextView
+                        android:id="@+id/etProfileMobileNumber"
+                        style="?appThemeEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberSigned"
+                        android:textAlignment="viewStart" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilProfileAddress"
+                style="?appThemeTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_address">
+
+                <com.dropo.component.CustomFontEditTextView
+                    android:id="@+id/etProfileAddress"
+                    style="?appThemeEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:minLines="1"
+                    android:textAlignment="viewStart" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="?appThemeTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_app_edit_text_padding"
+                android:hint="@string/text_zip_code"
+                android:visibility="gone">
+
+                <com.dropo.component.CustomFontEditTextView
+                    style="?appThemeEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned"
+                    android:minLines="1"
+                    android:textAlignment="viewStart" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvChangePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:enabled="false"
+                android:gravity="start"
+                android:padding="@dimen/dimen_app_edit_text_padding"
+                android:text="@string/text_change_password"
+                android:textSize="@dimen/size_app_text_small"
+                app:appTextColor="@integer/appThemeColor" />
+
+            <LinearLayout
+                android:id="@+id/llChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="?appThemeTextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_padding"
+                    android:hint="@string/text_pass_new"
+                    app:passwordToggleEnabled="true">
+
+                    <com.dropo.component.CustomFontEditTextView
+                        android:id="@+id/etNewPassword"
+                        style="?appThemeEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:minLines="1"
+                        android:textAlignment="viewStart" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="?appThemeTextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_padding"
+                    android:hint="@string/text_pass_retype"
+                    app:passwordToggleEnabled="true">
+
+                    <com.dropo.component.CustomFontEditTextView
+                        android:id="@+id/etConfirmPassword"
+                        style="?appThemeEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:inputType="textPassword"
+                        android:minLines="1"
+                        android:textAlignment="viewStart" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvReferral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/app_card_elevation"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/app_card_elevation"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                app:cardBackgroundColor="?appThemeModeColor"
+                app:cardCornerRadius="@dimen/app_card_radius"
+                app:cardElevation="@dimen/app_card_elevation">
+
+                <com.dropo.component.CustomFontTextView
+                    android:id="@+id/tvReferralCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/activity_horizontal_margin"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:textSize="@dimen/size_app_text_medium"
+                    android:visibility="visible"
+                    app:appTextColor="@integer/appThemeColor" />
+            </androidx.cardview.widget.CardView>
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvDeleteAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:padding="@dimen/dimen_app_edit_text_padding"
+                android:text="@string/text_delete_account"
+                android:textColor="@color/color_app_headings"
+                android:textSize="@dimen/size_app_text_regular" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

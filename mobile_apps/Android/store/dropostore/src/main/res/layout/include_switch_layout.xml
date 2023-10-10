@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.dropo.store.widgets.CustomTextView
+        android:id="@+id/tvSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general_margin"
+        android:text="@string/text_make_visible"
+        android:textSize="@dimen/size_app_text_small"
+        app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+    <com.dropo.store.widgets.CustomSwitch
+        android:id="@+id/switchMakeVisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_app_edit_text_padding"
+        app:theme="?appThemeSwitchStyle" />
+</LinearLayout>

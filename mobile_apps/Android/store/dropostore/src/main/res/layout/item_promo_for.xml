@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_app_edit_text_padding"
+    android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.dropo.store.widgets.CustomCheckBox
+        android:id="@+id/rbPromoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_app_edit_text_padding"
+        android:theme="?appThemeCheckBoxStyle"
+        android:visibility="visible" />
+
+    <com.dropo.store.widgets.CustomTextView
+        android:id="@+id/tvPromoItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_padding"
+        android:layout_weight="1"
+        android:maxLines="2"
+        android:text="PRICE"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/size_app_label_regular" />
+
+
+</LinearLayout>

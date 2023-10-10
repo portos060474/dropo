@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/card_view_space_12dp"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    app:cardBackgroundColor="?appThemeModeColor"
+    app:cardCornerRadius="@dimen/app_card_radius"
+    app:cardElevation="@dimen/app_card_elevation">
+
+
+    <LinearLayout
+        android:id="@+id/llProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_padding">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.dropo.store.widgets.CustomFontTextViewTitle
+                android:id="@+id/tvProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="Item Name"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/size_app_text_regular" />
+
+            <com.dropo.store.widgets.CustomTextView
+                android:id="@+id/tvProductDescription"
+                style="?appThemeLabelTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_app_edit_text_padding"
+                android:layout_marginBottom="@dimen/dimen_app_edit_text_padding"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="description"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/size_app_text_small" />
+
+            <com.dropo.store.widgets.CustomFontTextViewTitle
+                android:id="@+id/tvProductPricing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="$88.8"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/size_app_text_regular" />
+        </LinearLayout>
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:layout_marginStart="@dimen/dimen_app_edit_text_padding"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder"
+            android:visibility="gone"
+            app:riv_corner_radius="10dp" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

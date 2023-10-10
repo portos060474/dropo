@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InvoiceDialogCell" rowHeight="44" id="5Ds-9M-x3u" customClass="InvoiceDialogCell" customModule="Store" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Ds-9M-x3u" id="IgJ-ao-fZu">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" text="Base Pricdfsdf  " textAlignment="natural" lineBreakMode="clip" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tep-BV-NHq">
+                        <rect key="frame" x="15" y="5" width="119" height="34"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="$0.0/km$0.0/km$0.0/km$0.0/km$0.0/km$0.0/km$0.0/km$0.0/km$0.0/km$0.0/km" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKx-Xt-2ms">
+                        <rect key="frame" x="139" y="15" width="205" height="14"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="10"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UqF-Zj-gzZ">
+                        <rect key="frame" x="369.5" y="12" width="29.5" height="20.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="UqF-Zj-gzZ" secondAttribute="trailing" constant="15" id="2dc-j6-6x1"/>
+                    <constraint firstAttribute="trailing" secondItem="GKx-Xt-2ms" secondAttribute="trailing" constant="70" id="Apu-IM-MF3"/>
+                    <constraint firstItem="GKx-Xt-2ms" firstAttribute="leading" secondItem="tep-BV-NHq" secondAttribute="trailing" constant="5" id="Is9-5i-CDG"/>
+                    <constraint firstItem="UqF-Zj-gzZ" firstAttribute="centerY" secondItem="IgJ-ao-fZu" secondAttribute="centerY" id="TZZ-uZ-r4A"/>
+                    <constraint firstItem="tep-BV-NHq" firstAttribute="top" secondItem="IgJ-ao-fZu" secondAttribute="top" constant="5" id="Tx9-H6-lWS"/>
+                    <constraint firstItem="GKx-Xt-2ms" firstAttribute="centerY" secondItem="IgJ-ao-fZu" secondAttribute="centerY" id="X0G-nW-NVD"/>
+                    <constraint firstItem="tep-BV-NHq" firstAttribute="leading" secondItem="IgJ-ao-fZu" secondAttribute="leading" constant="15" id="jp1-cg-ZSM"/>
+                    <constraint firstAttribute="bottom" secondItem="tep-BV-NHq" secondAttribute="bottom" constant="5" id="x3s-2C-rvQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="lblPrice" destination="UqF-Zj-gzZ" id="BaJ-ch-tDP"/>
+                <outlet property="lblSubTitle" destination="GKx-Xt-2ms" id="vQi-dZ-A9f"/>
+                <outlet property="lblTitle" destination="tep-BV-NHq" id="CkE-4L-Ovk"/>
+            </connections>
+            <point key="canvasLocation" x="128.98550724637681" y="156.69642857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

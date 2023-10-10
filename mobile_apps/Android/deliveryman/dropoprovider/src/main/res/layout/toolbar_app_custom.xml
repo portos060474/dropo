@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?appThemeModeColor"
+    android:elevation="@dimen/dimen_app_tab_elevation"
+    android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    android:textAlignment="center"
+    android:theme="@style/ToolbarColoredBackArrow"
+    app:contentInsetStart="0dp"
+    app:layout_collapseMode="pin">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.dropo.provider.component.CustomFontTextViewTitle
+            android:id="@+id/tvToolbarTitle"
+            style="?appThemeTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/dimen_app_edit_text_padding"
+            android:textAlignment="center"
+            android:textSize="@dimen/size_app_text_medium"
+            android:visibility="visible" />
+
+        <com.dropo.provider.component.CustomImageView
+            android:id="@+id/ivToolbarRightIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivToolbarProfile"
+            android:layout_width="@dimen/toolbar_profile_icon"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivToolbarMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/dimen_app_edit_text_padding"
+            android:paddingEnd="@dimen/dimen_app_edit_text_padding"
+            android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_menu_icon" />
+
+        <ImageView
+            android:id="@+id/ivToolbarBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/dimen_app_edit_text_padding"
+            android:paddingEnd="@dimen/dimen_app_edit_text_padding"
+            android:paddingBottom="@dimen/dimen_app_edit_text_padding"
+            app:srcCompat="@drawable/ic_left_arrow" />
+    </FrameLayout>
+
+
+</androidx.appcompat.widget.Toolbar>
+
+

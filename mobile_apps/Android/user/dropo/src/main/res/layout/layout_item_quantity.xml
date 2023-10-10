@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <com.dropo.component.CustomFontTextView
+        style="@style/CustomTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_horizontal_padding"
+        android:layout_marginBottom="@dimen/dimen_app_edit_text_padding"
+        android:text="@string/text_max"
+        android:visibility="gone" />
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <com.dropo.component.CustomFontTextView
+            android:id="@+id/btnDecrease"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_round_right_black_stroke"
+            android:gravity="center"
+            android:layoutDirection="ltr"
+            android:text="@string/text_minus"
+            android:textSize="@dimen/size_app_text_medium"
+            app:appBackgroundStroke="1dp"
+            app:appBackgroundStrokeColor="@integer/appThemeColor"
+            app:appTextColor="@integer/appThemeColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.dropo.component.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/shape_custom_rect"
+                app:appBackgroundColor="@integer/appThemeColor">
+
+            </com.dropo.component.CustomFontTextView>
+
+            <com.dropo.component.CustomFontTextView
+                android:id="@+id/tvItemQuantity"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:autoSizeMaxTextSize="@dimen/size_app_text_medium"
+                android:autoSizeMinTextSize="@dimen/size_app_text_small"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingStart="@dimen/dimen_app_edit_text_padding"
+                android:paddingEnd="@dimen/dimen_app_edit_text_padding"
+                android:text="1"
+                android:textSize="@dimen/size_app_text_medium"
+                app:appBackgroundStroke="1dp"
+                app:appBackgroundStrokeColor="@integer/appThemeColor"
+                app:appTextColor="@integer/appThemeColor" />
+
+
+            <com.dropo.component.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/shape_custom_rect"
+                app:appBackgroundColor="@integer/appThemeColor">
+
+            </com.dropo.component.CustomFontTextView>
+        </LinearLayout>
+
+        <com.dropo.component.CustomFontTextView
+            android:id="@+id/btnIncrease"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_round_left_black_stroke"
+            android:gravity="center"
+            android:layoutDirection="ltr"
+            android:text="@string/text_plus"
+            android:textSize="@dimen/size_app_text_medium"
+            app:appBackgroundStroke="1dp"
+            app:appBackgroundStrokeColor="@integer/appThemeColor"
+            app:appTextColor="@integer/appThemeColor" />
+
+    </LinearLayout>
+</LinearLayout>

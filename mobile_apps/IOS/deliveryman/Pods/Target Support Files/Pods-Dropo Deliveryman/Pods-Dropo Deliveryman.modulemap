@@ -1,0 +1,6 @@
+framework module Pods_Dropo_Deliveryman {
+  umbrella header "Pods-Dropo Deliveryman-umbrella.h"
+
+  export *
+  module * { export * }
+}

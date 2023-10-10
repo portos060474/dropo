@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCollectionCell" id="gTV-IL-0wX" customClass="ProductCollectionCell" customModule="Edelivery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="223"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="223"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="ahf-Eg-28w">
+                        <rect key="frame" x="5" y="5" width="190" height="213"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzi-N0-nOG" userLabel="ImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="190" height="152"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="24B-le-e3Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="152"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="24B-le-e3Z" firstAttribute="leading" secondItem="mzi-N0-nOG" secondAttribute="leading" id="Hu4-dp-0ck"/>
+                                    <constraint firstAttribute="trailing" secondItem="24B-le-e3Z" secondAttribute="trailing" id="VWM-22-La7"/>
+                                    <constraint firstItem="24B-le-e3Z" firstAttribute="top" secondItem="mzi-N0-nOG" secondAttribute="top" id="agi-tF-Whn"/>
+                                    <constraint firstAttribute="bottom" secondItem="24B-le-e3Z" secondAttribute="bottom" id="oGV-Dq-XsV"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="800" text="Product Name of two line" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxQ-H7-0cb">
+                                <rect key="frame" x="0.0" y="167" width="190" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="MHN-wz-HZA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cxQ-H7-0cb" secondAttribute="bottom" constant="5" id="64R-dk-Sd5"/>
+                            <constraint firstItem="cxQ-H7-0cb" firstAttribute="top" secondItem="mzi-N0-nOG" secondAttribute="bottom" constant="15" id="6xu-hE-vhq"/>
+                            <constraint firstAttribute="trailing" secondItem="cxQ-H7-0cb" secondAttribute="trailing" id="NSk-Q6-jra"/>
+                            <constraint firstAttribute="trailing" secondItem="mzi-N0-nOG" secondAttribute="trailing" id="OoD-AO-DqO"/>
+                            <constraint firstItem="mzi-N0-nOG" firstAttribute="top" secondItem="ahf-Eg-28w" secondAttribute="top" id="fQ7-fM-Dqg"/>
+                            <constraint firstItem="mzi-N0-nOG" firstAttribute="leading" secondItem="ahf-Eg-28w" secondAttribute="leading" id="j2b-gA-tSO"/>
+                            <constraint firstItem="cxQ-H7-0cb" firstAttribute="leading" secondItem="ahf-Eg-28w" secondAttribute="leading" id="vc8-5e-aXT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ahf-Eg-28w" secondAttribute="trailing" constant="5" id="N0w-FU-78o"/>
+                <constraint firstItem="ahf-Eg-28w" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Ppi-5Z-vrw"/>
+                <constraint firstAttribute="bottom" secondItem="ahf-Eg-28w" secondAttribute="bottom" constant="5" id="UGp-Eb-Vpq"/>
+                <constraint firstItem="ahf-Eg-28w" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="pI7-5m-Eab"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="253" height="248"/>
+            <connections>
+                <outlet property="imgProduct" destination="24B-le-e3Z" id="w0M-Ee-DaS"/>
+                <outlet property="lblProductName" destination="cxQ-H7-0cb" id="wDo-DJ-ZL7"/>
+                <outlet property="viewForImage" destination="mzi-N0-nOG" id="7uK-Co-jQY"/>
+            </connections>
+            <point key="canvasLocation" x="-213.04347826086959" y="67.299107142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="104.5" height="105"/>
+    </resources>
+</document>

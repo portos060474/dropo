@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llSpecification"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_app_edit_text_padding">
+
+    <ImageView
+        android:id="@+id/ivBullet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/text_image"
+        android:paddingEnd="@dimen/dimen_app_edit_text_padding"
+        android:src="@drawable/ic_black"
+        android:visibility="visible" />
+
+    <com.dropo.store.widgets.CustomTextView
+        android:id="@+id/tvSequenceNumber"
+        style="?appThemeTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/activity_horizontal_padding"
+        android:text="0"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/size_app_label_small"
+        app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+    <com.dropo.store.widgets.CustomTextView
+        android:id="@+id/tvSpecification"
+        style="?appThemeTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/size_app_label_small"
+        app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+    <com.dropo.store.widgets.CustomTextView
+        android:id="@+id/tvSubSpecificationPrice"
+        style="?appThemeTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/general_top_margin"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/size_app_label_small"
+        app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+</LinearLayout>

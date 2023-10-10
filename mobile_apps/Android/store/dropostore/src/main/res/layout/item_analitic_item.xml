@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.dropo.store.widgets.CustomTextView
+        android:id="@+id/tvAnalyticValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_padding"
+        android:text="Earning"
+        android:textSize="@dimen/size_app_label_regular"
+        app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+    <com.dropo.store.widgets.CustomFontTextViewTitle
+        android:id="@+id/tvAnalyticName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/activity_horizontal_padding"
+        android:text="Earning"
+        android:textAllCaps="true"
+        android:textSize="@dimen/size_app_label_small"
+        app:typefaceTv="fonts/AvenirLTStd-Medium.otf" />
+
+    <include layout="@layout/app_divider_horizontal" />
+</LinearLayout>
